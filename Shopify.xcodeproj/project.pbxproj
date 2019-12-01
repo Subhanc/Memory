@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,12 @@
 		0D8B1A7823933E1400D71943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D8B1A7723933E1400D71943 /* Assets.xcassets */; };
 		0D8B1A7B23933E1400D71943 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D8B1A7A23933E1400D71943 /* Preview Assets.xcassets */; };
 		0D8B1A7E23933E1400D71943 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D8B1A7C23933E1400D71943 /* LaunchScreen.storyboard */; };
+		0D8B1A8B23933E9A00D71943 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A8A23933E9A00D71943 /* Card.swift */; };
+		0D8B1A8E23933ED900D71943 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0D8B1A8D23933ED900D71943 /* Alamofire */; };
+		0D8B1A9123933EF300D71943 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 0D8B1A9023933EF300D71943 /* SwiftyJSON */; };
+		0D8B1A9323933F1700D71943 /* UIImage+UIImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A9223933F1700D71943 /* UIImage+UIImageDownloader.swift */; };
+		0D8B1A9523933F3B00D71943 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A9423933F3B00D71943 /* Service.swift */; };
+		0D8B1A9723933F6A00D71943 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A9623933F6A00D71943 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,10 @@
 		0D8B1A7A23933E1400D71943 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0D8B1A7D23933E1400D71943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D8B1A7F23933E1400D71943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D8B1A8A23933E9A00D71943 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		0D8B1A9223933F1700D71943 /* UIImage+UIImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+UIImageDownloader.swift"; sourceTree = "<group>"; };
+		0D8B1A9423933F3B00D71943 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		0D8B1A9623933F6A00D71943 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8B1A9123933EF300D71943 /* SwiftyJSON in Frameworks */,
+				0D8B1A8E23933ED900D71943 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +68,11 @@
 		0D8B1A7023933E1200D71943 /* Shopify */ = {
 			isa = PBXGroup;
 			children = (
+				0D8B1A8823933E6D00D71943 /* Models */,
+				0D8B1A8723933E6B00D71943 /* Views */,
+				0D8B1A8923933E8100D71943 /* ViewModels */,
+				0D8B1A8623933E6A00D71943 /* Extensions */,
+				0D8B1A8523933E6800D71943 /* Service */,
 				0D8B1A7123933E1200D71943 /* AppDelegate.swift */,
 				0D8B1A7323933E1200D71943 /* SceneDelegate.swift */,
 				0D8B1A7523933E1200D71943 /* ContentView.swift */,
@@ -75,6 +92,45 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0D8B1A8523933E6800D71943 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0D8B1A9423933F3B00D71943 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0D8B1A8623933E6A00D71943 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0D8B1A9223933F1700D71943 /* UIImage+UIImageDownloader.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0D8B1A8723933E6B00D71943 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D8B1A9623933F6A00D71943 /* CardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D8B1A8823933E6D00D71943 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D8B1A8A23933E9A00D71943 /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0D8B1A8923933E8100D71943 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,6 +147,10 @@
 			dependencies = (
 			);
 			name = Shopify;
+			packageProductDependencies = (
+				0D8B1A8D23933ED900D71943 /* Alamofire */,
+				0D8B1A9023933EF300D71943 /* SwiftyJSON */,
+			);
 			productName = Shopify;
 			productReference = 0D8B1A6E23933E1200D71943 /* Shopify.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +179,10 @@
 				Base,
 			);
 			mainGroup = 0D8B1A6523933E1200D71943;
+			packageReferences = (
+				0D8B1A8C23933ED900D71943 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0D8B1A8F23933EF300D71943 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 0D8B1A6F23933E1200D71943 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,9 +210,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8B1A9723933F6A00D71943 /* CardView.swift in Sources */,
+				0D8B1A9323933F1700D71943 /* UIImage+UIImageDownloader.swift in Sources */,
 				0D8B1A7223933E1200D71943 /* AppDelegate.swift in Sources */,
 				0D8B1A7423933E1200D71943 /* SceneDelegate.swift in Sources */,
 				0D8B1A7623933E1200D71943 /* ContentView.swift in Sources */,
+				0D8B1A8B23933E9A00D71943 /* Card.swift in Sources */,
+				0D8B1A9523933F3B00D71943 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +410,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0D8B1A8C23933ED900D71943 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.9.1;
+			};
+		};
+		0D8B1A8F23933EF300D71943 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0D8B1A8D23933ED900D71943 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D8B1A8C23933ED900D71943 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		0D8B1A9023933EF300D71943 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D8B1A8F23933EF300D71943 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0D8B1A6623933E1200D71943 /* Project object */;
 }
