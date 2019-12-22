@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct CardView: View {
+    
     @Binding var card: Card
     
     var body: some View {
@@ -31,15 +32,14 @@ struct CardView: View {
         .rotation3DEffect(.init(degrees: self.card.isFlipped ? 180 : 0), axis: (0, 1, 0))
     }
     
-    
-    func cardBackgroundRectange() -> some View {
-          Rectangle()
-          .frame(width: 80, height: 100)
-          .shadow(radius: 20)
-          .foregroundColor(Color("ShopifyBlue"))
-          .cornerRadius(10)
-          .shadow(radius: 20)
-      }
+//    func cardBackgroundRectange() -> some View {
+//          Rectangle()
+//          .frame(width: 80, height: 100)
+//          .shadow(radius: 20)
+//          .foregroundColor(Color("ShopifyBlue"))
+//          .cornerRadius(10)
+//          .shadow(radius: 20)
+//      }
 }
 
 struct CardView_Previews: PreviewProvider {

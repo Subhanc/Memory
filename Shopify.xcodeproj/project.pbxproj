@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D727FC823A867B400AF61B3 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D727FC723A867B400AF61B3 /* CardsView.swift */; };
 		0D8B1A7223933E1200D71943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A7123933E1200D71943 /* AppDelegate.swift */; };
 		0D8B1A7423933E1200D71943 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A7323933E1200D71943 /* SceneDelegate.swift */; };
 		0D8B1A7623933E1200D71943 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A7523933E1200D71943 /* ContentView.swift */; };
@@ -19,9 +20,13 @@
 		0D8B1A9323933F1700D71943 /* UIImage+UIImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A9223933F1700D71943 /* UIImage+UIImageDownloader.swift */; };
 		0D8B1A9523933F3B00D71943 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A9423933F3B00D71943 /* Service.swift */; };
 		0D8B1A9723933F6A00D71943 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A9623933F6A00D71943 /* CardView.swift */; };
+		0D8B1A992393445900D71943 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A982393445900D71943 /* CardsViewModel.swift */; };
+		0D8B1A9B23943FBA00D71943 /* Array+Chunks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A9A23943FBA00D71943 /* Array+Chunks.swift */; };
+		0DA7CF0223B01626004E8E11 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF0123B01626004E8E11 /* GameManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D727FC723A867B400AF61B3 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
 		0D8B1A6E23933E1200D71943 /* Shopify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D8B1A7123933E1200D71943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D8B1A7323933E1200D71943 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +39,9 @@
 		0D8B1A9223933F1700D71943 /* UIImage+UIImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+UIImageDownloader.swift"; sourceTree = "<group>"; };
 		0D8B1A9423933F3B00D71943 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		0D8B1A9623933F6A00D71943 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		0D8B1A982393445900D71943 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
+		0D8B1A9A23943FBA00D71943 /* Array+Chunks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Chunks.swift"; sourceTree = "<group>"; };
+		0DA7CF0123B01626004E8E11 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				0D8B1A9223933F1700D71943 /* UIImage+UIImageDownloader.swift */,
+				0D8B1A9A23943FBA00D71943 /* Array+Chunks.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -112,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				0D8B1A9623933F6A00D71943 /* CardView.swift */,
+				0D727FC723A867B400AF61B3 /* CardsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -120,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				0D8B1A8A23933E9A00D71943 /* Card.swift */,
+				0DA7CF0123B01626004E8E11 /* GameManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -127,6 +138,7 @@
 		0D8B1A8923933E8100D71943 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0D8B1A982393445900D71943 /* CardsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -210,10 +222,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8B1A992393445900D71943 /* CardsViewModel.swift in Sources */,
 				0D8B1A9723933F6A00D71943 /* CardView.swift in Sources */,
 				0D8B1A9323933F1700D71943 /* UIImage+UIImageDownloader.swift in Sources */,
+				0DA7CF0223B01626004E8E11 /* GameManager.swift in Sources */,
 				0D8B1A7223933E1200D71943 /* AppDelegate.swift in Sources */,
+				0D8B1A9B23943FBA00D71943 /* Array+Chunks.swift in Sources */,
 				0D8B1A7423933E1200D71943 /* SceneDelegate.swift in Sources */,
+				0D727FC823A867B400AF61B3 /* CardsView.swift in Sources */,
 				0D8B1A7623933E1200D71943 /* ContentView.swift in Sources */,
 				0D8B1A8B23933E9A00D71943 /* Card.swift in Sources */,
 				0D8B1A9523933F3B00D71943 /* Service.swift in Sources */,

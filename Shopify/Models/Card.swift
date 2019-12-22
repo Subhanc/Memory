@@ -10,6 +10,7 @@ import UIKit
 import SwiftyJSON
 
 class Card: Identifiable, Equatable {
+   
     var id: Int
     var data: CardData
     var isFlipped: Bool = false

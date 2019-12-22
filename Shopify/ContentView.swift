@@ -9,9 +9,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello World")
-    }
+   
+   @ObservedObject var cardsViewModel: CardsViewModel = CardsViewModel.shared
+       
+   @State var showPause = false
+   
+   var body: some View {
+        ZStack {
+            CardsView(cardsViewModel: cardsViewModel)
+        }
+   }
 }
 
 struct ContentView_Previews: PreviewProvider {
