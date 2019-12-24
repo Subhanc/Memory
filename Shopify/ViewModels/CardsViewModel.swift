@@ -15,27 +15,31 @@ class CardsViewModel: ObservableObject {
     // Any view that uses this data will renvoke the body of that view if this data changes.
     @Published public var cards = [[Card]]()
     
-    static let shared = CardsViewModel()
-        
-    let service = Service.shared
-    var columnCount = 4
-    var uniqueAmount = 10
-    var totalCards = 0
-
-    init() {
-        loadCards(withColumns: columnCount, uniqueAmount: uniqueAmount)
-    }
+    static let shared = CardsViewModel(withGameMode: .init(gameDifficulty: .hard))
     
-    func loadCards(withColumns columnCount: Int, uniqueAmount: Int) {
-        self.columnCount = columnCount
-        self.uniqueAmount = uniqueAmount
+    let service = Service.shared
+    
+    let gameDetails: GameDetails
+    
+    init(withGameMode gameDetails: GameDetails) {
+        self.gameDetails = gameDetails
+        loadCards(withGameMode: gameDetails)
+    }
+
+    func loadCards(withGameMode gameDetails: GameDetails) {
+        
         self.service.getCardData { result in
-            if let localCards = result.value {
-                var subset = localCards[..<uniqueAmount]
-                subset.append(contentsOf: subset.map { $0.copy() })
-                self.totalCards = subset.count
-                let chunkedCards = subset.shuffled().chunk(into: columnCount)
-                self.cards = Array(chunkedCards[..<((uniqueAmount * 2) / columnCount)])
+           if let localCards = result.value {
+                var subset = localCards[..<gameDetails.numberOfCardPairs]
+                let cardPairs = subset
+                
+                for _ in 1...gameDetails.cardsPerMatch-1 {
+                    subset.append(contentsOf: cardPairs.map { $0.copy() })
+                }
+        
+                let chunkedCards = subset.shuffled().chunk(into: gameDetails.gridSize.x)
+             
+                self.cards = Array(chunkedCards[..<((gameDetails.numberOfCardPairs * gameDetails.cardsPerMatch) / gameDetails.gridSize.x)])
             }
         }
     }

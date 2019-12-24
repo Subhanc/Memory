@@ -13,8 +13,8 @@ struct CardsView: View {
       // Updates the view if anyhting changes to the cardsVieModel.
       @ObservedObject var cardsViewModel: CardsViewModel
     
+      var gameManager = GameManager.shared
 //      @State var memoryGameManager = MemoryCardGameManager.shared
-      let columnCount = 4
       
       var body: some View {
           VStack {
@@ -39,7 +39,7 @@ struct CardsView: View {
                     self.cardsViewModel.objectWillChange.send() // Update view.
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
                         withAnimation(.easeOut(duration: 0.2)) {
-//                            self.memoryGameManager.isValidMove(to: &self.cardsViewModel.cards[i][j])
+                            self.gameManager.isValidMove(to: &self.cardsViewModel.cards[i][j])
                         }
                     }
                 }

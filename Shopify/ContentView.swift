@@ -11,9 +11,7 @@ import SwiftUI
 struct ContentView: View {
    
    @ObservedObject var cardsViewModel: CardsViewModel = CardsViewModel.shared
-       
-   @State var showPause = false
-   
+
    var body: some View {
         ZStack {
             CardsView(cardsViewModel: cardsViewModel)
