@@ -11,11 +11,7 @@ import Foundation
 
 class GameManager: ObservableObject {
    
-//    var cardsViewModel: CardsViewModel = .shared
-    
-//    static let shared: GameManager = GameManager(withGame: )
-    
-    var currentMatchingCards = [Card]()
+    var currentFlippedCards = [Card]()
   
     var gameDetails: GameDetails
     var player: Player
@@ -28,19 +24,19 @@ class GameManager: ObservableObject {
     func isValidMove(to card: inout Card) {
 
         // First card flip move.
-        if currentMatchingCards.isEmpty {
-            currentMatchingCards.append(card)
+        if currentFlippedCards.isEmpty {
+            currentFlippedCards.append(card)
         } else { // Second or more move
             
             // Checks if next picked card is a valid move
             let isValidMove = self.isValid(card: &card)
             
             // Add selected card
-            self.currentMatchingCards.append(card)
+            self.currentFlippedCards.append(card)
             
             if isValidMove {
                 // Handle Win
-                if currentMatchingCards.count == gameDetails.cardsPerMatch {
+                if currentFlippedCards.count == gameDetails.cardsPerMatch {
                     handleWinMove()
                 }
                 // Continue on to the next card.
@@ -67,11 +63,11 @@ class GameManager: ObservableObject {
     }
 
     private func isValid(card: inout Card) -> Bool {
-          return card == currentMatchingCards.last
+          return card == currentFlippedCards.last
     }
     
     private func hideCards() {
-        for card in currentMatchingCards {
+        for card in currentFlippedCards {
             card.isFlipped = false
         }
         // Empty current matching cards
@@ -79,6 +75,6 @@ class GameManager: ObservableObject {
     }
     
     private func resetCurrentMatchingCards() {
-        self.currentMatchingCards = [] // Reset Cards
+        self.currentFlippedCards = [] // Reset Cards
     }
 }

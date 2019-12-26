@@ -16,12 +16,13 @@ class Game: ObservableObject {
     @Published var gameDetails: GameDetails
     @Published var gameMananger: GameManager
     
+    // Contains the different game modes available.
     enum GameMode {
         case lowestTime
         case accuracy
         case flash
     }
-
+    // Initalizes a new game object.
     init(newPlayer player: Player, andGameMode gameMode: GameMode, andGameDetails gameDetails: GameDetails) {
         self.player = player
         self.gameMode = gameMode

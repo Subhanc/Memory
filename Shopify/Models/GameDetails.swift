@@ -10,12 +10,14 @@ import Foundation
 
 class GameDetails {
     
+    // Difficulty selected by user
     var difficulty: Difficulty
     var gridSize: (x: Int, y: Int)
     var totalCards: Int
     var cardsPerMatch: Int
     var numberOfCardPairs: Int
     
+    // Game difficulty levels
     enum Difficulty {
         case veryEasy
         case easy

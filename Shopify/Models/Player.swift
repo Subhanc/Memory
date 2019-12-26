@@ -9,8 +9,11 @@
 import Foundation
 
 class Player {
+    // Current score a user has obtained in the current game
     var currentScore: Int = 0
+    // Current card pair matches made in the current game
     var currentMatches: Int = 0
-    var highScore: Int = 0
+
+    // Key to access Shopify API
     public static let accessToken: String = "c32313df0d0ef512ca64d5b336a0d7c6"
 }

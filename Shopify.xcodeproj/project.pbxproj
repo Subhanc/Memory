@@ -27,6 +27,9 @@
 		0DA7CF0623B13860004E8E11 /* GameDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF0523B13860004E8E11 /* GameDetails.swift */; };
 		0DA7CF0823B2C690004E8E11 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF0723B2C68F004E8E11 /* Game.swift */; };
 		0DA7CF1023B44BD6004E8E11 /* GameButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF0F23B44BD6004E8E11 /* GameButtons.swift */; };
+		0DA7CF1423B53DE3004E8E11 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF1323B53DE3004E8E11 /* CircleButton.swift */; };
+		0DA7CF1823B54105004E8E11 /* LargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF1723B54105004E8E11 /* LargeButton.swift */; };
+		0DA7CF1F23B55159004E8E11 /* MainMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF1E23B55159004E8E11 /* MainMenus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		0DA7CF0523B13860004E8E11 /* GameDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetails.swift; sourceTree = "<group>"; };
 		0DA7CF0723B2C68F004E8E11 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		0DA7CF0F23B44BD6004E8E11 /* GameButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButtons.swift; sourceTree = "<group>"; };
+		0DA7CF1323B53DE3004E8E11 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		0DA7CF1723B54105004E8E11 /* LargeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButton.swift; sourceTree = "<group>"; };
+		0DA7CF1E23B55159004E8E11 /* MainMenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainMenus.swift; path = Shopify/Views/MainMenus.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 			children = (
 				0D8B1A8823933E6D00D71943 /* Models */,
 				0D8B1A8723933E6B00D71943 /* Views */,
+				0DA7CF1D23B5510E004E8E11 /* New Group */,
 				0D8B1A8923933E8100D71943 /* ViewModels */,
 				0D8B1A8623933E6A00D71943 /* Extensions */,
 				0D8B1A8523933E6800D71943 /* Service */,
@@ -131,6 +138,8 @@
 				0D8B1A9623933F6A00D71943 /* CardView.swift */,
 				0D727FC723A867B400AF61B3 /* CardsView.swift */,
 				0DA7CF0F23B44BD6004E8E11 /* GameButtons.swift */,
+				0DA7CF1C23B55100004E8E11 /* New Group */,
+				0DA7CF1923B54109004E8E11 /* Helper */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,6 +170,30 @@
 				0D8B1A8A23933E9A00D71943 /* Card.swift */,
 			);
 			name = Game;
+			sourceTree = "<group>";
+		};
+		0DA7CF1923B54109004E8E11 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0DA7CF1723B54105004E8E11 /* LargeButton.swift */,
+				0DA7CF1323B53DE3004E8E11 /* CircleButton.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		0DA7CF1C23B55100004E8E11 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				0DA7CF1E23B55159004E8E11 /* MainMenus.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		0DA7CF1D23B5510E004E8E11 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +281,7 @@
 				0DA7CF0223B01626004E8E11 /* GameManager.swift in Sources */,
 				0DA7CF0423B1283E004E8E11 /* Player.swift in Sources */,
 				0DA7CF0623B13860004E8E11 /* GameDetails.swift in Sources */,
+				0DA7CF1823B54105004E8E11 /* LargeButton.swift in Sources */,
 				0D8B1A7223933E1200D71943 /* AppDelegate.swift in Sources */,
 				0D8B1A9B23943FBA00D71943 /* Array+Chunks.swift in Sources */,
 				0D8B1A7423933E1200D71943 /* SceneDelegate.swift in Sources */,
@@ -255,8 +289,10 @@
 				0DA7CF1023B44BD6004E8E11 /* GameButtons.swift in Sources */,
 				0D727FC823A867B400AF61B3 /* CardsView.swift in Sources */,
 				0D8B1A7623933E1200D71943 /* ContentView.swift in Sources */,
+				0DA7CF1F23B55159004E8E11 /* MainMenus.swift in Sources */,
 				0D8B1A8B23933E9A00D71943 /* Card.swift in Sources */,
 				0D8B1A9523933F3B00D71943 /* Service.swift in Sources */,
+				0DA7CF1423B53DE3004E8E11 /* CircleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

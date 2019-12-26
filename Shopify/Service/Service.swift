@@ -33,7 +33,6 @@ class Service {
     // Endpoint constant
     public static let API_URL = "https://shopicruit.myshopify.com/admin/products.json"
     
-    
     /** Performs a GET requests from the Shopify API.
      
         - Returns: Array of Card objects wrapped in a Result type. Result type is from the Swifty JSON library

@@ -13,7 +13,6 @@ struct CardsView: View {
       // Updates the view if anyhting changes to the cardsVieModel.
       @EnvironmentObject var cardsViewModel: CardsViewModel
       @EnvironmentObject var game: Game
-//      @State var memoryGameManager = MemoryCardGameManager.shared
       
       var body: some View {
           VStack {

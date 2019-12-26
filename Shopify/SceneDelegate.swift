@@ -27,6 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
         let contentView = ContentView().environmentObject(cardsViewModel).environmentObject(game)
 
+//        let contentView = MainMenus()
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
