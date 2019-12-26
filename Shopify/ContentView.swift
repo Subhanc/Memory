@@ -10,11 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
    
-   @ObservedObject var cardsViewModel: CardsViewModel = CardsViewModel.shared
+   @EnvironmentObject var cardsViewModel: CardsViewModel
+   @EnvironmentObject var game: Game
 
    var body: some View {
         ZStack {
-            CardsView(cardsViewModel: cardsViewModel)
+            CardsView()
         }
    }
 }

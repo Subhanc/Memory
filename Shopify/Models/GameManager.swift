@@ -9,20 +9,21 @@
 import Foundation
 
 
-class GameManager {
-
-    // Holds all current flipped cards.
-    public static let shared = GameManager()
+class GameManager: ObservableObject {
    
-    var cardsViewModel: CardsViewModel = .shared
+//    var cardsViewModel: CardsViewModel = .shared
+    
+//    static let shared: GameManager = GameManager(withGame: )
     
     var currentMatchingCards = [Card]()
-
+  
+    var gameDetails: GameDetails
+    var player: Player
     
-    // Number of cards that a set contains.
-    var gameMode = GameDetails(gameDifficulty: .hard)
-    
-    var totalMatches: Int = 0
+    init(withGameDetails gameDetails: GameDetails, andPlayer player: Player) {
+        self.gameDetails = gameDetails
+        self.player = player
+    }
  
     func isValidMove(to card: inout Card) {
 
@@ -39,7 +40,7 @@ class GameManager {
             
             if isValidMove {
                 // Handle Win
-                if currentMatchingCards.count == gameMode.cardsPerMatch {
+                if currentMatchingCards.count == gameDetails.cardsPerMatch {
                     handleWinMove()
                 }
                 // Continue on to the next card.
@@ -51,14 +52,14 @@ class GameManager {
     
     private func handleWinMove() {
         resetCurrentMatchingCards()
-        totalMatches += 1
+        player.currentScore += 1
         if didWinGame() {
             endGame()
         }
     }
     
     private func didWinGame() -> Bool {
-        return totalMatches == gameMode.numberOfCardPairs
+        return player.currentScore == gameDetails.numberOfCardPairs
     }
     
     private func endGame() {

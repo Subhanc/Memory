@@ -9,11 +9,12 @@
 import Foundation
 
 
-class Game {
+class Game: ObservableObject {
     
-    var player: Player
-    var gameMode: GameMode
-    var gameDetails: GameDetails
+    @Published var player: Player
+    @Published var gameMode: GameMode
+    @Published var gameDetails: GameDetails
+    @Published var gameMananger: GameManager
     
     enum GameMode {
         case lowestTime
@@ -25,5 +26,6 @@ class Game {
         self.player = player
         self.gameMode = gameMode
         self.gameDetails = gameDetails
+        self.gameMananger = GameManager(withGameDetails: gameDetails, andPlayer: player)
     }
 }

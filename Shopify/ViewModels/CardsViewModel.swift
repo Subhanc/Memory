@@ -7,39 +7,34 @@
 //
 
 import SwiftUI
-import GameplayKit
 import Combine
 
 class CardsViewModel: ObservableObject {
    
     // Any view that uses this data will renvoke the body of that view if this data changes.
     @Published public var cards = [[Card]]()
-    
-    static let shared = CardsViewModel(withGameMode: .init(gameDifficulty: .hard))
+    var game: Game
     
     let service = Service.shared
     
-    let gameDetails: GameDetails
-    
-    init(withGameMode gameDetails: GameDetails) {
-        self.gameDetails = gameDetails
-        loadCards(withGameMode: gameDetails)
+    init(withGame game: Game) {
+        self.game = game
+        self.loadCards()
     }
 
-    func loadCards(withGameMode gameDetails: GameDetails) {
-        
+    func loadCards() {
         self.service.getCardData { result in
            if let localCards = result.value {
-                var subset = localCards[..<gameDetails.numberOfCardPairs]
+                var subset = localCards[..<self.game.gameDetails.numberOfCardPairs]
                 let cardPairs = subset
                 
-                for _ in 1...gameDetails.cardsPerMatch-1 {
+                for _ in 1...self.game.gameDetails.cardsPerMatch-1 {
                     subset.append(contentsOf: cardPairs.map { $0.copy() })
                 }
         
-                let chunkedCards = subset.shuffled().chunk(into: gameDetails.gridSize.x)
+                let chunkedCards = subset.shuffled().chunk(into: self.game.gameDetails.gridSize.x)
              
-                self.cards = Array(chunkedCards[..<((gameDetails.numberOfCardPairs * gameDetails.cardsPerMatch) / gameDetails.gridSize.x)])
+                self.cards = Array(chunkedCards[..<((self.game.gameDetails.numberOfCardPairs * self.game.gameDetails.cardsPerMatch) / self.game.gameDetails.gridSize.x)])
             }
         }
     }

@@ -8,8 +8,9 @@
 //
 import Foundation
 
-class Player: ObservableObject {
-    @Published var currentScore: Int = 0
-    @Published var highScore: Int = 0
+class Player {
+    var currentScore: Int = 0
+    var currentMatches: Int = 0
+    var highScore: Int = 0
     public static let accessToken: String = "c32313df0d0ef512ca64d5b336a0d7c6"
 }

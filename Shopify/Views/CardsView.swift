@@ -11,9 +11,8 @@ import SwiftUI
 struct CardsView: View {
      
       // Updates the view if anyhting changes to the cardsVieModel.
-      @ObservedObject var cardsViewModel: CardsViewModel
-    
-      var gameManager = GameManager.shared
+      @EnvironmentObject var cardsViewModel: CardsViewModel
+      @EnvironmentObject var game: Game
 //      @State var memoryGameManager = MemoryCardGameManager.shared
       
       var body: some View {
@@ -39,7 +38,7 @@ struct CardsView: View {
                     self.cardsViewModel.objectWillChange.send() // Update view.
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
                         withAnimation(.easeOut(duration: 0.2)) {
-                            self.gameManager.isValidMove(to: &self.cardsViewModel.cards[i][j])
+                            self.game.gameMananger.isValidMove(to: &self.cardsViewModel.cards[i][j])
                         }
                     }
                 }
