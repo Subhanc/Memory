@@ -21,13 +21,13 @@ import SwiftyJSON
 
 class Service {
     
-    // Shared singleton
+    /// Shared singleton, creates a global instance of service.
     public static let shared = Service()
     
-    // Number which represents the page number Shopify API data (Current API has 3 pages, randomly chooses one)
+    /// The number that represents the page number Shopify API data (Current API has 3 pages, randomly chooses one)
     public static var pageNumber =  Int.random(in: 1..<4);
     
-    // Access token for to be passed into Shopify endpoint
+    /// Access token for to be passed into Shopify endpoint
     public static let ACCESS_TOKEN = "c32313df0d0ef512ca64d5b336a0d7c6"
     
     // Endpoint constant

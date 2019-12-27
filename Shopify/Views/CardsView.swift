@@ -37,7 +37,7 @@ struct CardsView: View {
                     self.cardsViewModel.objectWillChange.send() // Update view.
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
                         withAnimation(.easeOut(duration: 0.2)) {
-                            self.game.gameMananger.isValidMove(to: &self.cardsViewModel.cards[i][j])
+                            self.game.gameMananger.handleSelectedCard(withCard: &self.cardsViewModel.cards[i][j])
                         }
                     }
                 }
