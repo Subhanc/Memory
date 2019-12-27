@@ -21,13 +21,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         
-        
-        let game: Game = Game(newPlayer: Player(), andGameMode: .accuracy, andGameDetails: .init(gameDifficulty: .easy))
-        let cardsViewModel: CardsViewModel = CardsViewModel(withGame: game)
+//
+//        let game: Game = Game(newPlayer: Player(), andGameMode: .accuracy, andGameDetails: .init(gameDifficulty: .easy))
+//        let cardsViewModel: CardsViewModel = CardsViewModel(withGame: game)
     
-        let contentView = ContentView().environmentObject(cardsViewModel).environmentObject(game)
+//        let contentView = ContentView().environmentObject(cardsViewModel).environmentObject(game)
 
-//        let contentView = MainMenus()
+        let contentView = MainMenu()
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)

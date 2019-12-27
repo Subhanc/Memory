@@ -39,7 +39,7 @@ class Service {
      
      */
     public func getCardData(completion: @escaping (Result<[Card]>) -> Void) {
-        print(Service.pageNumber)
+        print("Getting data from page: \(Service.pageNumber)")
     
         // Parameters being set to perform the GET request
         let parameters: Parameters = [

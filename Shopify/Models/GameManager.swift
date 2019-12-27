@@ -35,6 +35,7 @@ class GameManager: ObservableObject {
             self.currentFlippedCards.append(card)
             
             if isValidMove {
+        
                 // Handle Win
                 if currentFlippedCards.count == gameDetails.cardsPerMatch {
                     handleWinMove()
@@ -49,6 +50,11 @@ class GameManager: ObservableObject {
     private func handleWinMove() {
         resetCurrentMatchingCards()
         player.currentScore += 1
+        player.currentMatches += 1
+        
+        print("Score: \(player.currentScore)")
+        print("Matches: \(player.currentMatches)")
+        
         if didWinGame() {
             endGame()
         }

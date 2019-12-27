@@ -17,14 +17,6 @@ class GameDetails {
     var cardsPerMatch: Int
     var numberOfCardPairs: Int
     
-    // Game difficulty levels
-    enum Difficulty {
-        case veryEasy
-        case easy
-        case medium
-        case hard
-        case custom
-    }
     
     init(gameDifficulty difficulty: Difficulty, andCustomGridSize gridSize: (x: Int, y: Int) = (0, 0), andCardsPerMatch cardsPerMatch: Int = 0) {
         self.difficulty = difficulty
@@ -56,3 +48,12 @@ class GameDetails {
         self.totalCards = self.gridSize.x*self.gridSize.y
     }
 }
+
+// Game difficulty levels
+enum Difficulty {
+      case veryEasy
+      case easy
+      case medium
+      case hard
+      case custom
+  }
