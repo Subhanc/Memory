@@ -1,13 +1,12 @@
-////
-////  Player.swift
-////  Shopify
-////
-////  Created by Subhan Chaudhry on 2019-12-23.
-////  Copyright © 2019 Subhan Chaudhry. All rights reserved.
-////
 //
-import Foundation
+//  Player.swift
+//  Shopify
+//
+//  Created by Subhan Chaudhry on 2019-12-23.
+//  Copyright © 2019 Subhan Chaudhry. All rights reserved.
+//
 
+import Foundation
 
 /// Model of a player
 class Player {

@@ -10,33 +10,56 @@ import SwiftUI
 
 struct CardsView: View {
      
-      // Updates the view if anyhting changes to the cardsVieModel.
-      @EnvironmentObject var cardsViewModel: CardsViewModel
-      @EnvironmentObject var game: Game
-      
-      var body: some View {
-          VStack {
-            ForEach(0..<self.cardsViewModel.cards.count, id:  \.self) { i in
-                HStack {
-                    ForEach(0..<self.cardsViewModel.cards[i].count, id: \.self) { j in
-                        self.displayCard(at: (i, j))
-                    }
-                 }
-             }
-          }
-      }
+    /// Model of the cardsView that holds information of the playing cards.
+    @EnvironmentObject var cardsViewModel: CardsViewModel
     
-    func displayCard(at indexPath: (i: Int, j: Int)) -> some View {
-        // What does this do?
+    /// Model of the game that holds all information of the game.
+    @EnvironmentObject var game: Game
+      
+    var body: some View {
+         displayCards()
+    }
+    
+    /**
+    Calling this will return a view of the cards playing field.
+
+    - Returns: View of the cards playing field.
+    */
+    private func displayCards() -> some View {
+        VStack {
+           ForEach(0..<self.cardsViewModel.cards.count, id:  \.self) { i in
+               HStack {
+                   ForEach(0..<self.cardsViewModel.cards[i].count, id: \.self) { j in
+                       self.displayCard(at: (i, j))
+                   }
+                }
+            }
+         }
+    }
+    
+    /**
+    Calling this will return a view of of a single playing card given the x, y index locations.
+
+    - Parameters:
+        - indexPath: i, j index of the card location in the 2D card array.
+    - Returns: View of a single playing card of the given location.
+    */
+    private func displayCard(at indexPath: (i: Int, j: Int)) -> some View {
         let (i, j) = indexPath
+        // Returns a view of a single card.
         return CardView(card: self.$cardsViewModel.cards[i][j])
+        // Handles game state when a user taps on a card.
         .onTapGesture {
-            if !self.cardsViewModel.cards[i][j].isFlipped { // Checks if the card isn't already flipped.
+            // Checks if the card isn't already flipped.
+            if !self.cardsViewModel.cards[i][j].isFlipped {
                 withAnimation(.easeOut(duration: 0.2)) {
-                    self.cardsViewModel.cards[i][j].isFlipped.toggle() 
+                    // Flips the card
+                    self.cardsViewModel.cards[i][j].isFlipped.toggle()
+                    // Sender which will update the view.
                     self.cardsViewModel.objectWillChange.send() // Update view.
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
                         withAnimation(.easeOut(duration: 0.2)) {
+                            // Handles the game state when the user selects the card.
                             self.game.gameMananger.handleSelectedCard(withCard: &self.cardsViewModel.cards[i][j])
                         }
                     }

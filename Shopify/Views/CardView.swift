@@ -10,36 +10,55 @@ import SwiftUI
 
 struct CardView: View {
     
+    /// A single playing card.
     @Binding var card: Card
     
     var body: some View {
-    
+        playingCard()
+    }
+
+    /**
+    Calling this will return a constructed playing card composed of a 'cardBackground' and 'cardImage' view.
+
+    - Returns: View of the card background.
+    */
+    private func playingCard() -> some View {
         ZStack {
-            Image(uiImage: self.card.isFlipped ? card.data.productImage : UIImage(named: "ShopifyLogo")!)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: self.card.isFlipped ? 80 : 50, height: self.card.isFlipped ? 80 : 50)
-                .zIndex(1)
-                .rotation3DEffect(.init(degrees: self.card.isFlipped ? 180 : 0), axis: (0, 1, 0))
-            Rectangle()
-                .frame(width: 80, height: 100)
-                .shadow(radius: 20)
-                .foregroundColor(self.card.isFlipped ? .white : Color("ShopifyBlue"))
-                .cornerRadius(10)
-                .shadow(radius: 20)
-                .zIndex(0)
+           cardImage()
+           cardBackground()
         }
+         // Rotation effect to flip the playing card.
         .rotation3DEffect(.init(degrees: self.card.isFlipped ? 180 : 0), axis: (0, 1, 0))
     }
     
-//    func cardBackgroundRectange() -> some View {
-//          Rectangle()
-//          .frame(width: 80, height: 100)
-//          .shadow(radius: 20)
-//          .foregroundColor(Color("ShopifyBlue"))
-//          .cornerRadius(10)
-//          .shadow(radius: 20)
-//      }
+    /**
+    Calling this will return a view of the image to be displayed on the playing card.
+
+    - Returns: View of the card background.
+    */
+    private func cardBackground() -> some View {
+          Rectangle()
+          .frame(width: 80, height: 100)
+          .shadow(radius: 20)
+          .foregroundColor(self.card.isFlipped ? .white : Color("ShopifyBlue"))
+          .cornerRadius(10)
+          .shadow(radius: 20)
+          .zIndex(0)
+      }
+    
+    /**
+    Calling this will return a view of the card background.
+
+    - Returns: View of the card background.
+    */
+    private func cardImage() -> some View {
+        Image(uiImage: self.card.isFlipped ? card.data.productImage : UIImage(named: "ShopifyLogo")!)
+           .resizable()
+           .aspectRatio(contentMode: .fit)
+           .frame(width: self.card.isFlipped ? 80 : 50, height: self.card.isFlipped ? 80 : 50)
+           .zIndex(1)
+           .rotation3DEffect(.init(degrees: self.card.isFlipped ? 180 : 0), axis: (0, 1, 0))
+    }
 }
 
 struct CardView_Previews: PreviewProvider {

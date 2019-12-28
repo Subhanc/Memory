@@ -10,12 +10,16 @@
 import UIKit
 
 extension UIImage {
-    /** Creates a UIImage from a given URL String. Downloads from web and sets its image. */
+    /** Creates a UIImage from a given URL String. Downloads from web and sets its image.
+     
+    - Parameters:
+        - url: URL location of the image on the internet.
+    - Returns: Downloded UIImage from the web.
+    */
     convenience init(fromUrl url: String) {
         // Creates URL using url String
         let imageURL = URL(string: url)
         // Attempts to download image
-        
         if let imageData = try? Data(contentsOf: imageURL!) {
             self.init(data: imageData)!
         } else {

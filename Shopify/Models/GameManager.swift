@@ -120,7 +120,7 @@ class GameManager: ObservableObject {
           return card == currentFlippedCards.last
     }
     
-    /// Handles a failed move by the player. Flips over the cards the player flipped in their most recent move. 
+    /// Handles a failed move by the player. Flips over the cards the player flipped in their most recent move.
     private func handleFailedMove() {
         
         // Flips over all cards that exist in 'currentFlippedCards'.
@@ -128,7 +128,7 @@ class GameManager: ObservableObject {
             // Sets flip state to flipped.
             card.isFlipped = false
         }
-        // Empty current matching cards.
+        // Empty current flipped cards array.
         resetCurrentFlippedCards()
     }
     

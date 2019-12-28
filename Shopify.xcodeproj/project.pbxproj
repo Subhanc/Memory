@@ -29,8 +29,8 @@
 		0DA7CF1023B44BD6004E8E11 /* GameButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF0F23B44BD6004E8E11 /* GameButtons.swift */; };
 		0DA7CF1423B53DE3004E8E11 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF1323B53DE3004E8E11 /* CircleButton.swift */; };
 		0DA7CF1823B54105004E8E11 /* LargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF1723B54105004E8E11 /* LargeButton.swift */; };
-		0DA7CF1F23B55159004E8E11 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF1E23B55159004E8E11 /* MainMenu.swift */; };
 		0DE3860E23B6B5E0000FDD7B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3860D23B6B5E0000FDD7B /* Enums.swift */; };
+		0DE3861023B7F932000FDD7B /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3860F23B7F932000FDD7B /* MainMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,8 +56,8 @@
 		0DA7CF0F23B44BD6004E8E11 /* GameButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButtons.swift; sourceTree = "<group>"; };
 		0DA7CF1323B53DE3004E8E11 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		0DA7CF1723B54105004E8E11 /* LargeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButton.swift; sourceTree = "<group>"; };
-		0DA7CF1E23B55159004E8E11 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainMenu.swift; path = Shopify/Views/MainMenu.swift; sourceTree = SOURCE_ROOT; };
 		0DE3860D23B6B5E0000FDD7B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		0DE3860F23B7F932000FDD7B /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +92,7 @@
 		0D8B1A7023933E1200D71943 /* Shopify */ = {
 			isa = PBXGroup;
 			children = (
+				0DA7CF1923B54109004E8E11 /* In Progress */,
 				0D8B1A8823933E6D00D71943 /* Models */,
 				0D8B1A8723933E6B00D71943 /* Views */,
 				0D8B1A8923933E8100D71943 /* ViewModels */,
@@ -138,9 +139,6 @@
 			children = (
 				0D8B1A9623933F6A00D71943 /* CardView.swift */,
 				0D727FC723A867B400AF61B3 /* CardsView.swift */,
-				0DA7CF0F23B44BD6004E8E11 /* GameButtons.swift */,
-				0DA7CF1E23B55159004E8E11 /* MainMenu.swift */,
-				0DA7CF1923B54109004E8E11 /* Helper */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,8 +146,11 @@
 		0D8B1A8823933E6D00D71943 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0D8B1A8A23933E9A00D71943 /* Card.swift */,
+				0DA7CF0323B1283E004E8E11 /* Player.swift */,
 				0DA7CF0723B2C68F004E8E11 /* Game.swift */,
-				0DA7CF0E23B42134004E8E11 /* Game */,
+				0DA7CF0523B13860004E8E11 /* GameDetails.swift */,
+				0DA7CF0123B01626004E8E11 /* GameManager.swift */,
 				0DE3860D23B6B5E0000FDD7B /* Enums.swift */,
 			);
 			path = Models;
@@ -163,24 +164,15 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		0DA7CF0E23B42134004E8E11 /* Game */ = {
+		0DA7CF1923B54109004E8E11 /* In Progress */ = {
 			isa = PBXGroup;
 			children = (
-				0DA7CF0123B01626004E8E11 /* GameManager.swift */,
-				0DA7CF0323B1283E004E8E11 /* Player.swift */,
-				0DA7CF0523B13860004E8E11 /* GameDetails.swift */,
-				0D8B1A8A23933E9A00D71943 /* Card.swift */,
-			);
-			name = Game;
-			sourceTree = "<group>";
-		};
-		0DA7CF1923B54109004E8E11 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
+				0DA7CF0F23B44BD6004E8E11 /* GameButtons.swift */,
+				0DE3860F23B7F932000FDD7B /* MainMenu.swift */,
 				0DA7CF1723B54105004E8E11 /* LargeButton.swift */,
 				0DA7CF1323B53DE3004E8E11 /* CircleButton.swift */,
 			);
-			path = Helper;
+			path = "In Progress";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +268,7 @@
 				0DA7CF1023B44BD6004E8E11 /* GameButtons.swift in Sources */,
 				0D727FC823A867B400AF61B3 /* CardsView.swift in Sources */,
 				0D8B1A7623933E1200D71943 /* ContentView.swift in Sources */,
-				0DA7CF1F23B55159004E8E11 /* MainMenu.swift in Sources */,
+				0DE3861023B7F932000FDD7B /* MainMenu.swift in Sources */,
 				0D8B1A8B23933E9A00D71943 /* Card.swift in Sources */,
 				0D8B1A9523933F3B00D71943 /* Service.swift in Sources */,
 				0DA7CF1423B53DE3004E8E11 /* CircleButton.swift in Sources */,
