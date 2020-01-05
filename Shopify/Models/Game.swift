@@ -19,7 +19,7 @@ class Game: ObservableObject {
     @Published var gameDetails: GameDetails
     /// The game manager that contains the  functions that interact with the game.
     @Published var gameMananger: GameManager
-    
+    /// The property to check the paused state of the game
     @Published var isPaused: Bool = true
     
     /**

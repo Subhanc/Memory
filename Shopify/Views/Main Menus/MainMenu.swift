@@ -44,15 +44,13 @@ struct MainMenu: View {
                             LargeButton(text: "Play")
                         })
                         
-                        HStack(spacing: 35) {
+                        HStack(alignment: .center, spacing: 35) {
                             SoundButton()
-                            MusicButton()
                             MusicButton()
                         }
                         
                         VStack {
                             Text("Made by Subhan Chaudhry.")
-                                .offset(y: 30)
                                 .foregroundColor(.white)
                                 .opacity(0.5)
                         }

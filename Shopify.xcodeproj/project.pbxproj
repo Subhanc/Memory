@@ -38,6 +38,7 @@
 		0DE3861323B94C7D000FDD7B /* PauseMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3861223B94C7D000FDD7B /* PauseMenuView.swift */; };
 		0DE3861523B94FB0000FDD7B /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3861423B94FB0000FDD7B /* BlurView.swift */; };
 		0DE3861723B95607000FDD7B /* ScoreLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3861623B95607000FDD7B /* ScoreLabelView.swift */; };
+		0DF808D623C285B6005FBD21 /* Card-flip-sound-effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0DF808D523C285B6005FBD21 /* Card-flip-sound-effect.mp3 */; };
 		0DFBC2C523BFF1AC006944B2 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFBC2C423BFF1AC006944B2 /* LogoView.swift */; };
 		0DFBC2C723BFF674006944B2 /* SelectGameModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFBC2C623BFF674006944B2 /* SelectGameModeView.swift */; };
 		0DFBC2C923BFFAAE006944B2 /* SelectDifficultyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFBC2C823BFFAAE006944B2 /* SelectDifficultyView.swift */; };
@@ -75,6 +76,7 @@
 		0DE3861223B94C7D000FDD7B /* PauseMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseMenuView.swift; sourceTree = "<group>"; };
 		0DE3861423B94FB0000FDD7B /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		0DE3861623B95607000FDD7B /* ScoreLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreLabelView.swift; sourceTree = "<group>"; };
+		0DF808D523C285B6005FBD21 /* Card-flip-sound-effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Card-flip-sound-effect.mp3"; sourceTree = "<group>"; };
 		0DFBC2C423BFF1AC006944B2 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		0DFBC2C623BFF674006944B2 /* SelectGameModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameModeView.swift; sourceTree = "<group>"; };
 		0DFBC2C823BFFAAE006944B2 /* SelectDifficultyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDifficultyView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		0D8B1A7023933E1200D71943 /* Shopify */ = {
 			isa = PBXGroup;
 			children = (
+				0DF808D423C285A9005FBD21 /* Audio */,
 				0DF808D323C1712E005FBD21 /* Templates */,
 				0D8B1A8823933E6D00D71943 /* Models */,
 				0D8B1A8723933E6B00D71943 /* Views */,
@@ -221,13 +224,21 @@
 				0DA9D40923BA9AB70058291B /* MusicButton.swift */,
 				0DA9D41223BC0CAC0058291B /* SoundButton.swift */,
 				0DA7CF1323B53DE3004E8E11 /* PauseButton.swift */,
-				0DA9D40B23BA9ACC0058291B /* SoundManager.swift */,
 				0DE3861623B95607000FDD7B /* ScoreLabelView.swift */,
 				0DA7CF0F23B44BD6004E8E11 /* GameButtons.swift */,
 				0DA7CF1723B54105004E8E11 /* LargeButton.swift */,
 			);
 			name = Templates;
 			path = Service/Templates;
+			sourceTree = "<group>";
+		};
+		0DF808D423C285A9005FBD21 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				0DF808D523C285B6005FBD21 /* Card-flip-sound-effect.mp3 */,
+				0DA9D40B23BA9ACC0058291B /* SoundManager.swift */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +309,7 @@
 			files = (
 				0D8B1A7E23933E1400D71943 /* LaunchScreen.storyboard in Resources */,
 				0D8B1A7B23933E1400D71943 /* Preview Assets.xcassets in Resources */,
+				0DF808D623C285B6005FBD21 /* Card-flip-sound-effect.mp3 in Resources */,
 				0D8B1A7823933E1400D71943 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

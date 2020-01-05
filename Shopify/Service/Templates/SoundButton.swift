@@ -17,13 +17,27 @@ struct SoundButton: View {
         Button(action: {
             self.soundManager.isSoundEffectsOn.toggle()
         }) {
-            Image(systemName: self.soundManager.isSoundEffectsOn ? "speaker.2.fill" : "speaker.slash.fill")
-            .foregroundColor(.black)
-            .frame(width: 44, height: 44)
-            .background(Color.white)
-            .cornerRadius(30)
-            .shadow(color: Color("buttonShadow"), radius: 6, x: 4, y: 4)
+            ZStack {
+                Image(systemName: "speaker.2.fill")
+                    .font(.system(size: 19))
+                    .foregroundColor(.black)
+                    .frame(width: 60, height: 60)
+                    .background(Color.white)
+                    .cornerRadius(30)
+                    .shadow(color: Color("buttonShadow"), radius: 6, x: 4, y: 4)
+                
+                if !soundManager.isSoundEffectsOn {
+                    crossedOutLine()
+                }
+            }
         }
+    }
+    
+    func crossedOutLine() -> some View {
+        Rectangle()
+            .frame(width: 60, height: 3)
+            .rotationEffect(.degrees(45))
+            .foregroundColor(Color("ShopifyGrey"))
     }
 }
 

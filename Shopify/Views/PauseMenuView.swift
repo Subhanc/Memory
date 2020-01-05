@@ -15,9 +15,7 @@ struct PauseMenuView: View {
     var body: some View {
         
         ZStack {
-            
             background()
-            
             VStack(spacing: 15)  {
                 
                 LogoView(title: "Paused")

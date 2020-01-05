@@ -13,6 +13,9 @@ import Combine
 /// Model that contains the functions that interact with the game.
 class GameManager: ObservableObject {
    
+    
+    @EnvironmentObject var soundManager: SoundManager
+    
     /// Holds the cards flipped by the player of the current move.
     var currentFlippedCards = [Card]()
     
@@ -43,13 +46,14 @@ class GameManager: ObservableObject {
      - Parameters:
         - card: The card seleceted by the player. Passed by reference.
      */
-    func handleSelectedCard(withCard card: inout Card) {
+    func handleSelectedCard(withCard card: inout Card) -> Bool {
 
         // The first card flipped by the user in the current move.
         if currentFlippedCards.isEmpty {
             
             // Adds card to the currently flipped cards array
             currentFlippedCards.append(card)
+            return true
             
         } else { // The second or more card flipped by the user in the current move.
             
@@ -65,14 +69,15 @@ class GameManager: ObservableObject {
                     
                     // Handles a successful match set.
                     handleSucessfulPairMatch()
+                    return true
                 }
             } else {
                 // Handle failed move by player of the cards selected.
-                handleFailedMove() 
+                handleFailedMove()
             }
+            return false
         }
     }
-    
     
     // MARK: Private functions
     

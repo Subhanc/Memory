@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct MusicButton: View {
-   
+    
     @EnvironmentObject var soundManager: SoundManager
     
     var body: some View {
@@ -17,12 +17,27 @@ struct MusicButton: View {
         Button(action: {
             self.soundManager.isMusicOn.toggle()
         }) {
-            Image(systemName: self.soundManager.isMusicOn ? "music.note" : "pause")
-            .foregroundColor(.black)
-            .frame(width: 44, height: 44)
-            .background(Color.white)
-            .cornerRadius(30)
-            .shadow(color: Color("buttonShadow"), radius: 6, x: 4, y: 4)
+            ZStack {
+                Image(systemName: "music.note")
+                    .font(.system(size: 19))
+                    .foregroundColor(.black)
+                    .frame(width: 60, height: 60)
+                    .background(Color.white)
+                    .cornerRadius(30)
+                    .shadow(color: Color("buttonShadow"), radius: 6, x: 4, y: 4)
+                
+                if !soundManager.isMusicOn {
+                    crossedOutLine()
+                }
+            }
         }
     }
+    
+    func crossedOutLine() -> some View {
+        Rectangle()
+            .frame(width: 60, height: 3)
+            .rotationEffect(.degrees(45))
+            .foregroundColor(Color("ShopifyGrey"))
+    }
 }
+

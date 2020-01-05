@@ -19,7 +19,8 @@ struct PauseButton: View {
         })  {
             Image(systemName: self.game.isPaused ? "play.fill" : "pause")
                 .foregroundColor(.black)
-            .frame(width: 44, height: 44)
+            
+            .frame(width: 60, height: 60)
             .background(Color.white)
             .cornerRadius(100)
             .shadow(color: Color("buttonShadow"), radius: 10, x: 8, y: 8)
