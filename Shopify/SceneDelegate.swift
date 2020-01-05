@@ -24,10 +24,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //
 //        let game: Game = Game(newPlayer: Player(), andGameMode: .accuracy, andGameDetails: .init(gameDifficulty: .easy))
 //        let cardsViewModel: CardsViewModel = CardsViewModel(withGame: game)
-    
-//        let contentView = ContentView().environmentObject(cardsViewModel).environmentObject(game)
+        let soundManager = SoundManager()
+        let contentView = MainMenu().environmentObject(soundManager)
 
-        let contentView = MainMenu()
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)

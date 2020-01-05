@@ -44,7 +44,7 @@ struct CardView: View {
           .cornerRadius(10)
           .shadow(radius: 20)
           .zIndex(0)
-      }
+    }
     
     /**
     Calling this will return a view of the card background.

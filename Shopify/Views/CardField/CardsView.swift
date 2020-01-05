@@ -11,7 +11,7 @@ import SwiftUI
 struct CardsView: View {
      
     /// Model of the cardsView that holds information of the playing cards.
-    @EnvironmentObject var cardsViewModel: CardsViewModel
+    @ObservedObject var cardsViewModel: CardsViewModel
     
     /// Model of the game that holds all information of the game.
     @EnvironmentObject var game: Game

@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import SwiftUI
+import Combine
 
 /// Model that contains the functions that interact with the game.
 class GameManager: ObservableObject {

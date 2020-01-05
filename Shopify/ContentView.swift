@@ -9,15 +9,24 @@
 import SwiftUI
 
 struct ContentView: View {
-   
-   @EnvironmentObject var cardsViewModel: CardsViewModel
-   @EnvironmentObject var game: Game
+    
+    @EnvironmentObject var game: Game
 
-   var body: some View {
+    var cardsViewModel: CardsViewModel {
+      CardsViewModel(withGame: self.game)
+    }
+
+    var body: some View {
         ZStack {
-            CardsView()
+            GameButtons()
+            CardsView(cardsViewModel: cardsViewModel)
+            
+            if !self.game.isPaused {
+                PauseMenuView()
+            }
         }
-   }
+        .navigationBarBackButtonHidden(true)
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {

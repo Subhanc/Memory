@@ -17,10 +17,10 @@ struct LargeButton: View {
             .foregroundColor(.black)
             .font(.title)
             .fontWeight(.bold)
-            .frame(width: 270, height: 80)
+            .frame(width: 300, height: 75)
             .background(Color.white)
-            .cornerRadius(60)
-            .shadow(color: Color("buttonShadow"), radius: 4, x: 4, y: 4)
+            .cornerRadius(37.5)
+            .shadow(color: Color("buttonShadow"), radius: 10, x: 2, y: 10)
     }
 }
 
