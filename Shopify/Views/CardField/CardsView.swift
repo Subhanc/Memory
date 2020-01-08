@@ -28,6 +28,7 @@ struct CardsView: View {
     - Returns: View of the cards playing field.
     */
     private func displayCards() -> some View {
+        
         VStack {
            ForEach(0..<self.cardsViewModel.cards.count, id:  \.self) { i in
                HStack {

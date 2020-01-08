@@ -12,8 +12,7 @@ struct SelectDifficultyView: View {
     
     @Binding var game: Game
     
-    
-    @State private var presentMe = false
+    @State private var tag: Int? = nil
     
     var body: some View {
         
@@ -21,44 +20,49 @@ struct SelectDifficultyView: View {
             ZStack {
                 Color.init("ShopifyPink")
                     .edgesIgnoringSafeArea(.all)
+                AnimationView()
+                .edgesIgnoringSafeArea(.all)
             }
-            VStack(spacing: 75) {
+            Spacer()
+            VStack() {
                 
                 LogoView(title: "Select Difficulty")
-                VStack(spacing: 12) {
-                    
-                    NavigationLink(destination: self.goToGame(), isActive: $presentMe) { EmptyView() }
+                    .font(.body)
+                VStack(spacing: 8) {
+                    NavigationLink(destination: self.goToGame(), tag: 1, selection: $tag) { EmptyView() }
                     Button(action: {
-                        self.game.gameDetails.difficulty = .veryEasy
-                        self.presentMe.toggle()
+                        self.game.gameDetails = GameDetails(gameDifficulty: .veryEasy)
+                        self.tag = 1
                     }, label: {
                         LargeButton(text: "Very Easy")
+                        .multilineTextAlignment(.center)
                     })
                     
-                    NavigationLink(destination: self.goToGame(), isActive: $presentMe) { EmptyView() }
+                    NavigationLink(destination: self.goToGame(), tag: 2, selection: $tag) { EmptyView() }
                     Button(action: {
-                        self.game.gameDetails.difficulty = .easy
-                        self.presentMe.toggle()
+                        self.game.gameDetails = GameDetails(gameDifficulty: .easy)
+                        self.tag = 2
                     }, label: {
                         LargeButton(text: "Easy")
                     })
                     
-                    NavigationLink(destination: self.goToGame(), isActive: $presentMe) { EmptyView() }
+                    NavigationLink(destination: self.goToGame(), tag: 3, selection: $tag) { EmptyView() }
                     Button(action: {
-                        self.game.gameDetails.difficulty = .medium
-                        self.presentMe.toggle()
+                        self.game.gameDetails = GameDetails(gameDifficulty: .medium)
+                        self.tag = 3
                     }, label: {
                         LargeButton(text: "Medium")
                     })
                     
-                    NavigationLink(destination: self.goToGame(), isActive: $presentMe) { EmptyView() }
+                    NavigationLink(destination: self.goToGame(), tag: 4, selection: $tag) { EmptyView() }
                     Button(action: {
-                        self.game.gameDetails.difficulty = .hard
-                        self.presentMe.toggle()
+                        self.game.gameDetails = GameDetails(gameDifficulty: .hard)
+                        self.tag = 4
                     }, label: {
                         LargeButton(text: "Hard")
                     })
                 }
+                Spacer()
             }
         }
     }

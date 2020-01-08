@@ -34,6 +34,7 @@ struct LogoView: View {
             }
             
             Text(title)
+                .fixedSize(horizontal: false, vertical: true)
                 .multilineTextAlignment(.center)
                 .font(.system(size: 52, weight: .bold, design: .rounded))
                 .foregroundColor(.white)

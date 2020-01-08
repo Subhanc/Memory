@@ -15,6 +15,8 @@ struct PauseMenuView: View {
     var body: some View {
         
         ZStack {
+            AnimationView()
+                .edgesIgnoringSafeArea(.all)
             background()
             VStack(spacing: 15)  {
                 
@@ -40,7 +42,7 @@ struct PauseMenuView: View {
     }
     
     func background() -> some View {
-            Rectangle()
+        Rectangle()
             .foregroundColor(.init("ShopifyBlue"))
             .frame(width: 350, height: 600)
             .background(Color.white)

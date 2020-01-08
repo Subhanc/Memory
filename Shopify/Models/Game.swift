@@ -14,11 +14,11 @@ class Game: ObservableObject {
     /// The current player
     @Published var player: Player
     /// The game mode selected by the player.
-    @Published var gameMode: GameMode
+    var gameMode: GameMode
     /// The game details selected by the player.
-    @Published var gameDetails: GameDetails
+    var gameDetails: GameDetails
     /// The game manager that contains the  functions that interact with the game.
-    @Published var gameMananger: GameManager
+    var gameMananger: GameManager
     /// The property to check the paused state of the game
     @Published var isPaused: Bool = true
     

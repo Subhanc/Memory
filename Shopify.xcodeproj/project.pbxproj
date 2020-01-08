@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D11F10823C5260900AC815B /* ParticlesEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F10723C5260900AC815B /* ParticlesEmitter.swift */; };
 		0D727FC823A867B400AF61B3 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D727FC723A867B400AF61B3 /* CardsView.swift */; };
 		0D8B1A7223933E1200D71943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A7123933E1200D71943 /* AppDelegate.swift */; };
 		0D8B1A7423933E1200D71943 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A7323933E1200D71943 /* SceneDelegate.swift */; };
@@ -34,6 +35,7 @@
 		0DA9D40C23BA9ACC0058291B /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D40B23BA9ACC0058291B /* SoundManager.swift */; };
 		0DA9D41023BBF5290058291B /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D40F23BBF5290058291B /* MainMenu.swift */; };
 		0DA9D41323BC0CAC0058291B /* SoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D41223BC0CAC0058291B /* SoundButton.swift */; };
+		0DB0C37323C52D92001D4DE6 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0C37223C52D92001D4DE6 /* Animation.swift */; };
 		0DE3860E23B6B5E0000FDD7B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3860D23B6B5E0000FDD7B /* Enums.swift */; };
 		0DE3861323B94C7D000FDD7B /* PauseMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3861223B94C7D000FDD7B /* PauseMenuView.swift */; };
 		0DE3861523B94FB0000FDD7B /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3861423B94FB0000FDD7B /* BlurView.swift */; };
@@ -45,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D11F10723C5260900AC815B /* ParticlesEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlesEmitter.swift; sourceTree = "<group>"; };
 		0D727FC723A867B400AF61B3 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
 		0D8B1A6E23933E1200D71943 /* Shopify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D8B1A7123933E1200D71943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 		0DA9D40B23BA9ACC0058291B /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		0DA9D40F23BBF5290058291B /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		0DA9D41223BC0CAC0058291B /* SoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButton.swift; sourceTree = "<group>"; };
+		0DB0C37223C52D92001D4DE6 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		0DE3860D23B6B5E0000FDD7B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		0DE3861223B94C7D000FDD7B /* PauseMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseMenuView.swift; sourceTree = "<group>"; };
 		0DE3861423B94FB0000FDD7B /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
@@ -196,6 +200,7 @@
 				0DA9D40F23BBF5290058291B /* MainMenu.swift */,
 				0DFBC2C623BFF674006944B2 /* SelectGameModeView.swift */,
 				0DFBC2C823BFFAAE006944B2 /* SelectDifficultyView.swift */,
+				0DB0C37223C52D92001D4DE6 /* Animation.swift */,
 			);
 			path = "Main Menus";
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 		0DF808D323C1712E005FBD21 /* Templates */ = {
 			isa = PBXGroup;
 			children = (
+				0D11F10723C5260900AC815B /* ParticlesEmitter.swift */,
 				0DE3861423B94FB0000FDD7B /* BlurView.swift */,
 				0DA9D40923BA9AB70058291B /* MusicButton.swift */,
 				0DA9D41223BC0CAC0058291B /* SoundButton.swift */,
@@ -323,8 +329,10 @@
 			files = (
 				0D8B1A992393445900D71943 /* CardsViewModel.swift in Sources */,
 				0D8B1A9723933F6A00D71943 /* CardView.swift in Sources */,
+				0D11F10823C5260900AC815B /* ParticlesEmitter.swift in Sources */,
 				0D8B1A9323933F1700D71943 /* UIImage+UIImageDownloader.swift in Sources */,
 				0DA7CF0223B01626004E8E11 /* GameManager.swift in Sources */,
+				0DB0C37323C52D92001D4DE6 /* Animation.swift in Sources */,
 				0DA7CF0423B1283E004E8E11 /* Player.swift in Sources */,
 				0DA7CF0623B13860004E8E11 /* GameDetails.swift in Sources */,
 				0DFBC2C923BFFAAE006944B2 /* SelectDifficultyView.swift in Sources */,

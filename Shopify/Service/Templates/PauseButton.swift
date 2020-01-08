@@ -15,9 +15,11 @@ struct PauseButton: View {
     var body: some View {
         
         Button(action: {
-            self.game.isPaused.toggle()
+            withAnimation(.easeIn(duration: 0.5)) {
+                self.game.isPaused.toggle()
+            }
         })  {
-            Image(systemName: self.game.isPaused ? "play.fill" : "pause")
+            Image(systemName: self.game.isPaused ? "pause" : "play.fill")
                 .foregroundColor(.black)
             
             .frame(width: 60, height: 60)

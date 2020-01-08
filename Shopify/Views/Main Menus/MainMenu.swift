@@ -10,10 +10,10 @@ import SwiftUI
 // Lets do the play screen!!
 
 struct MainMenu: View {
+   
     @State var game: Game = Game(newPlayer: Player(), andGameMode: .accuracy, andGameDetails: .init(gameDifficulty: .veryEasy))
     
     init() {
-        UINavigationBar.setAnimationsEnabled(false)
         UINavigationBar.appearance().tintColor = .black
     }
     
@@ -25,12 +25,13 @@ struct MainMenu: View {
             ZStack {
                 // Background
                 ZStack {
-                    Color.init("ShopifyBlue")
+                        Color.init("ShopifyBlue")
+                            .edgesIgnoringSafeArea(.all)
+                    }
+                    AnimationView()
                         .edgesIgnoringSafeArea(.all)
-                }
                 
-                VStack(spacing: 150) {
-                    
+                VStack() {
                     // LOGO
                     LogoView(title: "Memory")
                     
@@ -55,14 +56,10 @@ struct MainMenu: View {
                                 .opacity(0.5)
                         }
                     }
+                    
+                    Spacer()
                 }
             }
         }
-    }
-}
-
-struct Template_Previews: PreviewProvider {
-    static var previews: some View {
-        MainMenu()
     }
 }

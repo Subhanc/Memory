@@ -9,13 +9,13 @@
 import Foundation
 
 /// Model of a player
-class Player {
+class Player: ObservableObject {
     
     // The current score achieved in the current game
-    var currentScore: Int = 0
+    @Published var currentScore: Int = 0
     
     // The current match pairs achieved in the current game
-    var currentMatches: Int = 0
+    @Published var currentMatches: Int = 0
 
     // The acces token to access the Shopify API
     public static let accessToken: String = "c32313df0d0ef512ca64d5b336a0d7c6"

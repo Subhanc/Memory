@@ -11,7 +11,7 @@ import SwiftUI
 import Combine
 
 /// Model that contains the functions that interact with the game.
-class GameManager: ObservableObject {
+class GameManager {
    
     
     @EnvironmentObject var soundManager: SoundManager
@@ -90,6 +90,8 @@ class GameManager: ObservableObject {
         player.currentScore += 1
         // Adds to players 'currentMathes'
         player.currentMatches += 1
+        
+        self.player.objectWillChange.send()
         
         print("Score: \(player.currentScore)")
         print("Matches: \(player.currentMatches)")

@@ -11,21 +11,28 @@ import SwiftUI
 struct ContentView: View {
     
     @EnvironmentObject var game: Game
-
-    var cardsViewModel: CardsViewModel {
-      CardsViewModel(withGame: self.game)
-    }
-
+    
+    @State var cardsViewModel: CardsViewModel?
+    
     var body: some View {
         ZStack {
             GameButtons()
-            CardsView(cardsViewModel: cardsViewModel)
+            if self.cardsViewModel != nil {
+                CardsView(cardsViewModel: self.cardsViewModel!)
+            }
             
             if !self.game.isPaused {
                 PauseMenuView()
             }
         }
         .navigationBarBackButtonHidden(true)
+        .onAppear(perform: {
+            self.fetchCards()
+        })
+    }
+    
+    func fetchCards() {
+        self.cardsViewModel = CardsViewModel(withGame: self.game)
     }
 }
 
