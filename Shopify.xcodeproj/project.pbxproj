@@ -35,7 +35,11 @@
 		0DA9D40C23BA9ACC0058291B /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D40B23BA9ACC0058291B /* SoundManager.swift */; };
 		0DA9D41023BBF5290058291B /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D40F23BBF5290058291B /* MainMenu.swift */; };
 		0DA9D41323BC0CAC0058291B /* SoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D41223BC0CAC0058291B /* SoundButton.swift */; };
-		0DB0C37323C52D92001D4DE6 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0C37223C52D92001D4DE6 /* Animation.swift */; };
+		0DB0C37323C52D92001D4DE6 /* ParrallaxAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0C37223C52D92001D4DE6 /* ParrallaxAnimation.swift */; };
+		0DB3971A23C64F290081DB54 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3971923C64F290081DB54 /* GameOverView.swift */; };
+		0DB3971D23C651DD0081DB54 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0DB3971C23C651DD0081DB54 /* Lottie */; };
+		0DB3971F23C654860081DB54 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3971E23C654860081DB54 /* LottieView.swift */; };
+		0DB3972123C659200081DB54 /* Trophy.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3972023C659200081DB54 /* Trophy.json */; };
 		0DE3860E23B6B5E0000FDD7B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3860D23B6B5E0000FDD7B /* Enums.swift */; };
 		0DE3861323B94C7D000FDD7B /* PauseMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3861223B94C7D000FDD7B /* PauseMenuView.swift */; };
 		0DE3861523B94FB0000FDD7B /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3861423B94FB0000FDD7B /* BlurView.swift */; };
@@ -75,7 +79,10 @@
 		0DA9D40B23BA9ACC0058291B /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		0DA9D40F23BBF5290058291B /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		0DA9D41223BC0CAC0058291B /* SoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButton.swift; sourceTree = "<group>"; };
-		0DB0C37223C52D92001D4DE6 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		0DB0C37223C52D92001D4DE6 /* ParrallaxAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParrallaxAnimation.swift; sourceTree = "<group>"; };
+		0DB3971923C64F290081DB54 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		0DB3971E23C654860081DB54 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		0DB3972023C659200081DB54 /* Trophy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Trophy.json; sourceTree = "<group>"; };
 		0DE3860D23B6B5E0000FDD7B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		0DE3861223B94C7D000FDD7B /* PauseMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseMenuView.swift; sourceTree = "<group>"; };
 		0DE3861423B94FB0000FDD7B /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
@@ -93,6 +100,7 @@
 			files = (
 				0D8B1A9123933EF300D71943 /* SwiftyJSON in Frameworks */,
 				0D8B1A8E23933ED900D71943 /* Alamofire in Frameworks */,
+				0DB3971D23C651DD0081DB54 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +139,7 @@
 				0D8B1A7723933E1400D71943 /* Assets.xcassets */,
 				0D8B1A7C23933E1400D71943 /* LaunchScreen.storyboard */,
 				0D8B1A7F23933E1400D71943 /* Info.plist */,
+				0DB3972023C659200081DB54 /* Trophy.json */,
 				0D8B1A7923933E1400D71943 /* Preview Content */,
 			);
 			path = Shopify;
@@ -168,6 +177,8 @@
 				0DF808D223C17001005FBD21 /* CardField */,
 				0DF808D123C16FE3005FBD21 /* Logos */,
 				0DF808D023C16FCA005FBD21 /* Main Menus */,
+				0DB3971E23C654860081DB54 /* LottieView.swift */,
+				0DB3971923C64F290081DB54 /* GameOverView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,7 +211,7 @@
 				0DA9D40F23BBF5290058291B /* MainMenu.swift */,
 				0DFBC2C623BFF674006944B2 /* SelectGameModeView.swift */,
 				0DFBC2C823BFFAAE006944B2 /* SelectDifficultyView.swift */,
-				0DB0C37223C52D92001D4DE6 /* Animation.swift */,
+				0DB0C37223C52D92001D4DE6 /* ParrallaxAnimation.swift */,
 			);
 			path = "Main Menus";
 			sourceTree = "<group>";
@@ -266,6 +277,7 @@
 			packageProductDependencies = (
 				0D8B1A8D23933ED900D71943 /* Alamofire */,
 				0D8B1A9023933EF300D71943 /* SwiftyJSON */,
+				0DB3971C23C651DD0081DB54 /* Lottie */,
 			);
 			productName = Shopify;
 			productReference = 0D8B1A6E23933E1200D71943 /* Shopify.app */;
@@ -298,6 +310,7 @@
 			packageReferences = (
 				0D8B1A8C23933ED900D71943 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				0D8B1A8F23933EF300D71943 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				0DB3971B23C651DD0081DB54 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 0D8B1A6F23933E1200D71943 /* Products */;
 			projectDirPath = "";
@@ -313,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DB3972123C659200081DB54 /* Trophy.json in Resources */,
 				0D8B1A7E23933E1400D71943 /* LaunchScreen.storyboard in Resources */,
 				0D8B1A7B23933E1400D71943 /* Preview Assets.xcassets in Resources */,
 				0DF808D623C285B6005FBD21 /* Card-flip-sound-effect.mp3 in Resources */,
@@ -332,7 +346,7 @@
 				0D11F10823C5260900AC815B /* ParticlesEmitter.swift in Sources */,
 				0D8B1A9323933F1700D71943 /* UIImage+UIImageDownloader.swift in Sources */,
 				0DA7CF0223B01626004E8E11 /* GameManager.swift in Sources */,
-				0DB0C37323C52D92001D4DE6 /* Animation.swift in Sources */,
+				0DB0C37323C52D92001D4DE6 /* ParrallaxAnimation.swift in Sources */,
 				0DA7CF0423B1283E004E8E11 /* Player.swift in Sources */,
 				0DA7CF0623B13860004E8E11 /* GameDetails.swift in Sources */,
 				0DFBC2C923BFFAAE006944B2 /* SelectDifficultyView.swift in Sources */,
@@ -347,6 +361,7 @@
 				0DA9D40C23BA9ACC0058291B /* SoundManager.swift in Sources */,
 				0DA9D41023BBF5290058291B /* MainMenu.swift in Sources */,
 				0DA7CF1023B44BD6004E8E11 /* GameButtons.swift in Sources */,
+				0DB3971F23C654860081DB54 /* LottieView.swift in Sources */,
 				0DFBC2C523BFF1AC006944B2 /* LogoView.swift in Sources */,
 				0D727FC823A867B400AF61B3 /* CardsView.swift in Sources */,
 				0D8B1A7623933E1200D71943 /* ContentView.swift in Sources */,
@@ -357,6 +372,7 @@
 				0DA7CF1423B53DE3004E8E11 /* PauseButton.swift in Sources */,
 				0DFBC2C723BFF674006944B2 /* SelectGameModeView.swift in Sources */,
 				0DA9D41323BC0CAC0058291B /* SoundButton.swift in Sources */,
+				0DB3971A23C64F290081DB54 /* GameOverView.swift in Sources */,
 				0DE3860E23B6B5E0000FDD7B /* Enums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,6 +585,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		0DB3971B23C651DD0081DB54 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -581,6 +605,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0D8B1A8F23933EF300D71943 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		0DB3971C23C651DD0081DB54 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DB3971B23C651DD0081DB54 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct AnimationView: View {
+    
     var images:[UIImage] = [Images.orangeAlien, Images.greenAlien, Images.yellowAlien, Images.redAlien]
     
     var velocities:[Int] = [100, 90, 75, 80]
