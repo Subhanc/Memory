@@ -11,7 +11,7 @@ import SwiftUI
 
 struct MainMenu: View {
    
-    @State var game: Game = Game(newPlayer: Player(), andGameMode: .accuracy, andGameDetails: .init(gameDifficulty: .veryEasy))
+    @State var game: Game = Game(newPlayer: Player(), andGameMode: .accuracy, andGameDetails: .init(gameDifficulty: .veryEasy), andIsGameOver: false)
     
     init() {
         UINavigationBar.appearance().tintColor = .black
@@ -39,7 +39,6 @@ struct MainMenu: View {
                         
                         NavigationLink(destination: SelectGameModeView(game: $game), isActive: $presentMe) { EmptyView() }
                         Button(action: {
-                            print("hi")
                             self.presentMe.toggle()
                         }, label: {
                             LargeButton(text: "Play")

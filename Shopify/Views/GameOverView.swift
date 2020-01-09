@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct GameOverView: View {
+    
+    @EnvironmentObject var game: Game
+    
     var body: some View {
         
         ZStack {
@@ -32,22 +35,22 @@ struct GameOverView: View {
                 }
                 
                 VStack(alignment: .leading) {
-                    Text("Your Score: 300")
+                    Text("Your Score: \(game.player.currentScore)")
                         .font(.title)
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
                     
-                    Text("High Score: 300 ")
+                    Text("High Score: ---")
                         .font(.title)
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
                     
-                    Text("Mode: Accuracy")
+                    Text("Mode: \(game.gameMode.toString())")
                         .font(.title)
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
                     
-                    Text("Difficulty: Hard")
+                    Text("Difficulty: \(game.gameDetails.difficulty.toString())")
                         .font(.title)
                         .fontWeight(.semibold)
                         .foregroundColor(.white)

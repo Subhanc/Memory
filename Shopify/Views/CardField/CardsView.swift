@@ -66,7 +66,7 @@ struct CardsView: View {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
                         withAnimation(.easeOut(duration: 0.2)) {
                             // Handles the game state when the user selects the card.
-                           let isValidMove = self.game.gameMananger.handleSelectedCard(withCard: &self.cardsViewModel.cards[i][j])
+                           let isValidMove = self.game.handleSelectedCard(withCard: &self.cardsViewModel.cards[i][j])
                             
                             if !isValidMove {
 //                                if self.soundManager.isSoundEffectsOn {

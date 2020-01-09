@@ -13,12 +13,17 @@ struct ContentView: View {
     @EnvironmentObject var game: Game
     
     @State var cardsViewModel: CardsViewModel?
-    
+
+
     var body: some View {
         ZStack {
             GameButtons()
             if self.cardsViewModel != nil {
                 CardsView(cardsViewModel: self.cardsViewModel!)
+            }
+            
+            if game.isGameOver {
+                GameOverView()
             }
             
             if !self.game.isPaused {
