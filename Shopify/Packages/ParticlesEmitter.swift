@@ -13,7 +13,6 @@ import Foundation
 //
 //  NEED TO REFERENCE THIS CLASS AUTHOR
 
-//
 import SwiftUI
 import UIKit
 
@@ -81,17 +80,17 @@ public final class InternalParticlesView: UIView {
 @_functionBuilder
 struct EmitterCellBuilder {
     static func buildBlock(_ cells: CAEmitterCell...) -> [CAEmitterCell] {
-      Array(cells)
+        Array(cells)
     }
 }
 
 extension ParticlesEmitter {
     init(@EmitterCellBuilder _ content: () -> [CAEmitterCell]) {
-      self.init(cells: content())
+        self.init(cells: content())
     }
     
     init(@EmitterCellBuilder _ content: () -> CAEmitterCell) {
-      self.init(cells: [content()])
+        self.init(cells: [content()])
     }
 }
 

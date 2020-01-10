@@ -17,13 +17,13 @@ class SoundManager: ObservableObject {
     @Published var isSoundEffectsOn: Bool = true
     
     let url = URL(fileURLWithPath: (Bundle.main.path(forResource: "Card-flip-sound-effect.mp3", ofType:nil)!))
-
+    
     func playCardFlipSoundEffect() {
         do {
             cardFlipSoundEffect = try AVAudioPlayer(contentsOf: url)
             cardFlipSoundEffect?.play()
         } catch {
-            print("Error in playing card flip")
+            print("Error in playing Card-flip-sound-effect.mp3")
         }
     }
 }

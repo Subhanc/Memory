@@ -42,7 +42,7 @@ class GameDetails {
         switch difficulty {
         case .veryEasy:
             self.cardsPerMatch = 2
-            self.gridSize = (4, 4)
+            self.gridSize = (4, 3)
             self.numberOfCardPairs = self.gridSize.x*self.gridSize.y/self.cardsPerMatch
         case .easy:
             self.cardsPerMatch = 2
@@ -51,18 +51,17 @@ class GameDetails {
             self.numberOfCardPairs = self.gridSize.x*self.gridSize.y/self.cardsPerMatch
         case .medium:
             self.cardsPerMatch = 3
-            self.gridSize = (7, 6)
+            self.gridSize = (6, 5)
             self.numberOfCardPairs = self.gridSize.x*self.gridSize.y/self.cardsPerMatch
         case .hard:
             self.cardsPerMatch = 4
-            self.gridSize = (10, 10)
+            self.gridSize = (6, 6)
             self.numberOfCardPairs = self.gridSize.x*self.gridSize.y/self.cardsPerMatch
         case .custom:
             self.cardsPerMatch = cardsPerMatch
             self.gridSize = gridSize
             self.numberOfCardPairs = self.gridSize.x*self.gridSize.y/self.cardsPerMatch
         }
-        
         self.totalCards = self.gridSize.x*self.gridSize.y
     }
 }

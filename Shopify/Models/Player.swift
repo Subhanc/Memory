@@ -18,5 +18,5 @@ class Player: ObservableObject {
     @Published var currentMatches: Int = 0
 
     // The acces token to access the Shopify API
-    public static let accessToken: String = "c32313df0d0ef512ca64d5b336a0d7c6"
+    private static let accessToken: String = "c32313df0d0ef512ca64d5b336a0d7c6"
 }

@@ -27,7 +27,7 @@ struct MusicButton: View {
                     .shadow(color: Color("buttonShadow"), radius: 6, x: 4, y: 4)
                 
                 if !soundManager.isMusicOn {
-                    crossedOutLine()
+                    self.crossedOutLine()
                 }
             }
         }

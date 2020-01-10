@@ -7,7 +7,7 @@ import Foundation
 import SwiftUI
 
 class StopWatch: ObservableObject {
-   
+    
     private var sourceTimer: DispatchSourceTimer?
     private let queue = DispatchQueue(label: "stopwatch.timer")
     private var counter: Int = 0
