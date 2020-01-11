@@ -25,10 +25,10 @@ struct MainMenu: View {
             ZStack {
                 // Background
                 ZStack {
-                        Color.init("ShopifyBlue")
-                            .edgesIgnoringSafeArea(.all)
+                    Color.init("ShopifyBlue")
+                        .edgesIgnoringSafeArea(.all)
                     }
-                    AnimationView()
+                    ParrallaxFallingObjectsAnimation()
                         .edgesIgnoringSafeArea(.all)
                 
                 VStack() {

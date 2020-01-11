@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct AnimationView: View {
+struct ParrallaxFallingObjectsAnimation: View {
     
     var images:[UIImage] = [Images.orangeAlien, Images.greenAlien, Images.yellowAlien, Images.redAlien]
     
@@ -66,6 +66,6 @@ enum Images {
 
 struct Animation_Previews: PreviewProvider {
     static var previews: some View {
-        AnimationView()
+        ParrallaxFallingObjectsAnimation()
     }
 }

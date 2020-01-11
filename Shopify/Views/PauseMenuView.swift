@@ -15,7 +15,7 @@ struct PauseMenuView: View {
     var body: some View {
         
         ZStack {
-            AnimationView()
+            ParrallaxFallingObjectsAnimation()
                 .edgesIgnoringSafeArea(.all)
             background()
             VStack(spacing: 15)  {

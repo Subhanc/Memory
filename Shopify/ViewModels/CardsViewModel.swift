@@ -30,13 +30,12 @@ class CardsViewModel: ObservableObject {
      */
     init(withGame game: Game) {
         self.game = game
-        self.loadCards()
     }
         
     /**
      Calling this will populate the 'cards' array with a 2-D list of cards from the Shopify Products API.
      */
-    func loadCards() {
+    func loadCards(_ completion: (() -> Void)? = nil) {
         // Getting data from server.
         self.service.getCardData { result in
             // Saftley unwrapping the result.
@@ -53,6 +52,9 @@ class CardsViewModel: ObservableObject {
                 let chunkedCards = subset.shuffled().chunk(into: self.game.gameDetails.gridSize.x)
                 
                 self.cards = Array(chunkedCards[..<((self.game.gameDetails.numberOfCardPairs * self.game.gameDetails.cardsPerMatch) / self.game.gameDetails.gridSize.x)])
+                if let completion = completion {
+                    completion()
+                }
             }
         }
     }

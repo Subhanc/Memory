@@ -34,10 +34,11 @@ struct CardsView: View {
                HStack {
                    ForEach(0..<self.cardsViewModel.cards[i].count, id: \.self) { j in
                        self.displayCard(at: (i, j))
+                        .transition(.move(edge: .trailing))
                    }
                 }
             }
-         }
+        }
     }
     
     /**

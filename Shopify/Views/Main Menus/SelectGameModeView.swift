@@ -20,24 +20,13 @@ struct SelectGameModeView: View {
             ZStack {
                 Color.init("ShopifyGreen")
                     .edgesIgnoringSafeArea(.all)
-                AnimationView()
-                .edgesIgnoringSafeArea(.all)
+                ParrallaxFallingObjectsAnimation()
+                    .edgesIgnoringSafeArea(.all)
             }
             VStack(spacing: 75) {
                 LogoView(title: "Select Game Mode")
                 
                 VStack(spacing: 8) {
-                    
-                    NavigationLink(destination: self.goToDifficulty(), tag: 1, selection: $tag) { EmptyView()
-                    }
-                    
-                    Button(action: {
-                         print("test")
-                         self.game.gameMode = .lowestTime
-                        self.tag = 1
-                     }, label: {
-                         LargeButton(text: "Lowest Time")
-                     })
                     
                     NavigationLink(destination: self.goToDifficulty(), tag: 2, selection: $tag) { EmptyView() }
                     Button(action: {
@@ -45,6 +34,16 @@ struct SelectGameModeView: View {
                         self.tag = 2
                     }, label: {
                         LargeButton(text: "Accuracy")
+                    })
+                    
+                    
+                    NavigationLink(destination: self.goToDifficulty(), tag: 1, selection: $tag) { EmptyView() }
+                    Button(action: {
+                        print("test")
+                        self.game.gameMode = .lowestTime
+                        self.tag = 1
+                    }, label: {
+                        LargeButton(text: "Lowest Time")
                     })
                     
                     NavigationLink(destination: self.goToDifficulty(), tag: 3, selection: $tag) { EmptyView() }

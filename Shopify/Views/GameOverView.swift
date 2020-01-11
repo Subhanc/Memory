@@ -18,7 +18,7 @@ struct GameOverView: View {
             Color.init("ShopifyBlue")
                 .edgesIgnoringSafeArea(.all)
             
-            AnimationView()
+            ParrallaxFallingObjectsAnimation()
         
             VStack(spacing: 50) {
                 
@@ -64,31 +64,6 @@ struct GameOverView: View {
         }
     }
 }
-
-
-
-
-
-
-//            VStack(spacing: 12) {
-//                      LargeButton(text: "Play Again")
-//                      LargeButton(text: "Main Menu")
-//                  }
-
-
-
-
-
-
-//VStack {
-//
-
-//
-//}
-
-
-
-
 
 
 struct GameOverView_Previews: PreviewProvider {

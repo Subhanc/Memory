@@ -18,9 +18,9 @@ struct ScoreLabelView: View {
         
         ZStack {
             Text(game.gameMode == .lowestTime ? self.stopWatch.stopWatchTime : "Score: " + String(self.game.player.currentScore))
-                .font(.custom("courier", size: 21))
+                .font(.system(size: 21))
         }
-        .frame(width: 150, height: 44)
+        .frame(width: 168, height: 60)
         .background(Color.white)
         .cornerRadius(30)
         .shadow(color: Color("buttonShadow"), radius: 5.0, y: 2.0)

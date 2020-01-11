@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0184BE23C94F3A00AEF93D /* RestartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0184BD23C94F3A00AEF93D /* RestartButton.swift */; };
+		0D0184C023C9503100AEF93D /* InfoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0184BF23C9503100AEF93D /* InfoButton.swift */; };
+		0D0184C323CA7CDF00AEF93D /* ScoreAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0184C223CA7CDF00AEF93D /* ScoreAnimationView.swift */; };
+		0D0184C523CA822F00AEF93D /* celebrating-stars.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D0184C423CA822E00AEF93D /* celebrating-stars.json */; };
+		0D0184C723CA833600AEF93D /* gem-collect-sparkle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D0184C623CA833600AEF93D /* gem-collect-sparkle.mp3 */; };
 		0D11F10823C5260900AC815B /* ParticlesEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F10723C5260900AC815B /* ParticlesEmitter.swift */; };
 		0D727FC823A867B400AF61B3 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D727FC723A867B400AF61B3 /* CardsView.swift */; };
 		0D8B1A7223933E1200D71943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A7123933E1200D71943 /* AppDelegate.swift */; };
@@ -27,7 +32,7 @@
 		0DA7CF0423B1283E004E8E11 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF0323B1283E004E8E11 /* Player.swift */; };
 		0DA7CF0623B13860004E8E11 /* GameDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF0523B13860004E8E11 /* GameDetails.swift */; };
 		0DA7CF0823B2C690004E8E11 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF0723B2C68F004E8E11 /* Game.swift */; };
-		0DA7CF1023B44BD6004E8E11 /* GameButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF0F23B44BD6004E8E11 /* GameButtons.swift */; };
+		0DA7CF1023B44BD6004E8E11 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF0F23B44BD6004E8E11 /* MenuBar.swift */; };
 		0DA7CF1423B53DE3004E8E11 /* PauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF1323B53DE3004E8E11 /* PauseButton.swift */; };
 		0DA7CF1823B54105004E8E11 /* LargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF1723B54105004E8E11 /* LargeButton.swift */; };
 		0DA9D40423B97C9E0058291B /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D40323B97C9E0058291B /* StopWatch.swift */; };
@@ -35,7 +40,7 @@
 		0DA9D40C23BA9ACC0058291B /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D40B23BA9ACC0058291B /* SoundManager.swift */; };
 		0DA9D41023BBF5290058291B /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D40F23BBF5290058291B /* MainMenu.swift */; };
 		0DA9D41323BC0CAC0058291B /* SoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D41223BC0CAC0058291B /* SoundButton.swift */; };
-		0DB0C37323C52D92001D4DE6 /* ParrallaxAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0C37223C52D92001D4DE6 /* ParrallaxAnimation.swift */; };
+		0DB0C37323C52D92001D4DE6 /* ParrallaxFallingObjectsAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0C37223C52D92001D4DE6 /* ParrallaxFallingObjectsAnimation.swift */; };
 		0DB3971A23C64F290081DB54 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3971923C64F290081DB54 /* GameOverView.swift */; };
 		0DB3971D23C651DD0081DB54 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0DB3971C23C651DD0081DB54 /* Lottie */; };
 		0DB3971F23C654860081DB54 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3971E23C654860081DB54 /* LottieView.swift */; };
@@ -50,6 +55,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D0184BD23C94F3A00AEF93D /* RestartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartButton.swift; sourceTree = "<group>"; };
+		0D0184BF23C9503100AEF93D /* InfoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoButton.swift; sourceTree = "<group>"; };
+		0D0184C223CA7CDF00AEF93D /* ScoreAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreAnimationView.swift; sourceTree = "<group>"; };
+		0D0184C423CA822E00AEF93D /* celebrating-stars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "celebrating-stars.json"; sourceTree = "<group>"; };
+		0D0184C623CA833600AEF93D /* gem-collect-sparkle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "gem-collect-sparkle.mp3"; sourceTree = "<group>"; };
 		0D11F10723C5260900AC815B /* ParticlesEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlesEmitter.swift; sourceTree = "<group>"; };
 		0D727FC723A867B400AF61B3 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
 		0D8B1A6E23933E1200D71943 /* Shopify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopify.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +80,7 @@
 		0DA7CF0323B1283E004E8E11 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		0DA7CF0523B13860004E8E11 /* GameDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetails.swift; sourceTree = "<group>"; };
 		0DA7CF0723B2C68F004E8E11 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		0DA7CF0F23B44BD6004E8E11 /* GameButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButtons.swift; sourceTree = "<group>"; };
+		0DA7CF0F23B44BD6004E8E11 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		0DA7CF1323B53DE3004E8E11 /* PauseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseButton.swift; sourceTree = "<group>"; };
 		0DA7CF1723B54105004E8E11 /* LargeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButton.swift; sourceTree = "<group>"; };
 		0DA9D40323B97C9E0058291B /* StopWatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
@@ -78,7 +88,7 @@
 		0DA9D40B23BA9ACC0058291B /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		0DA9D40F23BBF5290058291B /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		0DA9D41223BC0CAC0058291B /* SoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButton.swift; sourceTree = "<group>"; };
-		0DB0C37223C52D92001D4DE6 /* ParrallaxAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParrallaxAnimation.swift; sourceTree = "<group>"; };
+		0DB0C37223C52D92001D4DE6 /* ParrallaxFallingObjectsAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParrallaxFallingObjectsAnimation.swift; sourceTree = "<group>"; };
 		0DB3971923C64F290081DB54 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		0DB3971E23C654860081DB54 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		0DB3972023C659200081DB54 /* Trophy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Trophy.json; sourceTree = "<group>"; };
@@ -105,6 +115,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0184C123CA78C000AEF93D /* Circle Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				0DA7CF1723B54105004E8E11 /* LargeButton.swift */,
+				0D0184BF23C9503100AEF93D /* InfoButton.swift */,
+				0DA9D40923BA9AB70058291B /* MusicButton.swift */,
+				0DA9D41223BC0CAC0058291B /* SoundButton.swift */,
+				0DA7CF1323B53DE3004E8E11 /* PauseButton.swift */,
+				0D0184BD23C94F3A00AEF93D /* RestartButton.swift */,
+			);
+			path = "Circle Buttons";
+			sourceTree = "<group>";
+		};
 		0D8B1A6523933E1200D71943 = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +160,6 @@
 				0D8B1A7723933E1400D71943 /* Assets.xcassets */,
 				0D8B1A7C23933E1400D71943 /* LaunchScreen.storyboard */,
 				0D8B1A7F23933E1400D71943 /* Info.plist */,
-				0DB3972023C659200081DB54 /* Trophy.json */,
 				0D8B1A7923933E1400D71943 /* Preview Content */,
 			);
 			path = Shopify;
@@ -171,12 +193,14 @@
 		0D8B1A8723933E6B00D71943 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0DB0C37223C52D92001D4DE6 /* ParrallaxFallingObjectsAnimation.swift */,
 				0DF808D323C1712E005FBD21 /* Templates */,
 				0DF808D023C16FCA005FBD21 /* Main Menus */,
-				0DA7CF0F23B44BD6004E8E11 /* GameButtons.swift */,
+				0DA7CF0F23B44BD6004E8E11 /* MenuBar.swift */,
 				0D727FC723A867B400AF61B3 /* CardsView.swift */,
 				0DE3861223B94C7D000FDD7B /* PauseMenuView.swift */,
 				0DB3971923C64F290081DB54 /* GameOverView.swift */,
+				0D0184C223CA7CDF00AEF93D /* ScoreAnimationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,7 +241,6 @@
 				0DA9D40F23BBF5290058291B /* MainMenu.swift */,
 				0DFBC2C623BFF674006944B2 /* SelectGameModeView.swift */,
 				0DFBC2C823BFFAAE006944B2 /* SelectDifficultyView.swift */,
-				0DB0C37223C52D92001D4DE6 /* ParrallaxAnimation.swift */,
 			);
 			path = "Main Menus";
 			sourceTree = "<group>";
@@ -225,12 +248,9 @@
 		0DF808D323C1712E005FBD21 /* Templates */ = {
 			isa = PBXGroup;
 			children = (
+				0D0184C123CA78C000AEF93D /* Circle Buttons */,
 				0D8B1A9623933F6A00D71943 /* CardView.swift */,
-				0DA9D40923BA9AB70058291B /* MusicButton.swift */,
-				0DA9D41223BC0CAC0058291B /* SoundButton.swift */,
-				0DA7CF1323B53DE3004E8E11 /* PauseButton.swift */,
 				0DE3861623B95607000FDD7B /* ScoreLabelView.swift */,
-				0DA7CF1723B54105004E8E11 /* LargeButton.swift */,
 				0DB3971E23C654860081DB54 /* LottieView.swift */,
 				0DFBC2C423BFF1AC006944B2 /* LogoView.swift */,
 			);
@@ -240,6 +260,9 @@
 		0DF808D423C285A9005FBD21 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				0D0184C423CA822E00AEF93D /* celebrating-stars.json */,
+				0D0184C623CA833600AEF93D /* gem-collect-sparkle.mp3 */,
+				0DB3972023C659200081DB54 /* Trophy.json */,
 				0DF808D523C285B6005FBD21 /* Card-flip-sound-effect.mp3 */,
 				0DA9D40B23BA9ACC0058291B /* SoundManager.swift */,
 			);
@@ -315,9 +338,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DB3972123C659200081DB54 /* Trophy.json in Resources */,
+				0D0184C523CA822F00AEF93D /* celebrating-stars.json in Resources */,
 				0D8B1A7E23933E1400D71943 /* LaunchScreen.storyboard in Resources */,
 				0D8B1A7B23933E1400D71943 /* Preview Assets.xcassets in Resources */,
 				0DF808D623C285B6005FBD21 /* Card-flip-sound-effect.mp3 in Resources */,
+				0D0184C723CA833600AEF93D /* gem-collect-sparkle.mp3 in Resources */,
 				0D8B1A7823933E1400D71943 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,20 +359,21 @@
 				0D11F10823C5260900AC815B /* ParticlesEmitter.swift in Sources */,
 				0D8B1A9323933F1700D71943 /* UIImage+UIImageDownloader.swift in Sources */,
 				0DA7CF0223B01626004E8E11 /* GameManager.swift in Sources */,
-				0DB0C37323C52D92001D4DE6 /* ParrallaxAnimation.swift in Sources */,
+				0DB0C37323C52D92001D4DE6 /* ParrallaxFallingObjectsAnimation.swift in Sources */,
 				0DA7CF0423B1283E004E8E11 /* Player.swift in Sources */,
 				0DA7CF0623B13860004E8E11 /* GameDetails.swift in Sources */,
 				0DFBC2C923BFFAAE006944B2 /* SelectDifficultyView.swift in Sources */,
 				0DA7CF1823B54105004E8E11 /* LargeButton.swift in Sources */,
 				0D8B1A7223933E1200D71943 /* AppDelegate.swift in Sources */,
 				0D8B1A9B23943FBA00D71943 /* Array+Chunks.swift in Sources */,
+				0D0184C323CA7CDF00AEF93D /* ScoreAnimationView.swift in Sources */,
 				0D8B1A7423933E1200D71943 /* SceneDelegate.swift in Sources */,
 				0DA9D40423B97C9E0058291B /* StopWatch.swift in Sources */,
 				0DA7CF0823B2C690004E8E11 /* Game.swift in Sources */,
 				0DE3861723B95607000FDD7B /* ScoreLabelView.swift in Sources */,
 				0DA9D40C23BA9ACC0058291B /* SoundManager.swift in Sources */,
 				0DA9D41023BBF5290058291B /* MainMenu.swift in Sources */,
-				0DA7CF1023B44BD6004E8E11 /* GameButtons.swift in Sources */,
+				0DA7CF1023B44BD6004E8E11 /* MenuBar.swift in Sources */,
 				0DB3971F23C654860081DB54 /* LottieView.swift in Sources */,
 				0DFBC2C523BFF1AC006944B2 /* LogoView.swift in Sources */,
 				0D727FC823A867B400AF61B3 /* CardsView.swift in Sources */,
@@ -356,7 +382,9 @@
 				0D8B1A8B23933E9A00D71943 /* Card.swift in Sources */,
 				0D8B1A9523933F3B00D71943 /* Service.swift in Sources */,
 				0DE3861323B94C7D000FDD7B /* PauseMenuView.swift in Sources */,
+				0D0184C023C9503100AEF93D /* InfoButton.swift in Sources */,
 				0DA7CF1423B53DE3004E8E11 /* PauseButton.swift in Sources */,
+				0D0184BE23C94F3A00AEF93D /* RestartButton.swift in Sources */,
 				0DFBC2C723BFF674006944B2 /* SelectGameModeView.swift in Sources */,
 				0DA9D41323BC0CAC0058291B /* SoundButton.swift in Sources */,
 				0DB3971A23C64F290081DB54 /* GameOverView.swift in Sources */,

@@ -20,7 +20,7 @@ struct SelectDifficultyView: View {
             ZStack {
                 Color.init("ShopifyPink")
                     .edgesIgnoringSafeArea(.all)
-                AnimationView()
+                ParrallaxFallingObjectsAnimation()
                 .edgesIgnoringSafeArea(.all)
             }
             Spacer()
@@ -29,13 +29,13 @@ struct SelectDifficultyView: View {
                 LogoView(title: "Select Difficulty")
                     .font(.body)
                 VStack(spacing: 8) {
+                   
                     NavigationLink(destination: self.goToGame(), tag: 1, selection: $tag) { EmptyView() }
                     Button(action: {
                         self.game.gameDetails = GameDetails(gameDifficulty: .veryEasy)
                         self.tag = 1
                     }, label: {
                         LargeButton(text: "Very Easy")
-                        .multilineTextAlignment(.center)
                     })
                     
                     NavigationLink(destination: self.goToGame(), tag: 2, selection: $tag) { EmptyView() }
