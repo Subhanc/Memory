@@ -58,7 +58,7 @@ struct ContentView: View {
                     self.isGameLoading = false
                 }
                 
-                if self.game.gameMode == .flash {
+                if self.game.gameMode == .oneShot {
                   self.cardsViewModel?.showAllCards()
                }
             }

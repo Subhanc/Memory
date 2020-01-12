@@ -13,6 +13,7 @@ enum Difficulty {
     case hard
     case custom
     
+    /// Converts to a String type.
     func toString() -> String {
         switch self {
         case .easy:
@@ -29,18 +30,19 @@ enum Difficulty {
 
 /// Game Modes the user can select from.
 enum GameMode {
+    case regular
     case lowestTime
-    case accuracy
-    case flash
+    case oneShot
     
+    /// Converts to a String type.
     func toString() -> String {
         switch self {
+        case .regular:
+            return "Regular"
         case .lowestTime:
             return "Lowest Time"
-        case .accuracy:
-            return "Accuracy"
-        case .flash:
-            return "Flash"
+        case .oneShot:
+            return "One Shot"
         }
     }
 }

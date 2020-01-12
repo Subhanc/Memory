@@ -31,7 +31,7 @@ class CardsViewModel: ObservableObject {
     init(withGame game: Game) {
         self.game = game
     }
-        
+    
     /**
      Calling this will populate the 'cards' array with a 2-D list of cards from the Shopify Products API.
      */
@@ -52,6 +52,7 @@ class CardsViewModel: ObservableObject {
                 let chunkedCards = subset.shuffled().chunk(into: self.game.gameDetails.gridSize.x)
                 
                 self.cards = Array(chunkedCards[..<((self.game.gameDetails.numberOfCardPairs * self.game.gameDetails.cardsPerMatch) / self.game.gameDetails.gridSize.x)])
+             
                 if let completion = completion {
                     completion()
                 }
@@ -59,21 +60,24 @@ class CardsViewModel: ObservableObject {
         }
     }
     
-    
-     func showAllCards() {
+    /// Flips over all cards on the playing field displaying the face of each caard for 7 seconds then flips the cards back over.
+    func showAllCards() {
+       
         for row in self.cards {
             for card in row {
                 card.isFlipped = true
             }
         }
         
-       DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
-           for row in self.cards {
-                for card in row {
-                    card.isFlipped = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
+            withAnimation(.easeOut(duration: 0.4)) {
+                for row in self.cards {
+                    for card in row {
+                        card.isFlipped = false
+                    }
                 }
+                self.objectWillChange.send()
             }
-          self.objectWillChange.send()
         }
     }
 }

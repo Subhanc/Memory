@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D0184BE23C94F3A00AEF93D /* RestartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0184BD23C94F3A00AEF93D /* RestartButton.swift */; };
-		0D0184C023C9503100AEF93D /* InfoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0184BF23C9503100AEF93D /* InfoButton.swift */; };
-		0D0184C323CA7CDF00AEF93D /* ScoreAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0184C223CA7CDF00AEF93D /* ScoreAnimationView.swift */; };
+		0D0184BE23C94F3A00AEF93D /* RestartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0184BD23C94F3A00AEF93D /* RestartButtonView.swift */; };
 		0D0184C523CA822F00AEF93D /* celebrating-stars.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D0184C423CA822E00AEF93D /* celebrating-stars.json */; };
-		0D0184C723CA833600AEF93D /* gem-collect-sparkle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D0184C623CA833600AEF93D /* gem-collect-sparkle.mp3 */; };
-		0D0184C923CA979C00AEF93D /* Trophy.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D0184C823CA979C00AEF93D /* Trophy.json */; };
+		0D0184C723CA833600AEF93D /* success-sparkle-sound-effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D0184C623CA833600AEF93D /* success-sparkle-sound-effect.mp3 */; };
+		0D0184C923CA979C00AEF93D /* trophy.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D0184C823CA979C00AEF93D /* trophy.json */; };
 		0D11F10823C5260900AC815B /* ParticlesEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F10723C5260900AC815B /* ParticlesEmitter.swift */; };
 		0D727FC823A867B400AF61B3 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D727FC723A867B400AF61B3 /* CardsView.swift */; };
 		0D8B1A7223933E1200D71943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A7123933E1200D71943 /* AppDelegate.swift */; };
@@ -33,13 +31,13 @@
 		0DA7CF0623B13860004E8E11 /* GameDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF0523B13860004E8E11 /* GameDetails.swift */; };
 		0DA7CF0823B2C690004E8E11 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF0723B2C68F004E8E11 /* Game.swift */; };
 		0DA7CF1023B44BD6004E8E11 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF0F23B44BD6004E8E11 /* MenuBar.swift */; };
-		0DA7CF1423B53DE3004E8E11 /* PauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF1323B53DE3004E8E11 /* PauseButton.swift */; };
-		0DA7CF1823B54105004E8E11 /* LargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF1723B54105004E8E11 /* LargeButton.swift */; };
+		0DA7CF1423B53DE3004E8E11 /* PauseButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF1323B53DE3004E8E11 /* PauseButtonView.swift */; };
+		0DA7CF1823B54105004E8E11 /* LargeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF1723B54105004E8E11 /* LargeButtonView.swift */; };
 		0DA9D40423B97C9E0058291B /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D40323B97C9E0058291B /* StopWatch.swift */; };
-		0DA9D40A23BA9AB70058291B /* MusicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D40923BA9AB70058291B /* MusicButton.swift */; };
+		0DA9D40A23BA9AB70058291B /* MusicButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D40923BA9AB70058291B /* MusicButtonView.swift */; };
 		0DA9D40C23BA9ACC0058291B /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D40B23BA9ACC0058291B /* SoundManager.swift */; };
 		0DA9D41023BBF5290058291B /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D40F23BBF5290058291B /* MainMenu.swift */; };
-		0DA9D41323BC0CAC0058291B /* SoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D41223BC0CAC0058291B /* SoundButton.swift */; };
+		0DA9D41323BC0CAC0058291B /* SoundButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D41223BC0CAC0058291B /* SoundButtonView.swift */; };
 		0DB0C37323C52D92001D4DE6 /* ParrallaxFallingObjectsAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0C37223C52D92001D4DE6 /* ParrallaxFallingObjectsAnimation.swift */; };
 		0DB3971A23C64F290081DB54 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3971923C64F290081DB54 /* GameOverView.swift */; };
 		0DB3971D23C651DD0081DB54 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0DB3971C23C651DD0081DB54 /* Lottie */; };
@@ -47,19 +45,17 @@
 		0DE3860E23B6B5E0000FDD7B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3860D23B6B5E0000FDD7B /* Enums.swift */; };
 		0DE3861323B94C7D000FDD7B /* PauseMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3861223B94C7D000FDD7B /* PauseMenuView.swift */; };
 		0DE3861723B95607000FDD7B /* ScoreLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3861623B95607000FDD7B /* ScoreLabelView.swift */; };
-		0DF808D623C285B6005FBD21 /* Card-flip-sound-effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0DF808D523C285B6005FBD21 /* Card-flip-sound-effect.mp3 */; };
+		0DF808D623C285B6005FBD21 /* card-flip-sound-effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0DF808D523C285B6005FBD21 /* card-flip-sound-effect.mp3 */; };
 		0DFBC2C523BFF1AC006944B2 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFBC2C423BFF1AC006944B2 /* LogoView.swift */; };
 		0DFBC2C723BFF674006944B2 /* SelectGameModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFBC2C623BFF674006944B2 /* SelectGameModeView.swift */; };
 		0DFBC2C923BFFAAE006944B2 /* SelectDifficultyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFBC2C823BFFAAE006944B2 /* SelectDifficultyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0D0184BD23C94F3A00AEF93D /* RestartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartButton.swift; sourceTree = "<group>"; };
-		0D0184BF23C9503100AEF93D /* InfoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoButton.swift; sourceTree = "<group>"; };
-		0D0184C223CA7CDF00AEF93D /* ScoreAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreAnimationView.swift; sourceTree = "<group>"; };
+		0D0184BD23C94F3A00AEF93D /* RestartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartButtonView.swift; sourceTree = "<group>"; };
 		0D0184C423CA822E00AEF93D /* celebrating-stars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "celebrating-stars.json"; sourceTree = "<group>"; };
-		0D0184C623CA833600AEF93D /* gem-collect-sparkle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "gem-collect-sparkle.mp3"; sourceTree = "<group>"; };
-		0D0184C823CA979C00AEF93D /* Trophy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Trophy.json; sourceTree = "<group>"; };
+		0D0184C623CA833600AEF93D /* success-sparkle-sound-effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "success-sparkle-sound-effect.mp3"; sourceTree = "<group>"; };
+		0D0184C823CA979C00AEF93D /* trophy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trophy.json; sourceTree = "<group>"; };
 		0D11F10723C5260900AC815B /* ParticlesEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlesEmitter.swift; sourceTree = "<group>"; };
 		0D727FC723A867B400AF61B3 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
 		0D8B1A6E23933E1200D71943 /* Shopify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopify.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,20 +76,20 @@
 		0DA7CF0523B13860004E8E11 /* GameDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetails.swift; sourceTree = "<group>"; };
 		0DA7CF0723B2C68F004E8E11 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		0DA7CF0F23B44BD6004E8E11 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
-		0DA7CF1323B53DE3004E8E11 /* PauseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseButton.swift; sourceTree = "<group>"; };
-		0DA7CF1723B54105004E8E11 /* LargeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButton.swift; sourceTree = "<group>"; };
+		0DA7CF1323B53DE3004E8E11 /* PauseButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseButtonView.swift; sourceTree = "<group>"; };
+		0DA7CF1723B54105004E8E11 /* LargeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButtonView.swift; sourceTree = "<group>"; };
 		0DA9D40323B97C9E0058291B /* StopWatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
-		0DA9D40923BA9AB70058291B /* MusicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicButton.swift; sourceTree = "<group>"; };
+		0DA9D40923BA9AB70058291B /* MusicButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicButtonView.swift; sourceTree = "<group>"; };
 		0DA9D40B23BA9ACC0058291B /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		0DA9D40F23BBF5290058291B /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
-		0DA9D41223BC0CAC0058291B /* SoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButton.swift; sourceTree = "<group>"; };
+		0DA9D41223BC0CAC0058291B /* SoundButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButtonView.swift; sourceTree = "<group>"; };
 		0DB0C37223C52D92001D4DE6 /* ParrallaxFallingObjectsAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParrallaxFallingObjectsAnimation.swift; sourceTree = "<group>"; };
 		0DB3971923C64F290081DB54 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		0DB3971E23C654860081DB54 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		0DE3860D23B6B5E0000FDD7B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		0DE3861223B94C7D000FDD7B /* PauseMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseMenuView.swift; sourceTree = "<group>"; };
 		0DE3861623B95607000FDD7B /* ScoreLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreLabelView.swift; sourceTree = "<group>"; };
-		0DF808D523C285B6005FBD21 /* Card-flip-sound-effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Card-flip-sound-effect.mp3"; sourceTree = "<group>"; };
+		0DF808D523C285B6005FBD21 /* card-flip-sound-effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "card-flip-sound-effect.mp3"; sourceTree = "<group>"; };
 		0DFBC2C423BFF1AC006944B2 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		0DFBC2C623BFF674006944B2 /* SelectGameModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameModeView.swift; sourceTree = "<group>"; };
 		0DFBC2C823BFFAAE006944B2 /* SelectDifficultyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDifficultyView.swift; sourceTree = "<group>"; };
@@ -113,17 +109,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D0184C123CA78C000AEF93D /* Circle Buttons */ = {
+		0D0184C123CA78C000AEF93D /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				0DA7CF1723B54105004E8E11 /* LargeButton.swift */,
-				0D0184BF23C9503100AEF93D /* InfoButton.swift */,
-				0DA9D40923BA9AB70058291B /* MusicButton.swift */,
-				0DA9D41223BC0CAC0058291B /* SoundButton.swift */,
-				0DA7CF1323B53DE3004E8E11 /* PauseButton.swift */,
-				0D0184BD23C94F3A00AEF93D /* RestartButton.swift */,
+				0DA7CF1723B54105004E8E11 /* LargeButtonView.swift */,
+				0DA9D40923BA9AB70058291B /* MusicButtonView.swift */,
+				0DA9D41223BC0CAC0058291B /* SoundButtonView.swift */,
+				0DA7CF1323B53DE3004E8E11 /* PauseButtonView.swift */,
+				0D0184BD23C94F3A00AEF93D /* RestartButtonView.swift */,
+				0DE3861623B95607000FDD7B /* ScoreLabelView.swift */,
 			);
-			path = "Circle Buttons";
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		0D3E918C23CBD6C40094DCD8 /* InGame */ = {
+			isa = PBXGroup;
+			children = (
+				0DA7CF0F23B44BD6004E8E11 /* MenuBar.swift */,
+				0D727FC723A867B400AF61B3 /* CardsView.swift */,
+				0DE3861223B94C7D000FDD7B /* PauseMenuView.swift */,
+			);
+			path = InGame;
+			sourceTree = "<group>";
+		};
+		0D3E918D23CBD70A0094DCD8 /* Art and Animations */ = {
+			isa = PBXGroup;
+			children = (
+				0DB0C37223C52D92001D4DE6 /* ParrallaxFallingObjectsAnimation.swift */,
+				0DB3971E23C654860081DB54 /* LottieView.swift */,
+				0DFBC2C423BFF1AC006944B2 /* LogoView.swift */,
+			);
+			path = "Art and Animations";
+			sourceTree = "<group>";
+		};
+		0D3E918E23CBD73B0094DCD8 /* Game Over */ = {
+			isa = PBXGroup;
+			children = (
+				0DB3971923C64F290081DB54 /* GameOverView.swift */,
+			);
+			path = "Game Over";
+			sourceTree = "<group>";
+		};
+		0D3E918F23CBD85D0094DCD8 /* Lottie-Animations */ = {
+			isa = PBXGroup;
+			children = (
+				0D0184C423CA822E00AEF93D /* celebrating-stars.json */,
+				0D0184C823CA979C00AEF93D /* trophy.json */,
+			);
+			path = "Lottie-Animations";
 			sourceTree = "<group>";
 		};
 		0D8B1A6523933E1200D71943 = {
@@ -145,13 +178,14 @@
 		0D8B1A7023933E1200D71943 /* Shopify */ = {
 			isa = PBXGroup;
 			children = (
-				0DB3972223C811FF0081DB54 /* Packages */,
 				0DF808D423C285A9005FBD21 /* Audio */,
+				0D3E918F23CBD85D0094DCD8 /* Lottie-Animations */,
+				0DB3972223C811FF0081DB54 /* Packages */,
 				0D8B1A8823933E6D00D71943 /* Models */,
 				0D8B1A8723933E6B00D71943 /* Views */,
 				0D8B1A8923933E8100D71943 /* ViewModels */,
-				0D8B1A8623933E6A00D71943 /* Extensions */,
 				0D8B1A8523933E6800D71943 /* Service */,
+				0D8B1A8623933E6A00D71943 /* Extensions */,
 				0D8B1A7123933E1200D71943 /* AppDelegate.swift */,
 				0D8B1A7323933E1200D71943 /* SceneDelegate.swift */,
 				0D8B1A7523933E1200D71943 /* ContentView.swift */,
@@ -191,14 +225,10 @@
 		0D8B1A8723933E6B00D71943 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0DB0C37223C52D92001D4DE6 /* ParrallaxFallingObjectsAnimation.swift */,
-				0DF808D323C1712E005FBD21 /* Templates */,
-				0DF808D023C16FCA005FBD21 /* Main Menus */,
-				0DA7CF0F23B44BD6004E8E11 /* MenuBar.swift */,
-				0D727FC723A867B400AF61B3 /* CardsView.swift */,
-				0DE3861223B94C7D000FDD7B /* PauseMenuView.swift */,
-				0DB3971923C64F290081DB54 /* GameOverView.swift */,
-				0D0184C223CA7CDF00AEF93D /* ScoreAnimationView.swift */,
+				0DF808D323C1712E005FBD21 /* Reusable Views */,
+				0DF808D023C16FCA005FBD21 /* Onboarding */,
+				0D3E918C23CBD6C40094DCD8 /* InGame */,
+				0D3E918E23CBD73B0094DCD8 /* Game Over */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,8 +239,8 @@
 				0DA9D40B23BA9ACC0058291B /* SoundManager.swift */,
 				0D8B1A8A23933E9A00D71943 /* Card.swift */,
 				0DA7CF0323B1283E004E8E11 /* Player.swift */,
-				0DA7CF0723B2C68F004E8E11 /* Game.swift */,
 				0DA7CF0523B13860004E8E11 /* GameDetails.swift */,
+				0DA7CF0723B2C68F004E8E11 /* Game.swift */,
 				0DE3860D23B6B5E0000FDD7B /* Enums.swift */,
 			);
 			path = Models;
@@ -233,35 +263,31 @@
 			path = Packages;
 			sourceTree = "<group>";
 		};
-		0DF808D023C16FCA005FBD21 /* Main Menus */ = {
+		0DF808D023C16FCA005FBD21 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
 				0DA9D40F23BBF5290058291B /* MainMenu.swift */,
 				0DFBC2C623BFF674006944B2 /* SelectGameModeView.swift */,
 				0DFBC2C823BFFAAE006944B2 /* SelectDifficultyView.swift */,
 			);
-			path = "Main Menus";
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		0DF808D323C1712E005FBD21 /* Templates */ = {
+		0DF808D323C1712E005FBD21 /* Reusable Views */ = {
 			isa = PBXGroup;
 			children = (
-				0D0184C123CA78C000AEF93D /* Circle Buttons */,
+				0D0184C123CA78C000AEF93D /* Buttons */,
+				0D3E918D23CBD70A0094DCD8 /* Art and Animations */,
 				0D8B1A9623933F6A00D71943 /* CardView.swift */,
-				0DE3861623B95607000FDD7B /* ScoreLabelView.swift */,
-				0DB3971E23C654860081DB54 /* LottieView.swift */,
-				0DFBC2C423BFF1AC006944B2 /* LogoView.swift */,
 			);
-			path = Templates;
+			path = "Reusable Views";
 			sourceTree = "<group>";
 		};
 		0DF808D423C285A9005FBD21 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				0D0184C423CA822E00AEF93D /* celebrating-stars.json */,
-				0D0184C623CA833600AEF93D /* gem-collect-sparkle.mp3 */,
-				0D0184C823CA979C00AEF93D /* Trophy.json */,
-				0DF808D523C285B6005FBD21 /* Card-flip-sound-effect.mp3 */,
+				0D0184C623CA833600AEF93D /* success-sparkle-sound-effect.mp3 */,
+				0DF808D523C285B6005FBD21 /* card-flip-sound-effect.mp3 */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -337,9 +363,9 @@
 				0D0184C523CA822F00AEF93D /* celebrating-stars.json in Resources */,
 				0D8B1A7E23933E1400D71943 /* LaunchScreen.storyboard in Resources */,
 				0D8B1A7B23933E1400D71943 /* Preview Assets.xcassets in Resources */,
-				0DF808D623C285B6005FBD21 /* Card-flip-sound-effect.mp3 in Resources */,
-				0D0184C723CA833600AEF93D /* gem-collect-sparkle.mp3 in Resources */,
-				0D0184C923CA979C00AEF93D /* Trophy.json in Resources */,
+				0DF808D623C285B6005FBD21 /* card-flip-sound-effect.mp3 in Resources */,
+				0D0184C723CA833600AEF93D /* success-sparkle-sound-effect.mp3 in Resources */,
+				0D0184C923CA979C00AEF93D /* trophy.json in Resources */,
 				0D8B1A7823933E1400D71943 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,10 +385,9 @@
 				0DA7CF0423B1283E004E8E11 /* Player.swift in Sources */,
 				0DA7CF0623B13860004E8E11 /* GameDetails.swift in Sources */,
 				0DFBC2C923BFFAAE006944B2 /* SelectDifficultyView.swift in Sources */,
-				0DA7CF1823B54105004E8E11 /* LargeButton.swift in Sources */,
+				0DA7CF1823B54105004E8E11 /* LargeButtonView.swift in Sources */,
 				0D8B1A7223933E1200D71943 /* AppDelegate.swift in Sources */,
 				0D8B1A9B23943FBA00D71943 /* Array+Chunks.swift in Sources */,
-				0D0184C323CA7CDF00AEF93D /* ScoreAnimationView.swift in Sources */,
 				0D8B1A7423933E1200D71943 /* SceneDelegate.swift in Sources */,
 				0DA9D40423B97C9E0058291B /* StopWatch.swift in Sources */,
 				0DA7CF0823B2C690004E8E11 /* Game.swift in Sources */,
@@ -374,15 +399,14 @@
 				0DFBC2C523BFF1AC006944B2 /* LogoView.swift in Sources */,
 				0D727FC823A867B400AF61B3 /* CardsView.swift in Sources */,
 				0D8B1A7623933E1200D71943 /* ContentView.swift in Sources */,
-				0DA9D40A23BA9AB70058291B /* MusicButton.swift in Sources */,
+				0DA9D40A23BA9AB70058291B /* MusicButtonView.swift in Sources */,
 				0D8B1A8B23933E9A00D71943 /* Card.swift in Sources */,
 				0D8B1A9523933F3B00D71943 /* Service.swift in Sources */,
 				0DE3861323B94C7D000FDD7B /* PauseMenuView.swift in Sources */,
-				0D0184C023C9503100AEF93D /* InfoButton.swift in Sources */,
-				0DA7CF1423B53DE3004E8E11 /* PauseButton.swift in Sources */,
-				0D0184BE23C94F3A00AEF93D /* RestartButton.swift in Sources */,
+				0DA7CF1423B53DE3004E8E11 /* PauseButtonView.swift in Sources */,
+				0D0184BE23C94F3A00AEF93D /* RestartButtonView.swift in Sources */,
 				0DFBC2C723BFF674006944B2 /* SelectGameModeView.swift in Sources */,
-				0DA9D41323BC0CAC0058291B /* SoundButton.swift in Sources */,
+				0DA9D41323BC0CAC0058291B /* SoundButtonView.swift in Sources */,
 				0DB3971A23C64F290081DB54 /* GameOverView.swift in Sources */,
 				0DE3860E23B6B5E0000FDD7B /* Enums.swift in Sources */,
 			);

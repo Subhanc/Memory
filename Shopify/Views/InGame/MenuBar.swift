@@ -18,10 +18,14 @@ struct MenuBar: View {
     var onRefreshCompletion: () -> Void
     
     var body: some View {
+        displayMenuBar()
+    }
+    /// Displays the menu bar that belongs the game field. This contains a Pause Button, Score Label and Restart Button.
+    func displayMenuBar() -> some View {
         ZStack {
             VStack {
                 HStack {
-                    PauseButton()
+                    PauseButtonView()
                     ScoreLabelView().offset(x: 20)
                     Spacer()
                 }.offset(x: 10)
@@ -31,12 +35,11 @@ struct MenuBar: View {
             VStack {
                 HStack(spacing: 12) {
                     Spacer()
-                    RestartButton(cardsViewModel: self.cardsViewModel, onRefreshCompletion: self.onRefreshCompletion)
+                    RestartButtonView(cardsViewModel: self.cardsViewModel, onRefreshCompletion: self.onRefreshCompletion)
                 }.offset(x: -10)
                 Spacer()
             }
             Spacer()
         }
     }
-    
 }

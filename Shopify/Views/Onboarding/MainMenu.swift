@@ -11,7 +11,7 @@ import SwiftUI
 
 struct MainMenu: View {
    
-    @State var game: Game = Game(newPlayer: Player(), andGameMode: .accuracy, andGameDetails: .init(gameDifficulty: .easy), andIsGameOver: false)
+    @State var game: Game = Game(newPlayer: Player(), andGameMode: .regular, andGameDetails: .init(gameDifficulty: .easy), andIsGameOver: false)
     
     init() {
         UINavigationBar.appearance().tintColor = .black
@@ -41,12 +41,12 @@ struct MainMenu: View {
                         Button(action: {
                             self.presentMe.toggle()
                         }, label: {
-                            LargeButton(text: "Play")
+                            LargeButtonView(text: "Play")
                         })
                         
                         HStack(alignment: .center, spacing: 35) {
-                            SoundButton()
-                            MusicButton()
+                            SoundButtonView()
+                            MusicButtonView()
                         }
                         
                         VStack {

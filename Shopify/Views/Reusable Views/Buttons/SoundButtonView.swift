@@ -8,13 +8,15 @@
 
 import SwiftUI
 
-struct SoundButton: View {
+struct SoundButtonView: View {
     
+    /// The sound manager which includes all information about the audio..
     @EnvironmentObject var soundManager: SoundManager
     
     var body: some View {
         
         Button(action: {
+            // Changes on/off state when player presses button.
             self.soundManager.isSoundEffectsOn.toggle()
         }) {
             ZStack {
@@ -26,6 +28,7 @@ struct SoundButton: View {
                     .cornerRadius(30)
                     .shadow(color: Color("buttonShadow"), radius: 6, x: 4, y: 4)
                 
+                // Adds a crossed out line view if the sound effects is turned off.
                 if !soundManager.isSoundEffectsOn {
                     crossedOutLine()
                 }
@@ -43,6 +46,6 @@ struct SoundButton: View {
 
 struct SoundButton_Previews: PreviewProvider {
     static var previews: some View {
-        SoundButton()
+        SoundButtonView()
     }
 }

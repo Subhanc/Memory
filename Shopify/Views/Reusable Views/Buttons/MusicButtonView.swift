@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct MusicButton: View {
+struct MusicButtonView: View {
     
     @EnvironmentObject var soundManager: SoundManager
     
@@ -33,6 +33,7 @@ struct MusicButton: View {
         }
     }
     
+    /// Adds a 45 degreest  line to the view which represents an 'off' state.
     func crossedOutLine() -> some View {
         Rectangle()
             .frame(width: 60, height: 3)

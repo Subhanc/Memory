@@ -24,7 +24,7 @@ class Service {
     public static let shared = Service()
     
     /// The number that represents the page number Shopify API data (Current API has 3 pages, randomly chooses one)
-    public static var pageNumber =  Int.random(in: 1..<4);
+    public static var pageNumber =  Int.random(in: 1..<3);
     
     /// Access token for to be passed into Shopify endpoint
     public static let ACCESS_TOKEN = "c32313df0d0ef512ca64d5b336a0d7c6"

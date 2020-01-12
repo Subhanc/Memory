@@ -35,7 +35,7 @@ struct GameOverView: View {
                     
                     
                     ZStack {
-                        LottieView(fileName: "Trophy")
+                        LottieView(fileName: "trophy")
                     }
                     .frame(width: 350, height: 200)
                     
@@ -44,7 +44,7 @@ struct GameOverView: View {
                         .fontWeight(.heavy)
                         .foregroundColor(.white)
                     
-                    if game.gameMode == .flash {
+                    if game.gameMode == .oneShot {
                         Text(game.player.currentMatches == game.gameDetails.numberOfCardPairs ? "You Win!" : "You Lose!")
                             .font(.largeTitle)
                             .fontWeight(.heavy)
@@ -66,12 +66,12 @@ struct GameOverView: View {
                 
                 VStack(spacing: 12) {
                     Button(action: self.onPlayAgainCompletion, label: {
-                        LargeButton(text: "Play Again")
+                        LargeButtonView(text: "Play Again")
                     })
                     Button(action: {
                         self.presentationMode.wrappedValue.dismiss()
                     }, label: {
-                        LargeButton(text: "Main Menu")
+                        LargeButtonView(text: "Main Menu")
                     })
                 }
             }

@@ -27,8 +27,8 @@ struct CardView: View {
             cardImage()
             cardBackground()
         }
-            // Rotation effect to flip the playing card.
-            .rotation3DEffect(.init(degrees: self.card.isFlipped ? 180 : 0), axis: (0, 1, 0))
+        // Rotation effect to flip the playing card.
+        .rotation3DEffect(.init(degrees: self.card.isFlipped ? 180 : 0), axis: (0, 1, 0))
     }
     
     /**

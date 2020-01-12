@@ -1,5 +1,5 @@
 //
-//  InfoButton.swift
+//  RestartButton.swift
 //  Shopify
 //
 //  Created by Subhan Chaudhry on 2020-01-10.
@@ -8,11 +8,16 @@
 
 import SwiftUI
 
-struct InfoButton: View {
+struct RestartButtonView: View {
+    
+    /// The model which holds all information about the cards field.
+    @ObservedObject var cardsViewModel: CardsViewModel
+    
+    var onRefreshCompletion: (() -> Void)
+    
     var body: some View {
-        Button(action: {
-        })  {
-            Image(systemName: "questionmark")
+        Button(action: self.onRefreshCompletion) {
+            Image(systemName: "arrow.counterclockwise")
                 .foregroundColor(.black)
                 .frame(width: 60, height: 60)
                 .background(Color.white)
@@ -21,10 +26,3 @@ struct InfoButton: View {
         }
     }
 }
-
-struct InfoButton_Previews: PreviewProvider {
-    static var previews: some View {
-        InfoButton()
-    }
-}
-  

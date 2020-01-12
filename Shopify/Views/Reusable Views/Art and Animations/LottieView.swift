@@ -9,6 +9,8 @@
 import SwiftUI
 import Lottie
 
+
+// Converted Lottie File to
 struct LottieView: UIViewRepresentable {
 
     let animationView = Lottie.AnimationView()

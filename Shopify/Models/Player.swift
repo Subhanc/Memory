@@ -17,6 +17,6 @@ class Player: ObservableObject {
     // The current match pairs achieved in the current game
     @Published var currentMatches: Int = 0
 
-    // The acces token to access the Shopify API
+    // The access token to access the Shopify API
     private static let accessToken: String = "c32313df0d0ef512ca64d5b336a0d7c6"
 }

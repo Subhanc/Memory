@@ -8,14 +8,16 @@
 
 import SwiftUI
 
-struct PauseButton: View {
+struct PauseButtonView: View {
     
+    /// The model which holds all the game information.
     @EnvironmentObject var game: Game
     
     var body: some View {
         
         Button(action: {
             withAnimation(.easeIn(duration: 0.5)) {
+                // Changes the on/off state when the player presses the button.
                 self.game.isPaused.toggle()
             }
         })  {

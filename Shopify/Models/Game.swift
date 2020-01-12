@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-/// Model of the game that holds all information of the game.
+/// Model that holds all information of the game.
 class Game: ObservableObject {
     
     /// The current player
@@ -139,7 +139,7 @@ class Game: ObservableObject {
     private func handleFailedMove() {
         
         
-        if self.gameMode == .flash {
+        if self.gameMode == .oneShot {
             self.endGame()
         }
         

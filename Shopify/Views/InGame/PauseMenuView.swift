@@ -25,19 +25,19 @@ struct PauseMenuView: View {
                 LogoView(title: "Paused")
                 
                 HStack(spacing: 50) {
-                    MusicButton()
-                    SoundButton()
+                    MusicButtonView()
+                    SoundButtonView()
                 }
                 Button(action: {
                     self.game.isPaused.toggle()
                 }) {
-                    LargeButton(text: "Resume")
+                    LargeButtonView(text: "Resume")
                 }
                 
                 Button(action: {
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
-                    LargeButton(text: "Exit")
+                    LargeButtonView(text: "Exit")
                 }
             }
         }

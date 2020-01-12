@@ -43,7 +43,6 @@ class GameDetails {
         case .easy:
             self.cardsPerMatch = 2
             self.gridSize = (4, 4)
-
             self.numberOfCardPairs = self.gridSize.x*self.gridSize.y/self.cardsPerMatch
         case .medium:
             self.cardsPerMatch = 3

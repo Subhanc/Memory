@@ -30,10 +30,10 @@ struct SelectGameModeView: View {
                     
                     NavigationLink(destination: self.goToDifficulty(), tag: 2, selection: $tag) { EmptyView() }
                     Button(action: {
-                        self.game.gameMode = .accuracy
+                        self.game.gameMode = .regular
                         self.tag = 2
                     }, label: {
-                        LargeButton(text: "Accuracy")
+                        LargeButtonView(text: "Accuracy")
                     })
                     
                     
@@ -43,15 +43,15 @@ struct SelectGameModeView: View {
                         self.game.gameMode = .lowestTime
                         self.tag = 1
                     }, label: {
-                        LargeButton(text: "Lowest Time")
+                        LargeButtonView(text: "Lowest Time")
                     })
                     
                     NavigationLink(destination: self.goToDifficulty(), tag: 3, selection: $tag) { EmptyView() }
                     Button(action: {
-                        self.game.gameMode = .flash
+                        self.game.gameMode = .oneShot
                         self.tag = 2
                     }, label: {
-                        LargeButton(text: "One Shot")
+                        LargeButtonView(text: "One Shot")
                     })
                 }
                 Spacer()

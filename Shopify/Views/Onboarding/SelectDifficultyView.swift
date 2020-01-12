@@ -35,7 +35,7 @@ struct SelectDifficultyView: View {
                         self.game.gameDetails = GameDetails(gameDifficulty: .easy)
                         self.tag = 2
                     }, label: {
-                        LargeButton(text: "Easy")
+                        LargeButtonView(text: "Easy")
                     })
                     
                     NavigationLink(destination: self.goToGame(), tag: 3, selection: $tag) { EmptyView() }
@@ -43,7 +43,7 @@ struct SelectDifficultyView: View {
                         self.game.gameDetails = GameDetails(gameDifficulty: .medium)
                         self.tag = 3
                     }, label: {
-                        LargeButton(text: "Medium")
+                        LargeButtonView(text: "Medium")
                     })
                     
                     NavigationLink(destination: self.goToGame(), tag: 4, selection: $tag) { EmptyView() }
@@ -51,7 +51,7 @@ struct SelectDifficultyView: View {
                         self.game.gameDetails = GameDetails(gameDifficulty: .hard)
                         self.tag = 4
                     }, label: {
-                        LargeButton(text: "Hard")
+                        LargeButtonView(text: "Hard")
                     })
                 }
                 Spacer()
