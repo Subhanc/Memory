@@ -10,42 +10,50 @@ import SwiftUI
 
 struct GameOverView: View {
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     @EnvironmentObject var game: Game
     
+    var onPlayAgainCompletion: () -> Void
+    
     var body: some View {
-        
         ZStack {
-            Color.init("ShopifyBlue")
+            Color.init("ShopifyGreen")
                 .edgesIgnoringSafeArea(.all)
             
             ParrallaxFallingObjectsAnimation()
-        
-            VStack(spacing: 50) {
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack(alignment: .center, spacing: 50) {
                 
-                VStack(spacing: -10) {
-                    VStack {
+                VStack() {
+                    
+                    Text(game.gameMode.toString())
+                        .font(.system(size: 52))
+                        .fontWeight(.heavy)
+                        .foregroundColor(.white)
+                    
+                    
+                    ZStack {
                         LottieView(fileName: "Trophy")
                     }
                     .frame(width: 350, height: 200)
                     
                     Text("Game Over!")
-                       .font(.largeTitle)
-                       .fontWeight(.heavy)
-                       .foregroundColor(.white)
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
+                        .foregroundColor(.white)
+                    
+                    if game.gameMode == .flash {
+                        Text(game.player.currentMatches == game.gameDetails.numberOfCardPairs ? "You Win!" : "You Lose!")
+                            .font(.largeTitle)
+                            .fontWeight(.heavy)
+                            .foregroundColor(.white)
+                    }
                 }
                 
                 VStack(alignment: .leading) {
-                    Text("Your Score: \(game.player.currentScore)")
-                        .font(.title)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.white)
-                    
-                    Text("High Score: ---")
-                        .font(.title)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.white)
-                    
-                    Text("Mode: \(game.gameMode.toString())")
+                    Text("Number of Matches: \(game.player.currentMatches)")
                         .font(.title)
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
@@ -57,17 +65,16 @@ struct GameOverView: View {
                 }
                 
                 VStack(spacing: 12) {
-                    LargeButton(text: "Play Again")
-                    LargeButton(text: "Main Menu")
+                    Button(action: self.onPlayAgainCompletion, label: {
+                        LargeButton(text: "Play Again")
+                    })
+                    Button(action: {
+                        self.presentationMode.wrappedValue.dismiss()
+                    }, label: {
+                        LargeButton(text: "Main Menu")
+                    })
                 }
             }
         }
-    }
-}
-
-
-struct GameOverView_Previews: PreviewProvider {
-    static var previews: some View {
-        GameOverView()
     }
 }

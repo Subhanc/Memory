@@ -20,6 +20,7 @@ struct CardsView: View {
       
     var body: some View {
          displayCards()
+            .padding([.leading, .trailing], 12)
     }
     
     /**

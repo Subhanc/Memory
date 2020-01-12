@@ -58,4 +58,22 @@ class CardsViewModel: ObservableObject {
             }
         }
     }
+    
+    
+     func showAllCards() {
+        for row in self.cards {
+            for card in row {
+                card.isFlipped = true
+            }
+        }
+        
+       DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
+           for row in self.cards {
+                for card in row {
+                    card.isFlipped = false
+                }
+            }
+          self.objectWillChange.send()
+        }
+    }
 }

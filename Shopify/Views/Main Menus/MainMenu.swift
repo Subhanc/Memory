@@ -11,7 +11,7 @@ import SwiftUI
 
 struct MainMenu: View {
    
-    @State var game: Game = Game(newPlayer: Player(), andGameMode: .accuracy, andGameDetails: .init(gameDifficulty: .veryEasy), andIsGameOver: false)
+    @State var game: Game = Game(newPlayer: Player(), andGameMode: .accuracy, andGameDetails: .init(gameDifficulty: .easy), andIsGameOver: false)
     
     init() {
         UINavigationBar.appearance().tintColor = .black

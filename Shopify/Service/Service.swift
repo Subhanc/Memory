@@ -11,13 +11,12 @@ import Alamofire
 import SwiftyJSON
 
 /**
-
+ 
  This file handles all server requests that communicate with the backend endpoints.
-
-- Author: Subhan Chaudhry
-- Date:
-*/
-
+ 
+ - Author: Subhan Chaudhry
+ - Date:
+ */
 
 class Service {
     
@@ -35,12 +34,12 @@ class Service {
     
     /** Performs a GET requests from the Shopify API.
      
-        - Returns: Array of Card objects wrapped in a Result type. Result type is from the Swifty JSON library
+     - Returns: Array of Card objects wrapped in a Result type. Result type is from the Swifty JSON library
      
      */
     public func getCardData(completion: @escaping (Result<[Card]>) -> Void) {
         print("Getting data from page: \(Service.pageNumber)")
-    
+        
         // Parameters being set to perform the GET request
         let parameters: Parameters = [
             "access_token": Service.ACCESS_TOKEN,
@@ -48,7 +47,7 @@ class Service {
         ]
         // Defaults to .get
         let request = Alamofire.request(Service.API_URL, parameters: parameters)
-
+        
         request.responseJSON { response in
             DispatchQueue.main.async {
                 if let value = response.result.value {

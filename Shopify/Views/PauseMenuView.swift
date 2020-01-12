@@ -10,6 +10,8 @@ import SwiftUI
 
 struct PauseMenuView: View {
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     @EnvironmentObject var game: Game
     
     var body: some View {
@@ -33,7 +35,7 @@ struct PauseMenuView: View {
                 }
                 
                 Button(action: {
-                    self.game.isPaused.toggle()
+                    self.presentationMode.wrappedValue.dismiss()
                 }) {
                     LargeButton(text: "Exit")
                 }

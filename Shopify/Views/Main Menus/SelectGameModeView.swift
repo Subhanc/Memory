@@ -23,8 +23,8 @@ struct SelectGameModeView: View {
                 ParrallaxFallingObjectsAnimation()
                     .edgesIgnoringSafeArea(.all)
             }
-            VStack(spacing: 75) {
-                LogoView(title: "Select Game Mode")
+            VStack(spacing: 40) {
+                LogoView(title: "Select Game")
                 
                 VStack(spacing: 8) {
                     

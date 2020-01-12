@@ -15,9 +15,10 @@ struct MenuBar: View {
     
     @EnvironmentObject var game: Game
     
+    var onRefreshCompletion: () -> Void
+    
     var body: some View {
-        
-        HStack {
+        ZStack {
             VStack {
                 HStack {
                     PauseButton()
@@ -26,15 +27,16 @@ struct MenuBar: View {
                 }.offset(x: 10)
                 Spacer()
             }
-        
+            
             VStack {
                 HStack(spacing: 12) {
                     Spacer()
-                    RestartButton(cardsViewModel: self.cardsViewModel)
+                    RestartButton(cardsViewModel: self.cardsViewModel, onRefreshCompletion: self.onRefreshCompletion)
                 }.offset(x: -10)
                 Spacer()
             }
+            Spacer()
         }
     }
+    
 }
-

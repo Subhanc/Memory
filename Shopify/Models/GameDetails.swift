@@ -40,13 +40,9 @@ class GameDetails {
         self.difficulty = difficulty
         
         switch difficulty {
-        case .veryEasy:
-            self.cardsPerMatch = 2
-            self.gridSize = (4, 3)
-            self.numberOfCardPairs = self.gridSize.x*self.gridSize.y/self.cardsPerMatch
         case .easy:
             self.cardsPerMatch = 2
-            self.gridSize = (5, 4)
+            self.gridSize = (4, 4)
 
             self.numberOfCardPairs = self.gridSize.x*self.gridSize.y/self.cardsPerMatch
         case .medium:

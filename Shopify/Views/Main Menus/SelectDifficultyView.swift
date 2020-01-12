@@ -24,19 +24,11 @@ struct SelectDifficultyView: View {
                 .edgesIgnoringSafeArea(.all)
             }
             Spacer()
-            VStack() {
+            VStack(spacing: 40) {
                 
                 LogoView(title: "Select Difficulty")
                     .font(.body)
                 VStack(spacing: 8) {
-                   
-                    NavigationLink(destination: self.goToGame(), tag: 1, selection: $tag) { EmptyView() }
-                    Button(action: {
-                        self.game.gameDetails = GameDetails(gameDifficulty: .veryEasy)
-                        self.tag = 1
-                    }, label: {
-                        LargeButton(text: "Very Easy")
-                    })
                     
                     NavigationLink(destination: self.goToGame(), tag: 2, selection: $tag) { EmptyView() }
                     Button(action: {

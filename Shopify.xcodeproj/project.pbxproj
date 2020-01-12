@@ -12,6 +12,7 @@
 		0D0184C323CA7CDF00AEF93D /* ScoreAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0184C223CA7CDF00AEF93D /* ScoreAnimationView.swift */; };
 		0D0184C523CA822F00AEF93D /* celebrating-stars.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D0184C423CA822E00AEF93D /* celebrating-stars.json */; };
 		0D0184C723CA833600AEF93D /* gem-collect-sparkle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D0184C623CA833600AEF93D /* gem-collect-sparkle.mp3 */; };
+		0D0184C923CA979C00AEF93D /* Trophy.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D0184C823CA979C00AEF93D /* Trophy.json */; };
 		0D11F10823C5260900AC815B /* ParticlesEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D11F10723C5260900AC815B /* ParticlesEmitter.swift */; };
 		0D727FC823A867B400AF61B3 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D727FC723A867B400AF61B3 /* CardsView.swift */; };
 		0D8B1A7223933E1200D71943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A7123933E1200D71943 /* AppDelegate.swift */; };
@@ -28,7 +29,6 @@
 		0D8B1A9723933F6A00D71943 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A9623933F6A00D71943 /* CardView.swift */; };
 		0D8B1A992393445900D71943 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A982393445900D71943 /* CardsViewModel.swift */; };
 		0D8B1A9B23943FBA00D71943 /* Array+Chunks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B1A9A23943FBA00D71943 /* Array+Chunks.swift */; };
-		0DA7CF0223B01626004E8E11 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF0123B01626004E8E11 /* GameManager.swift */; };
 		0DA7CF0423B1283E004E8E11 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF0323B1283E004E8E11 /* Player.swift */; };
 		0DA7CF0623B13860004E8E11 /* GameDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF0523B13860004E8E11 /* GameDetails.swift */; };
 		0DA7CF0823B2C690004E8E11 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7CF0723B2C68F004E8E11 /* Game.swift */; };
@@ -44,7 +44,6 @@
 		0DB3971A23C64F290081DB54 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3971923C64F290081DB54 /* GameOverView.swift */; };
 		0DB3971D23C651DD0081DB54 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0DB3971C23C651DD0081DB54 /* Lottie */; };
 		0DB3971F23C654860081DB54 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3971E23C654860081DB54 /* LottieView.swift */; };
-		0DB3972123C659200081DB54 /* Trophy.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3972023C659200081DB54 /* Trophy.json */; };
 		0DE3860E23B6B5E0000FDD7B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3860D23B6B5E0000FDD7B /* Enums.swift */; };
 		0DE3861323B94C7D000FDD7B /* PauseMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3861223B94C7D000FDD7B /* PauseMenuView.swift */; };
 		0DE3861723B95607000FDD7B /* ScoreLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3861623B95607000FDD7B /* ScoreLabelView.swift */; };
@@ -60,6 +59,7 @@
 		0D0184C223CA7CDF00AEF93D /* ScoreAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreAnimationView.swift; sourceTree = "<group>"; };
 		0D0184C423CA822E00AEF93D /* celebrating-stars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "celebrating-stars.json"; sourceTree = "<group>"; };
 		0D0184C623CA833600AEF93D /* gem-collect-sparkle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "gem-collect-sparkle.mp3"; sourceTree = "<group>"; };
+		0D0184C823CA979C00AEF93D /* Trophy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Trophy.json; sourceTree = "<group>"; };
 		0D11F10723C5260900AC815B /* ParticlesEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlesEmitter.swift; sourceTree = "<group>"; };
 		0D727FC723A867B400AF61B3 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
 		0D8B1A6E23933E1200D71943 /* Shopify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopify.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,7 +76,6 @@
 		0D8B1A9623933F6A00D71943 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		0D8B1A982393445900D71943 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
 		0D8B1A9A23943FBA00D71943 /* Array+Chunks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Chunks.swift"; sourceTree = "<group>"; };
-		0DA7CF0123B01626004E8E11 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		0DA7CF0323B1283E004E8E11 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		0DA7CF0523B13860004E8E11 /* GameDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetails.swift; sourceTree = "<group>"; };
 		0DA7CF0723B2C68F004E8E11 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
@@ -91,7 +90,6 @@
 		0DB0C37223C52D92001D4DE6 /* ParrallaxFallingObjectsAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParrallaxFallingObjectsAnimation.swift; sourceTree = "<group>"; };
 		0DB3971923C64F290081DB54 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		0DB3971E23C654860081DB54 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
-		0DB3972023C659200081DB54 /* Trophy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Trophy.json; sourceTree = "<group>"; };
 		0DE3860D23B6B5E0000FDD7B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		0DE3861223B94C7D000FDD7B /* PauseMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseMenuView.swift; sourceTree = "<group>"; };
 		0DE3861623B95607000FDD7B /* ScoreLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreLabelView.swift; sourceTree = "<group>"; };
@@ -208,11 +206,11 @@
 		0D8B1A8823933E6D00D71943 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0DA9D40B23BA9ACC0058291B /* SoundManager.swift */,
 				0D8B1A8A23933E9A00D71943 /* Card.swift */,
 				0DA7CF0323B1283E004E8E11 /* Player.swift */,
 				0DA7CF0723B2C68F004E8E11 /* Game.swift */,
 				0DA7CF0523B13860004E8E11 /* GameDetails.swift */,
-				0DA7CF0123B01626004E8E11 /* GameManager.swift */,
 				0DE3860D23B6B5E0000FDD7B /* Enums.swift */,
 			);
 			path = Models;
@@ -262,9 +260,8 @@
 			children = (
 				0D0184C423CA822E00AEF93D /* celebrating-stars.json */,
 				0D0184C623CA833600AEF93D /* gem-collect-sparkle.mp3 */,
-				0DB3972023C659200081DB54 /* Trophy.json */,
+				0D0184C823CA979C00AEF93D /* Trophy.json */,
 				0DF808D523C285B6005FBD21 /* Card-flip-sound-effect.mp3 */,
-				0DA9D40B23BA9ACC0058291B /* SoundManager.swift */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -337,12 +334,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DB3972123C659200081DB54 /* Trophy.json in Resources */,
 				0D0184C523CA822F00AEF93D /* celebrating-stars.json in Resources */,
 				0D8B1A7E23933E1400D71943 /* LaunchScreen.storyboard in Resources */,
 				0D8B1A7B23933E1400D71943 /* Preview Assets.xcassets in Resources */,
 				0DF808D623C285B6005FBD21 /* Card-flip-sound-effect.mp3 in Resources */,
 				0D0184C723CA833600AEF93D /* gem-collect-sparkle.mp3 in Resources */,
+				0D0184C923CA979C00AEF93D /* Trophy.json in Resources */,
 				0D8B1A7823933E1400D71943 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,7 +355,6 @@
 				0D8B1A9723933F6A00D71943 /* CardView.swift in Sources */,
 				0D11F10823C5260900AC815B /* ParticlesEmitter.swift in Sources */,
 				0D8B1A9323933F1700D71943 /* UIImage+UIImageDownloader.swift in Sources */,
-				0DA7CF0223B01626004E8E11 /* GameManager.swift in Sources */,
 				0DB0C37323C52D92001D4DE6 /* ParrallaxFallingObjectsAnimation.swift in Sources */,
 				0DA7CF0423B1283E004E8E11 /* Player.swift in Sources */,
 				0DA7CF0623B13860004E8E11 /* GameDetails.swift in Sources */,

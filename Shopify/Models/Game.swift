@@ -138,6 +138,11 @@ class Game: ObservableObject {
     /// Handles a failed move by the player. Flips over the cards the player flipped in their most recent move.
     private func handleFailedMove() {
         
+        
+        if self.gameMode == .flash {
+            self.endGame()
+        }
+        
         // Flips over all cards that exist in 'currentFlippedCards'.
         for card in currentFlippedCards {
             // Sets flip state to flipped.
@@ -150,5 +155,11 @@ class Game: ObservableObject {
     /// Calling this  will reset  'currentFlippedCards' to an empty array.
     private func resetCurrentFlippedCards() {
         self.currentFlippedCards = [] // Reset Cards
+    }
+    
+    func resetGameStats() {
+        self.player.currentScore = 0
+        self.player.currentMatches = 0
+        self.resetCurrentFlippedCards()
     }
 }

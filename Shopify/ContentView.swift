@@ -20,23 +20,28 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             
-            ActivityIndicator(isAnimating: $isGameLoading, style: .large)
-          
-            if cardsViewModel != nil {
-                MenuBar(cardsViewModel: cardsViewModel!)
-            }
-           
-            if !isGameLoading {
-                CardsView(cardsViewModel: self.cardsViewModel!)
-                    .transition(.scale(scale: 0.0, anchor: .bottomTrailing))
-            }
-            
-            if game.isGameOver {
-                GameOverView()
-            }
-            
-            if !self.game.isPaused {
-                PauseMenuView()
+            if !game.isGameOver {
+                ActivityIndicator(isAnimating: $isGameLoading, style: .large)
+              
+                if cardsViewModel != nil {
+                    MenuBar(cardsViewModel: cardsViewModel!, onRefreshCompletion: {
+                        self.refresh()
+                    })
+                }
+               
+                if !isGameLoading {
+                    CardsView(cardsViewModel: self.cardsViewModel!)
+                        .transition(.scale(scale: 0.0, anchor: .bottomTrailing))
+                }
+                
+                if !self.game.isPaused {
+                    PauseMenuView()
+                }
+            } else {
+                GameOverView {
+                    self.refresh()
+                    self.game.isGameOver = false
+                }
             }
         }
         .navigationBarBackButtonHidden(true)
@@ -45,15 +50,25 @@ struct ContentView: View {
         })
     }
     
-    func fetchCards() {
+    private func fetchCards() {
         self.cardsViewModel = CardsViewModel(withGame: self.game)
         if let cardsViewModel = self.cardsViewModel {
             cardsViewModel.loadCards {
                 withAnimation {
                     self.isGameLoading = false
                 }
+                
+                if self.game.gameMode == .flash {
+                  self.cardsViewModel?.showAllCards()
+               }
             }
         }
+    }
+    
+    private func refresh() {
+        self.isGameLoading = true
+        self.game.resetGameStats()
+        self.fetchCards()
     }
 }
 

@@ -12,10 +12,10 @@ struct RestartButton: View {
     
     @ObservedObject var cardsViewModel: CardsViewModel
     
+    var onRefreshCompletion: (() -> Void)
+    
     var body: some View {
-        Button(action: {
-            self.cardsViewModel.loadCards()
-        })  {
+        Button(action: self.onRefreshCompletion)  {
             Image(systemName: "arrow.counterclockwise")
                 .foregroundColor(.black)
                 .frame(width: 60, height: 60)

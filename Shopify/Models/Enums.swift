@@ -8,7 +8,6 @@
 
 /// Difficulty modes which the user can select from.
 enum Difficulty {
-    case veryEasy
     case easy
     case medium
     case hard
@@ -16,8 +15,6 @@ enum Difficulty {
     
     func toString() -> String {
         switch self {
-        case .veryEasy:
-            return "Very Easy"
         case .easy:
             return "Easy"
         case .medium:
