@@ -1,21 +1,13 @@
 //
 //  ParticlesEmitter.swift
-//  Shopify
-//
-//  Created by Subhan Chaudhry on 2020-01-07.
-//  Copyright © 2020 Subhan Chaudhry. All rights reserved.
-//
-
-import Foundation
-//
-//  ParticlesEmitter.swift
 //  SwiftUI-Particles
 //
-//  NEED TO REFERENCE THIS CLASS AUTHOR
+//  Created by Arthur Guibert on 28/10/2019.
 
-import SwiftUI
+//  Reference: https://github.com/ArthurGuibert/SwiftUI-Particles
+
 import UIKit
-
+import SwiftUI
 
 /// Class that wraps the CAEmitterCell in a class compatible with SwiftUI
 public struct ParticlesEmitter: UIViewRepresentable {

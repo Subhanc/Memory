@@ -1,7 +1,8 @@
 //
 //  StopWatch.swift
 //  StopWatch
-// https://gist.github.com/programmingwithswift/0303decba01bba1189e66d4943dda4a3/archive/6c20430caa45865d53b99eb5a1201dc4cccca98f.zip
+//  Reference: https://gist.github.com/programmingwithswift/
+
 import Combine
 import Foundation
 import SwiftUI
