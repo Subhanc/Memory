@@ -180,7 +180,7 @@
 			children = (
 				0DF808D423C285A9005FBD21 /* Audio */,
 				0D3E918F23CBD85D0094DCD8 /* Lottie-Animations */,
-				0DB3972223C811FF0081DB54 /* Packages */,
+				0DB3972223C811FF0081DB54 /* Third-Party */,
 				0D8B1A8823933E6D00D71943 /* Models */,
 				0D8B1A8723933E6B00D71943 /* Views */,
 				0D8B1A8923933E8100D71943 /* ViewModels */,
@@ -254,13 +254,13 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		0DB3972223C811FF0081DB54 /* Packages */ = {
+		0DB3972223C811FF0081DB54 /* Third-Party */ = {
 			isa = PBXGroup;
 			children = (
 				0DA9D40323B97C9E0058291B /* StopWatch.swift */,
 				0D11F10723C5260900AC815B /* ParticlesEmitter.swift */,
 			);
-			path = Packages;
+			path = "Third-Party";
 			sourceTree = "<group>";
 		};
 		0DF808D023C16FCA005FBD21 /* Onboarding */ = {
