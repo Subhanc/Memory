@@ -1,4 +1,4 @@
-#  Shopify: iOS Internship Summer 2020 Challenge Submission.
+#  Shopify - iOS Internship Summer 2020 Challenge Submission.
 ## By: Subhan Chaudhry 
 
 <p float="left" align="center">
@@ -35,20 +35,51 @@ To clone this project in Xcode, click "Clone or download" and select "Open in Xc
 
 ## Game Modes 
 
-### Regular 
+The game consists of three game modes in which the player is able to choose from: 
 
-### Lowest Time 
+### Regular
+
+Achieve all the matches on the cards field. Play at your own pace! 
+
+### Lowest Time
+
+Achieve all the matches on the cards field in the lowest amount of time! 
 
 ### One Shot 
+When starting your game, all cards on the field will be face-up for 7 seconds. Use this time wisley to memorize the card field because they will be flipped back over! You have only one shot on matching all the cards pairs on the cards field, if you get a pair wrong, you lose! 
 
 ## Game Difficulties
 
 ### Easy
 
+* 2 cards per card pair. 
+* Grid size 4x4 
+
 ### Medium 
+* 3 cards per card pair. 
+* Grid size: 6x5 
 
 ### Hard
 
+* 4 cards per card pair. 
+* Grid size: 6x6 
+
+
+## Extra features
+
+### Restart your game.
+
+* Insert Picture
+
+
+### Music and Sound! 
+
+* Turn your volume up as their is sound 
+
+
+### Pause the game
+
+* Need a break? Feel free to pause the game
 
 
 ```
