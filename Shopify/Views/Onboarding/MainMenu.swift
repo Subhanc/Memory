@@ -7,13 +7,15 @@
 //
 
 import SwiftUI
-// Lets do the play screen!!
 
+/// Returns a view of the Main Screen of the game, the first view that shows when the game is launched.
 struct MainMenu: View {
    
+    /// Creates a temporality game object that is overwritten with real values through player preferance selection.
     @State var game: Game = Game(newPlayer: Player(), andGameMode: .regular, andGameDetails: .init(gameDifficulty: .easy), andIsGameOver: false)
     
     init() {
+        // Sets the back prompt labels to black.
         UINavigationBar.appearance().tintColor = .black
     }
     
@@ -23,27 +25,29 @@ struct MainMenu: View {
     
         NavigationView {
             ZStack {
-                // Background
                 ZStack {
+                    // Sets background color to blue.
                     Color.init("ShopifyBlue")
                         .edgesIgnoringSafeArea(.all)
                     }
-                    ParrallaxFallingObjectsAnimation()
+                    CardsFallingAnimationView()
                         .edgesIgnoringSafeArea(.all)
                 
                 VStack() {
-                    // LOGO
+                    
+                    /// Displays branding logo.
                     LogoView(title: "Memory")
                     
                     VStack(spacing: 40) {
-                        
+                        // Navigation Link to to the SelectGameMode screen when user presses the 'play' button.
                         NavigationLink(destination: SelectGameModeView(game: $game), isActive: $presentMe) { EmptyView() }
                         Button(action: {
                             self.presentMe.toggle()
                         }, label: {
-                            LargeButtonView(text: "Play")
+                            LargeButtonView(title: "Play")
                         })
                         
+                        // Sound and Music buttons.
                         HStack(alignment: .center, spacing: 35) {
                             SoundButtonView()
                             MusicButtonView()
@@ -55,7 +59,6 @@ struct MainMenu: View {
                                 .opacity(0.5)
                         }
                     }
-                    
                     Spacer()
                 }
             }

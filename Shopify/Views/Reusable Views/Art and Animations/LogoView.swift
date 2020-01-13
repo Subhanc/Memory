@@ -8,31 +8,17 @@
 
 import SwiftUI
 
+/// Returns a view of the branding logo the game given a title to be displayed under it.
 struct LogoView: View {
+   
+    /// The title to displayed under the logo.
     var title: String
+    
     var body: some View {
         VStack {
-            HStack(spacing: -35) {
-                
-                CardForLogo(imageName: "GreenProduct")
-                    .shadow(color: .black, radius: 4, x: -2, y: 4)
-                    .rotationEffect(.init(degrees: -35))
-                
-                CardForLogo(imageName: "OrangeProduct")
-                    .shadow(color: .black, radius: 4, x: -1, y: 2)
-                    .offset(y: -25)
-                    .rotationEffect(.init(degrees: -10))
-                
-                CardForLogo(imageName: "YellowProduct")
-                    .shadow(color: .black, radius: 4, x: -2, y: 2)
-                    .offset(y: -25)
-                    .rotationEffect(.init(degrees: 10))
-                
-                CardForLogo(imageName: "RedProduct")
-                    .shadow(color: .black, radius: 4, x: -2, y: 4)
-                    .rotationEffect(.init(degrees: 35))
-            }
+            makeLogoImage()
             
+            // The label that is displayed under the branding logo.
             Text(title)
                 .fixedSize(horizontal: false, vertical: true)
                 .multilineTextAlignment(.center)
@@ -42,8 +28,32 @@ struct LogoView: View {
                 .offset(y: -5)
         }
     }
+    
+    /// Returns a view of the Logo. .
+    func makeLogoImage() -> some View {
+        HStack(spacing: -35) {
+            CardForLogo(imageName: "GreenProduct")
+                .shadow(color: .black, radius: 4, x: -2, y: 4)
+                .rotationEffect(.init(degrees: -35))
+            
+            CardForLogo(imageName: "OrangeProduct")
+                .shadow(color: .black, radius: 4, x: -1, y: 2)
+                .offset(y: -25)
+                .rotationEffect(.init(degrees: -10))
+            
+            CardForLogo(imageName: "YellowProduct")
+                .shadow(color: .black, radius: 4, x: -2, y: 2)
+                .offset(y: -25)
+                .rotationEffect(.init(degrees: 10))
+            
+            CardForLogo(imageName: "RedProduct")
+                .shadow(color: .black, radius: 4, x: -2, y: 4)
+                .rotationEffect(.init(degrees: 35))
+        }
+    }
 }
 
+/// Singular card that is reused to make the logo.
 struct CardForLogo: View {
     
     let imageName: String

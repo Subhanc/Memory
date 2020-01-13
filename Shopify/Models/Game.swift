@@ -157,6 +157,7 @@ class Game: ObservableObject {
         self.currentFlippedCards = [] // Reset Cards
     }
     
+    /// Calling this will reset all player stats to zero and empty the 'currentFlippedCards' to an empty array.
     func resetGameStats() {
         self.player.currentScore = 0
         self.player.currentMatches = 0

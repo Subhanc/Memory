@@ -6,7 +6,6 @@
 //  Copyright © 2019 Subhan Chaudhry. All rights reserved.
 //
 
-
 import UIKit
 
 extension UIImage {

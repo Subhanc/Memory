@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// Model that holds the game    of a created game.
+/// Model that holds the game details of a game created by the player.
 class GameDetails {
     
     /// The difficulty mode selected by the user.

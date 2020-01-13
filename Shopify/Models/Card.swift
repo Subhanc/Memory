@@ -11,7 +11,8 @@ import SwiftyJSON
 
 /// Model of a single playing card
 class Card: Identifiable, Equatable {
-   
+    
+    // The id of the card.
     var id: Int
     
     /// Holds the properties and information of a single playing card.

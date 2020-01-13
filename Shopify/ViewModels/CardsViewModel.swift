@@ -9,6 +9,7 @@
 import SwiftUI
 import Combine
 
+/// View Model which holds all information of the cards field, and loading the data from the backend.
 class CardsViewModel: ObservableObject {
     
     /// The cards to be used to in the game
@@ -52,7 +53,7 @@ class CardsViewModel: ObservableObject {
                 let chunkedCards = subset.shuffled().chunk(into: self.game.gameDetails.gridSize.x)
                 
                 self.cards = Array(chunkedCards[..<((self.game.gameDetails.numberOfCardPairs * self.game.gameDetails.cardsPerMatch) / self.game.gameDetails.gridSize.x)])
-             
+                
                 if let completion = completion {
                     completion()
                 }
@@ -62,7 +63,7 @@ class CardsViewModel: ObservableObject {
     
     /// Flips over all cards on the playing field displaying the face of each caard for 7 seconds then flips the cards back over.
     func showAllCards() {
-       
+        
         for row in self.cards {
             for card in row {
                 card.isFlipped = true

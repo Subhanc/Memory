@@ -8,32 +8,33 @@
 
 import SwiftUI
 
+
+/// The view to be dispalyed when the game has ended. .
 struct GameOverView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
+    /// The model that holds all information of the game.
     @EnvironmentObject var game: Game
     
     var onPlayAgainCompletion: () -> Void
     
     var body: some View {
         ZStack {
+            // Sets the background colour to green.
             Color.init("ShopifyGreen")
                 .edgesIgnoringSafeArea(.all)
             
-            ParrallaxFallingObjectsAnimation()
+            // Card falling animation.
+            CardsFallingAnimationView()
                 .edgesIgnoringSafeArea(.all)
             
             VStack(alignment: .center, spacing: 50) {
-                
                 VStack() {
-                    
                     Text(game.gameMode.toString())
                         .font(.system(size: 52))
                         .fontWeight(.heavy)
                         .foregroundColor(.white)
-                    
-                    
                     ZStack {
                         LottieView(fileName: "trophy")
                     }
@@ -53,7 +54,7 @@ struct GameOverView: View {
                 }
                 
                 VStack(alignment: .leading) {
-                    Text("Number of Matches: \(game.player.currentMatches)")
+                    Text("Matches Made: \(game.player.currentMatches)")
                         .font(.title)
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
@@ -66,12 +67,12 @@ struct GameOverView: View {
                 
                 VStack(spacing: 12) {
                     Button(action: self.onPlayAgainCompletion, label: {
-                        LargeButtonView(text: "Play Again")
+                        LargeButtonView(title: "Play Again")
                     })
                     Button(action: {
                         self.presentationMode.wrappedValue.dismiss()
                     }, label: {
-                        LargeButtonView(text: "Main Menu")
+                        LargeButtonView(title: "Main Menu")
                     })
                 }
             }

@@ -8,13 +8,17 @@
 
 import SwiftUI
 
+
+/// Returns a button that toggles the on/off state of music audio.
 struct MusicButtonView: View {
     
+    /// The sound manager which includes all information about the audio..
     @EnvironmentObject var soundManager: SoundManager
     
     var body: some View {
         
         Button(action: {
+            // Toggles on/off state when player presses button.
             self.soundManager.isMusicOn.toggle()
         }) {
             ZStack {
@@ -26,6 +30,7 @@ struct MusicButtonView: View {
                     .cornerRadius(30)
                     .shadow(color: Color("buttonShadow"), radius: 6, x: 4, y: 4)
                 
+                 // Adds a crossed out line view if the music audio is turned off.
                 if !soundManager.isMusicOn {
                     self.crossedOutLine()
                 }

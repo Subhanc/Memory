@@ -8,16 +8,18 @@
 
 import SwiftUI
 
+/// The  menu to be dispalyed when the game state is paused. Includes a Reuume Button, Exit Button and Sound and Music On/Off buttons.
 struct PauseMenuView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
+    /// The model that holds all information of the game.
     @EnvironmentObject var game: Game
     
     var body: some View {
         
         ZStack {
-            ParrallaxFallingObjectsAnimation()
+            CardsFallingAnimationView()
                 .edgesIgnoringSafeArea(.all)
             background()
             VStack(spacing: 15)  {
@@ -31,19 +33,20 @@ struct PauseMenuView: View {
                 Button(action: {
                     self.game.isPaused.toggle()
                 }) {
-                    LargeButtonView(text: "Resume")
+                    LargeButtonView(title: "Resume")
                 }
                 
                 Button(action: {
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
-                    LargeButtonView(text: "Exit")
+                    LargeButtonView(title: "Exit")
                 }
             }
         }
     }
     
-    func background() -> some View {
+    /// Returns a background frame for the pause menu.
+    private func background() -> some View {
         Rectangle()
             .foregroundColor(.init("ShopifyBlue"))
             .frame(width: 350, height: 600)

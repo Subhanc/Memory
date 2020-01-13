@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+/// Returns a button that toggles the on/off state of the pause state of the game.
 struct PauseButtonView: View {
     
     /// The model which holds all the game information.
@@ -17,7 +18,7 @@ struct PauseButtonView: View {
         
         Button(action: {
             withAnimation(.easeIn(duration: 0.5)) {
-                // Changes the on/off state when the player presses the button.
+                // Toggles the pause to on/off when the player presses the button.
                 self.game.isPaused.toggle()
             }
         })  {

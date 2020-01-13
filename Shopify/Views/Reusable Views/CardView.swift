@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+/// View of a single playing card.
 struct CardView: View {
     
     /// A single playing card.

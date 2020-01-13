@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// Model of a player
+/// The model of the player
 class Player: ObservableObject {
     
     // The current score achieved in the current game

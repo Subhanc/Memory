@@ -8,13 +8,14 @@
 
 import SwiftUI
 
+/// Returns a Large Button given a title.
 struct LargeButtonView: View {
     
     /// Title  to be displayed on the button.
-    var text: String
+    var title: String
     
     var body: some View {
-        Text(text)
+        Text(title)
             .foregroundColor(.black)
             .font(.title)
             .fontWeight(.bold)
@@ -27,6 +28,6 @@ struct LargeButtonView: View {
 
 struct LargeButton_Previews: PreviewProvider {
     static var previews: some View {
-        LargeButtonView(text: "Button")
+        LargeButtonView(title: "Button")
     }
 }

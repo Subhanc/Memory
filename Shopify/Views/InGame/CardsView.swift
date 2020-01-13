@@ -8,12 +8,11 @@
 
 import SwiftUI
 
+/// View that displays the field of cards.
 struct CardsView: View {
     
     /// Model of the cardsView that holds information of the playing cards.
     @ObservedObject var cardsViewModel: CardsViewModel
-    
-    @EnvironmentObject var soundManager: SoundManager
     
     /// Model of the game that holds all information of the game.
     @EnvironmentObject var game: Game
@@ -56,9 +55,6 @@ struct CardsView: View {
             .onTapGesture {
                 // Checks if the card isn't already flipped.
                 if !self.cardsViewModel.cards[i][j].isFlipped {
-                    //                if self.soundManager.isSoundEffectsOn {
-                    //                    self.soundManager.playCardFlipSoundEffect()
-                    //                }
                     withAnimation(.easeOut(duration: 0.2)) {
                         // Flips the card
                         self.cardsViewModel.cards[i][j].isFlipped.toggle()
@@ -68,12 +64,6 @@ struct CardsView: View {
                             withAnimation(.easeOut(duration: 0.2)) {
                                 // Handles the game state when the user selects the card.
                                 let isValidMove = self.game.handleSelectedCard(withCard: &self.cardsViewModel.cards[i][j])
-                                
-                                if !isValidMove {
-                                    //                                if self.soundManager.isSoundEffectsOn {
-                                    //                                         self.soundManager.playCardFlipSoundEffect()
-                                    //                                }
-                                }
                             }
                         }
                     }
@@ -81,3 +71,4 @@ struct CardsView: View {
         }
     }
 }
+

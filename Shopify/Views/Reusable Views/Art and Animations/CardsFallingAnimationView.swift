@@ -8,8 +8,8 @@
 
 import SwiftUI
 
-/// This returns a CAEmitterLayer in  the form of a SwiftUI View that creates a  parrallax falling animation of card objects. .
-struct ParrallaxFallingObjectsAnimation: View {
+/// This returns a convereted CAEmitterLayer to SwiftUI View of a parrallax animation of falling card objects.
+struct CardsFallingAnimationView: View {
     
     /// The images that will be used in the animation.
     var images:[UIImage] = [Images.orangeAlien, Images.greenAlien, Images.yellowAlien, Images.redAlien]
@@ -74,6 +74,6 @@ enum Images {
 
 struct Animation_Previews: PreviewProvider {
     static var previews: some View {
-        ParrallaxFallingObjectsAnimation()
+        CardsFallingAnimationView()
     }
 }

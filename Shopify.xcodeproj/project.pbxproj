@@ -38,7 +38,7 @@
 		0DA9D40C23BA9ACC0058291B /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D40B23BA9ACC0058291B /* SoundManager.swift */; };
 		0DA9D41023BBF5290058291B /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D40F23BBF5290058291B /* MainMenu.swift */; };
 		0DA9D41323BC0CAC0058291B /* SoundButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D41223BC0CAC0058291B /* SoundButtonView.swift */; };
-		0DB0C37323C52D92001D4DE6 /* ParrallaxFallingObjectsAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0C37223C52D92001D4DE6 /* ParrallaxFallingObjectsAnimation.swift */; };
+		0DB0C37323C52D92001D4DE6 /* CardsFallingAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB0C37223C52D92001D4DE6 /* CardsFallingAnimationView.swift */; };
 		0DB3971A23C64F290081DB54 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3971923C64F290081DB54 /* GameOverView.swift */; };
 		0DB3971D23C651DD0081DB54 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0DB3971C23C651DD0081DB54 /* Lottie */; };
 		0DB3971F23C654860081DB54 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3971E23C654860081DB54 /* LottieView.swift */; };
@@ -83,7 +83,7 @@
 		0DA9D40B23BA9ACC0058291B /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		0DA9D40F23BBF5290058291B /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		0DA9D41223BC0CAC0058291B /* SoundButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButtonView.swift; sourceTree = "<group>"; };
-		0DB0C37223C52D92001D4DE6 /* ParrallaxFallingObjectsAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParrallaxFallingObjectsAnimation.swift; sourceTree = "<group>"; };
+		0DB0C37223C52D92001D4DE6 /* CardsFallingAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsFallingAnimationView.swift; sourceTree = "<group>"; };
 		0DB3971923C64F290081DB54 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		0DB3971E23C654860081DB54 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		0DE3860D23B6B5E0000FDD7B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 		0D3E918D23CBD70A0094DCD8 /* Art and Animations */ = {
 			isa = PBXGroup;
 			children = (
-				0DB0C37223C52D92001D4DE6 /* ParrallaxFallingObjectsAnimation.swift */,
+				0DB0C37223C52D92001D4DE6 /* CardsFallingAnimationView.swift */,
 				0DB3971E23C654860081DB54 /* LottieView.swift */,
 				0DFBC2C423BFF1AC006944B2 /* LogoView.swift */,
 			);
@@ -381,7 +381,7 @@
 				0D8B1A9723933F6A00D71943 /* CardView.swift in Sources */,
 				0D11F10823C5260900AC815B /* ParticlesEmitter.swift in Sources */,
 				0D8B1A9323933F1700D71943 /* UIImage+UIImageDownloader.swift in Sources */,
-				0DB0C37323C52D92001D4DE6 /* ParrallaxFallingObjectsAnimation.swift in Sources */,
+				0DB0C37323C52D92001D4DE6 /* CardsFallingAnimationView.swift in Sources */,
 				0DA7CF0423B1283E004E8E11 /* Player.swift in Sources */,
 				0DA7CF0623B13860004E8E11 /* GameDetails.swift in Sources */,
 				0DFBC2C923BFFAAE006944B2 /* SelectDifficultyView.swift in Sources */,

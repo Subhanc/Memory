@@ -8,8 +8,10 @@
 
 import SwiftUI
 
+/// Label that displays the live  scores associated with the current game. Changes display based on game mode.
 struct ScoreLabelView: View {
     
+    /// The model which holds all the game information.
     @EnvironmentObject var game: Game
     
     @State var stopWatch = StopWatch()

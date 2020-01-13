@@ -9,10 +9,13 @@
 import SwiftUI
 import Combine
 
+/// Menu bar that is dispalyed on top of the game view. Includes a Pause Button, Score Label, and a Restart Button
 struct MenuBar: View {
     
+    /// The model which holds all information about the cards field.
     @ObservedObject var cardsViewModel: CardsViewModel
     
+    /// The mode lthat holds all information of the game.
     @EnvironmentObject var game: Game
     
     var onRefreshCompletion: () -> Void

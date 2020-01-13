@@ -10,14 +10,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-/**
- 
- This file handles all server requests that communicate with the backend endpoints.
- 
- - Author: Subhan Chaudhry
- - Date:
- */
-
+/// Model that handles all server requests that communicate with the backend endpoints.
 class Service {
     
     /// Shared singleton, creates a global instance of service.

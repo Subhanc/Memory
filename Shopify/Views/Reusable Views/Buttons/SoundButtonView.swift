@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+/// Returns a button that toggles the on/off state of sound effects audio.
 struct SoundButtonView: View {
     
     /// The sound manager which includes all information about the audio..
@@ -16,7 +17,7 @@ struct SoundButtonView: View {
     var body: some View {
         
         Button(action: {
-            // Changes on/off state when player presses button.
+            // Toggles on/off state when player presses button.
             self.soundManager.isSoundEffectsOn.toggle()
         }) {
             ZStack {

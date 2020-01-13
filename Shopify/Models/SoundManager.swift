@@ -9,7 +9,7 @@
 import Foundation
 import AVFoundation
 
-/// Handles  all audio functionality of the game.
+/// Handles all audio functionality of the game.
 class SoundManager: ObservableObject {
     
     /// The audio player for the card flip sound effect.
@@ -20,6 +20,7 @@ class SoundManager: ObservableObject {
     
     /// Controls the state if music audio is enabled by the user.
     @Published var isMusicOn: Bool = true
+    
     /// Controls the state if sound effects audio is enabled by the user.
     @Published var isSoundEffectsOn: Bool = true
     

@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+/// Returns a button that when pressed restarts the current game.
 struct RestartButtonView: View {
     
     /// The model which holds all information about the cards field.
