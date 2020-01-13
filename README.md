@@ -33,4 +33,22 @@ To clone this project in Xcode, click "Clone or download" and select "Open in Xc
 
 # Features
 
+## Game Modes 
+
+### Regular 
+
+### Lowest Time 
+
+### One Shot 
+
+## Game Difficulties
+
+### Easy
+
+### Medium 
+
+### Hard
+
+
+
 ```
