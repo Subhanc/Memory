@@ -64,37 +64,17 @@ When starting your game, all cards on the field will be face-up for 7 seconds. U
 ## Game Difficulties
 
 
-| Difficulty | Grid Size  | Products Per Match |
-|------------|------------|--------------------|
-| Easy       | 4x4        | 2 Produxts         |
-| Medium     | 6x5        | 3 Products         |
-| Hard       | 6x6        | 3 Products         |
+| Difficulty | Grid Size  | # Products Per Match |
+|------------|------------|----------------------|
+| Easy       | 4x4        | 2 Products           |
+| Medium     | 6x5        | 3 Products           |
+| Hard       | 6x6        | 4 Products           |
 
-### Easy
-
-* Match 2 of the same product to complete match.  
-* Grid size 4x4 
 
 <p float="left">
-    <img src="./Documentation-Folder/EasyMode.PNG" width="200"/>
-</col>
-
-
-### Medium 
-* Match 3 of the same product to complete match. 
-* Grid size: 6x5 
-
-<p float="left">
-    <img src="./Documentation-Folder/MediumMode.PNG" width="200"/>
-</p>
-
-### Hard
-
-* Match 4 of the same product to complete match. 
-* Grid size: 6x6 
-
-<p float="left">
-    <img src="./Documentation-Folder/HardMode.PNG" width="200"/>
+    Easy <img src="./Documentation-Folder/EasyMode.PNG" width="200"/>
+    Medium <img src="./Documentation-Folder/MediumMode.PNG" width="200"/>
+    Hard <img src="./Documentation-Folder/HardMode.PNG" width="200"/>
 </p>
 
 ## Extra features
