@@ -64,10 +64,11 @@ When starting your game, all cards on the field will be face-up for 7 seconds. U
 ## Game Difficulties
 
 
-| Difficulty         | Easy       | Medium     | Hard       |
-|--------------------|------------|------------|------------|
-| Grid Size          | 4x4        | 6x5        | 6x6        |
-| Products Per Match | 2 Products | 3 Products | 4 Products |
+| Difficulty | Grid Size  | Products Per Match |
+|------------|------------|--------------------|
+| Easy       | 4x4        | 2 Produxts         |
+| Medium     | 6x5        | 3 Products         |
+| Hard       | 6x6        | 3 Products         |
 
 ### Easy
 
