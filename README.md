@@ -63,6 +63,7 @@ The game consists of three game modes in which the player is able to choose from
     <img src="./Documentation-Folder/HardMode.PNG" width="200"/>
 </p>
 
+</br>
 ## Game Difficulties
 
 
