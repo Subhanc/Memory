@@ -23,6 +23,18 @@ The project has the following third-party dependecies and uses Swift Packagesfor
   * PartcileEmitter - Converts a swift CAAnimationLayer to be usable in SwifTUI.@ https://github.com/ArthurGuibert/SwiftUI-Particless
   
   
+# File Architecture - MVVM 
+
+* This project is built using Apple's new *SwiftUI* - user interface toolkit that lets us design apps in a *declarative way* and the *Combine Framework* - A declarative Swift API for processing values over time.
+
+This project follows the *Model, View, ViewModel (MVVM)* structural design pattern*
+
+*Services:* 
+*Models:* 
+*ViewModels:* 
+Assets.xcassets: Includes all images and colours used for this app
+  
+  
 # Getting Started
 
 ### System Requirements
