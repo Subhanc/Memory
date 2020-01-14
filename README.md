@@ -3,7 +3,7 @@
 
 <p float="left" align="center">
     <img src="./Documentation-Folder/FirstVideo.gif" width="200"/>
-    <img src="/Documentation-Folder/Loading.gif" width="200"/>
+    <img src="/Documentation-Folder/SecondVideo.gif" width="200"/>
     <img src="./Documentation-Folder/PlayingGame.gif" width="200"/>
     <img src="./Documentation-Folder/GameOver.gif" width="200"/>
 </p>
@@ -103,5 +103,9 @@ Pressed the counter-clockwise arrow to restart your curent game.
 ### Pause the game
 
 * Need a break? Feel free to pause the game
+
+<p float="left">
+    <img src="./Documentation-Folder/PauseScreen.gif" width="200"/>
+</p>
 
 ```
