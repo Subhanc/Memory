@@ -85,13 +85,14 @@ The game consists of three game modes in which the player is able to choose from
 
 Pressed the counter-clockwise arrow to restart your curent game. 
 
-<p>
-    <img src="./Documentation-Folder/restart.gif" width="200"/>
-</p>
 
 ### Music and Sound
 
-* Turn your volume up as their is sound 
+* Make sure your volume is turned on to enhance your game experience!  
+
+<p float="left" align="center">
+    <img src="./Documentation-Folder/test.gif" width="200"/>
+</p>
 
 ### Pause the game
 
