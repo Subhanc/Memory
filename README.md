@@ -69,7 +69,7 @@ When starting your game, all cards on the field will be face-up for 7 seconds. U
 * Grid size 4x4 
 
 <p float="left">
-    <img src="./Documentation-Folder/EasyMode.PNG" width="100"/>
+    <img src="./Documentation-Folder/EasyMode.PNG" width="150"/>
 </p>
 
 
@@ -78,7 +78,7 @@ When starting your game, all cards on the field will be face-up for 7 seconds. U
 * Grid size: 6x5 
 
 <p float="left">
-    <img src="./Documentation-Folder/MediumMode.PNG" width="100"/>
+    <img src="./Documentation-Folder/MediumMode.PNG" width="150"/>
 </p>
 
 ### Hard
@@ -87,7 +87,7 @@ When starting your game, all cards on the field will be face-up for 7 seconds. U
 * Grid size: 6x6 
 
 <p float="left">
-    <img src="./Documentation-Folder/HardMode.PNG" width="100"/>
+    <img src="./Documentation-Folder/HardMode.PNG" width="150"/>
 </p>
 
 ## Extra features
