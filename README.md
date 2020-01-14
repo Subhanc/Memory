@@ -9,7 +9,6 @@ This is my project submission for the Mobile Developer Intern (iOS) - Summer 202
 
 This iOS game is a version of the concentration card game known as Memory. 
 
-
 # Third Party Dependecies
 ## Packages 
 
@@ -17,11 +16,10 @@ The project has the following third-party dependecies and uses Swift Packagesfor
 
 * Alamofire - for HTTP Requests @ https://github.com/Alamofire/Alamofire
 * SwiftyJSON - for parsing data @ https://github.com/SwiftyJSON/SwiftyJSON
-* Lottie - To render animation natively. @ https://github.com/airbnb/lottie-ios
+* Lottie - To render animations natively. @ https://github.com/airbnb/lottie-ios
 
 ## Third Party Files 
   * PartcileEmitter - Converts a swift CAAnimationLayer to be usable in SwifTUI.@ https://github.com/ArthurGuibert/SwiftUI-Particless
-  
   
 # File Architecture - MVVM 
 
@@ -29,11 +27,14 @@ The project has the following third-party dependecies and uses Swift Packagesfor
 
 This project follows the *Model, View, ViewModel (MVVM)* structural design pattern*
 
-**Services:** 
-**Models:**
-**ViewModels:** 
+**Audio**: Includes the .mp3 assests used in the project. 
+**Third-Party**: Includes all third party files used in the project. 
+**Services:** Handles API Related code. Utilizes the Alamofire framework.  
+**Models:**  Includes custom models to be used to parse API results which houses all the data and game functionality,  and sound. 
+**ViewModels:** Includes files that are responsible for exposing the data objects from the model in such a way that objects are easily managed and presented. An example used within the project is the CardsViewModel.
 **Assets.xcassets:** Includes all images and colours used for this app
-  
+**Extensions**: Includes the extenstions made to any existing swift file.
+**ContentView**: The view of the actual game. 
   
 # Getting Started
 
@@ -64,18 +65,17 @@ When starting your game, all cards on the field will be face-up for 7 seconds. U
 
 ### Easy
 
-* 2 cards per card pair. 
+* Match 2 of the same product to complete match.  
 * Grid size 4x4 
 
 ### Medium 
-* 3 cards per card pair. 
+* Match 3 of the same product to complete match. 
 * Grid size: 6x5 
 
 ### Hard
 
-* 4 cards per card pair. 
+* Match 4 of the same product to complete match. 
 * Grid size: 6x6 
-
 
 ## Extra features
 
@@ -83,11 +83,9 @@ When starting your game, all cards on the field will be face-up for 7 seconds. U
 
 * Insert Picture
 
-
-### Music and Sound! 
+### Music and Sound
 
 * Turn your volume up as their is sound 
-
 
 ### Pause the game
 
