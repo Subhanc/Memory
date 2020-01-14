@@ -70,10 +70,10 @@ Number of products per match | 2 Products |  3 Products |  4 Products
 Content in the first column | Content in the second column | 4 | 5
 
 
-First Header | Second Header
+Difficulty | Easy
 ------------ | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+Number of products per match | 2 Products
+Grid Size | 4x4
 
 ### Easy
 
