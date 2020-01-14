@@ -63,7 +63,18 @@ When starting your game, all cards on the field will be face-up for 7 seconds. U
 
 ## Game Difficulties
 
-<col> 
+
+Difficulty | Easy | Medium | Hard 
+------------ | ------------- | -------------
+Number of products per match | 2 Products |  3 Products |  4 Products 
+Content in the first column | Content in the second column | 4 | 5
+
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
 ### Easy
 
 * Match 2 of the same product to complete match.  
@@ -89,8 +100,6 @@ When starting your game, all cards on the field will be face-up for 7 seconds. U
 
 <p float="left">
     <img src="./Documentation-Folder/HardMode.PNG" width="200"/>
-</p>
-
 </p>
 
 ## Extra features
