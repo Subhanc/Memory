@@ -71,7 +71,7 @@ When starting your game, all cards on the field will be face-up for 7 seconds. U
 | Hard       | 6x6        | 4 Products           |
 
 
-<p float="left">
+<p float="left" align="center">
     <img src="./Documentation-Folder/EasyMode.PNG" width="200"/>
     <img src="./Documentation-Folder/MediumMode.PNG" width="200"/>
     <img src="./Documentation-Folder/HardMode.PNG" width="200"/>
