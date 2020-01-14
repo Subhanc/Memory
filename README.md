@@ -2,9 +2,10 @@
 ## By: Subhan Chaudhry 
 
 <p float="left" align="center">
-    <img src="./Documentation-Folder/test.gif" width="200"/>
+    <img src="./Documentation-Folder/FirstVideo.gif" width="200"/>
     <img src="/Documentation-Folder/Loading.gif" width="200"/>
-    <img src="./Documentation-Folder/MediumMode.PNG" width="200"/>
+    <img src="./Documentation-Folder/PlayingGame.gif" width="200"/>
+    <img src="./Documentation-Folder/GameOver.gif" width="200"/>
 </p>
 
 This is my project submission for the Mobile Developer Intern (iOS) - Summer 2020 Position at Shopify in Toronto, Montreal, and Ottawa. The project challenge can be read at: https://docs.google.com/document/d/1M2VsBSZr8696HU6mO3MWveSB7p3Do9lOkMrjT5nKiEg/edit
@@ -87,12 +88,16 @@ The game consists of three game modes in which the player is able to choose from
 
 Pressed the counter-clockwise arrow to restart your curent game. 
 
+<p float="left">
+    <img src="./Documentation-Folder/Restart.gif" width="200"/>
+</p>
+
 ### Music and Sound
 
 * Make sure your volume is turned on to enhance your game experience!  
 
 <p float="left">
-    <img src="./Documentation-Folder/test.gif" width="200"/>
+    <img src="./Documentation-Folder/SoundAndMusic.gif" width="200"/>
 </p>
 
 ### Pause the game
