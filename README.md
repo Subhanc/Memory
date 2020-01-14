@@ -4,7 +4,7 @@
 <p float="left" align="center">
     <img src="./Documentation-Folder/test.gif" width="200"/>
     <img src="./Documentation-Folder/test.gif" width="200"/>
-    <img src="./Documentation-Folder/GameOver.gif" width="200"/>
+    <img src="./Documentation-Folder/MediumMode.PNG" width="200"/>
 </p>
 
 This is my project submission for the Mobile Developer Intern (iOS) - Summer 2020 Position at Shopify in Toronto, Montreal, and Ottawa. The project challenge can be read at: https://docs.google.com/document/d/1M2VsBSZr8696HU6mO3MWveSB7p3Do9lOkMrjT5nKiEg/edit
