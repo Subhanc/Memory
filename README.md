@@ -90,7 +90,7 @@ Pressed the counter-clockwise arrow to restart your curent game.
 
 * Make sure your volume is turned on to enhance your game experience!  
 
-<p float="left" align="center">
+<p float="left">
     <img src="./Documentation-Folder/test.gif" width="200"/>
 </p>
 
