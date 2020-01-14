@@ -70,10 +70,10 @@ Number of products per match | 2 Products |  3 Products |  4 Products
 Content in the first column | Content in the second column | 4 | 5
 
 
-Difficulty | Easy
+Difficulty | Easy | Medium
 ------------ | -------------
-Number of products per match | 2 Products
-Grid Size | 4x4
+Number of products per match | 2 Products | 3 Products
+Grid Size | 4x4 | 6x5
 
 ### Easy
 
