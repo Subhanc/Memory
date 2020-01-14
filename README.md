@@ -3,6 +3,7 @@
 
 <p float="left" align="center">
     <img src="./Documentation-Folder/test.gif" width="200"/>
+    <img src="./Documentation-Folder/test.gif" width="200"/>
     <img src="./Documentation-Folder/GameOver.gif" width="200"/>
 </p>
 
