@@ -60,9 +60,9 @@ The game consists of three game modes in which the player is able to choose from
 
 
 <p float="left" align="center">
-    <img src="./Documentation-Folder/EasyMode.PNG" width="200"/>
-    <img src="./Documentation-Folder/MediumMode.PNG" width="200"/>
-    <img src="./Documentation-Folder/HardMode.PNG" width="200"/>
+    <img src="./Documentation-Folder/Regular.gif" width="200"/>
+    <img src="./Documentation-Folder/LowestTime.gif" width="200"/>
+    <img src="./Documentation-Folder/OneShot.gif" width="200"/>
 </p>
 
 ## Game Difficulties
