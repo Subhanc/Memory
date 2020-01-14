@@ -2,7 +2,6 @@
 ## By: Subhan Chaudhry 
 
 <p float="left" align="center">
-    <img src="./Documentation-Folder/test.gif" width="200"/>
     <img src="./Documentation-Folder/Loading.gif" width="200"/>
     <img src="./Documentation-Folder/MediumMode.PNG" width="200"/>
 </p>
