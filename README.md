@@ -21,7 +21,8 @@ The project has the following third-party dependecies and uses Swift Packagesfor
 * Lottie - To render animations natively. @ https://github.com/airbnb/lottie-ios
 
 ## Third Party Files 
-  * PartcileEmitter - Converts a swift CAAnimationLayer to be usable in SwifTUI.@ https://github.com/ArthurGuibert/SwiftUI-Particless
+  * ParticleEmitter - Converts a swift CAAnimationLayer to be usable in SwifTUI.@ https://github.com/ArthurGuibert/SwiftUI-Particless
+  * StopWatch - SwiftUI View that is used to handle time. Includes functions with .stop() .start() ..etc
   
 # File Architecture - MVVM 
 
@@ -29,14 +30,14 @@ The project has the following third-party dependecies and uses Swift Packagesfor
 
 This project follows the *Model, View, ViewModel (MVVM)* structural design pattern*
 
-**Audio**: Includes the .mp3 assests used in the project. 
-**Third-Party**: Includes all third party files used in the project. 
-**Services:** Handles API Related code. Utilizes the Alamofire framework.  
-**Models:**  Includes custom models to be used to parse API results which houses all the data and game functionality,  and sound. 
-**ViewModels:** Includes files that are responsible for exposing the data objects from the model in such a way that objects are easily managed and presented. An example used within the project is the CardsViewModel.
-**Assets.xcassets:** Includes all images and colours used for this app
-**Extensions**: Includes the extenstions made to any existing swift file.
-**ContentView**: The view of the actual game. 
+* **Audio**: Includes the .mp3 assests used in the project. 
+* **Third-Party**: Includes all third party files used in the project. 
+* **Services:** Handles API Related code. Utilizes the Alamofire framework.  
+* **Models:**  Includes custom models to be used to parse API results which houses all the data and game functionality,  and sound. 
+* **ViewModels:** Includes files that are responsible for exposing the data objects from the model in such a way that objects are easily managed and presented. An example used within the project is the CardsViewModel.
+* **Assets.xcassets:** Includes all images and colours used for this app
+* **Extensions**: Includes the extenstions made to any existing swift file.
+* **ContentView**: The view of the actual game. 
   
 # Getting Started
 
@@ -93,7 +94,7 @@ Pressed the counter-clockwise arrow to restart your curent game.
 
 ### Music and Sound
 
-* Make sure your volume is turned on to enhance your game experience!  
+Make sure your volume is turned on to enhance your game experience!  
 
 <p float="left">
     <img src="./Documentation-Folder/SoundandMusic.gif" width="200"/>
@@ -101,7 +102,7 @@ Pressed the counter-clockwise arrow to restart your curent game.
 
 ### Pause the game
 
-* Need a break? Feel free to pause the game
+Need a break? Feel free to pause the game
 
 <p float="left">
     <img src="./Documentation-Folder/PauseScreen.gif" width="200"/>
