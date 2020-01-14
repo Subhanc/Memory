@@ -72,9 +72,9 @@ When starting your game, all cards on the field will be face-up for 7 seconds. U
 
 
 <p float="left">
-    Easy <img src="./Documentation-Folder/EasyMode.PNG" width="200"/>
-    Medium <img src="./Documentation-Folder/MediumMode.PNG" width="200"/>
-    Hard <img src="./Documentation-Folder/HardMode.PNG" width="200"/>
+    <img src="./Documentation-Folder/EasyMode.PNG" width="200"/>
+    <img src="./Documentation-Folder/MediumMode.PNG" width="200"/>
+    <img src="./Documentation-Folder/HardMode.PNG" width="200"/>
 </p>
 
 ## Extra features
