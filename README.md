@@ -97,7 +97,7 @@ Pressed the counter-clockwise arrow to restart your curent game.
 * Make sure your volume is turned on to enhance your game experience!  
 
 <p float="left">
-    <img src="./Documentation-Folder/SoundAndMusic.gif" width="200"/>
+    <img src="./Documentation-Folder/SoundandMusic.gif" width="200"/>
 </p>
 
 ### Pause the game
