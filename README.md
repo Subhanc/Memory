@@ -65,10 +65,10 @@ When starting your game, all cards on the field will be face-up for 7 seconds. U
 
 ### Easy
 
-<p float="left" align="center">
+<p float="left">
     * Match 2 of the same product to complete match.  
     * Grid size 4x4 
-    <img src="./Documentation-Folder/EasyMode.png" width="200"/>
+    <img src="./Documentation-Folder/EasyMode.PNG" width="200"/>
 </p>
 
 
