@@ -3,7 +3,6 @@
 
 <p float="left" align="center">
     <img src="./Documentation-Folder/FirstVideo.gif" width="200"/>
-    <img src="/Documentation-Folder/SecondVideo.gif" width="200"/>
     <img src="./Documentation-Folder/PlayingGame.gif" width="200"/>
     <img src="./Documentation-Folder/GameOver.gif" width="200"/>
 </p>
