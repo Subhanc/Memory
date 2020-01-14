@@ -63,7 +63,7 @@ When starting your game, all cards on the field will be face-up for 7 seconds. U
 
 ## Game Difficulties
 
-<p> 
+<col> 
 ### Easy
 
 * Match 2 of the same product to complete match.  
@@ -71,7 +71,7 @@ When starting your game, all cards on the field will be face-up for 7 seconds. U
 
 <p float="left">
     <img src="./Documentation-Folder/EasyMode.PNG" width="200"/>
-</p>
+</col>
 
 
 ### Medium 
