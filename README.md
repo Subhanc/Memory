@@ -83,7 +83,11 @@ The game consists of three game modes in which the player is able to choose from
 
 ### Restart your game.
 
-* Insert Picture
+Pressed the counter-clockwise arrow to restart your curent game. 
+
+<p float="left" align="center">
+    <img src="./Documentation-Folder/RestartGame.PNG" width="200"/>
+</p>
 
 ### Music and Sound
 
