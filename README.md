@@ -48,6 +48,14 @@ To clone this project in Xcode, click "Clone or download" and select "Open in Xc
 
 ## Game Modes 
 
+
+
+| Game Mode   | Description                                                                                                                                                                                                                                                                          |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Regular     | Achieve all the matches on the cards field. Play at your own pace!                                                                                                                                                                                                                   |
+| Lowest Time | Achieve all the matches on the cards field in the lowest amount of time!                                                                                                                                                                                                             |
+| One Shot    | When starting your game, all cards on the field will be face-up for 7 seconds. Use this time wisley to memorize the card field because they will be flipped back over! You have only one shot on matching all the cards pairs on the cards field, if you get a pair wrong, you lose! |
+
 The game consists of three game modes in which the player is able to choose from: 
 
 ### Regular
