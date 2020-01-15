@@ -12,6 +12,9 @@
 This is my project submission for the Mobile Developer Intern (iOS) - Summer 2020 Position at Shopify in Toronto, Montreal, and Ottawa. The project challenge can be read at: https://docs.google.com/document/d/1M2VsBSZr8696HU6mO3MWveSB7p3Do9lOkMrjT5nKiEg/edit
 
 This iOS game is a version of the concentration card game known as Memory written in **Swift** using the new **SwiftUI** and **Combine** frameworks by Apple. 
+# Documentation 
+
+Documentation of the entire project can be found at: https://subhanc.github.io/Shopify-Memory/
 
 # Third Party Dependecies
 ## Packages 
