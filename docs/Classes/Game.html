@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Game Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Game" class="dashAnchor"></a>
+    <a title="Game Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (55% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Game Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Card.html">Card</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Card/CardData.html">– CardData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardsViewModel.html">CardsViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EmitterCell.html">EmitterCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EmitterCell/Content.html">– Content</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Game.html">Game</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GameDetails.html">GameDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InternalParticlesView.html">InternalParticlesView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Player.html">Player</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SceneDelegate.html">SceneDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Service.html">Service</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SoundManager.html">SoundManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StopWatch.html">StopWatch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StopWatch/LapItem.html">– LapItem</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Difficulty.html">Difficulty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GameMode.html">GameMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Images.html">Images</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ActivityIndicator.html">ActivityIndicator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Animation_Previews.html">Animation_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardForLogo.html">CardForLogo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardView.html">CardView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardView_Previews.html">CardView_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardsFallingAnimationView.html">CardsFallingAnimationView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardsView.html">CardsView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContentView.html">ContentView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContentView_Previews.html">ContentView_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EmitterCellBuilder.html">EmitterCellBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GameOverView.html">GameOverView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LargeButtonView.html">LargeButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LargeButton_Previews.html">LargeButton_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LogoView.html">LogoView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LogoView_Previews.html">LogoView_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LottieView.html">LottieView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MainMenu.html">MainMenu</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MenuBar.html">MenuBar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MusicButtonView.html">MusicButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ParticlesEmitter.html">ParticlesEmitter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PauseButtonView.html">PauseButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PauseMenuView.html">PauseMenuView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PauseMenu_Previews.html">PauseMenu_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RestartButtonView.html">RestartButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ScoreLabelView.html">ScoreLabelView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SelectDifficultyView.html">SelectDifficultyView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SelectGameModeView.html">SelectGameModeView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SoundButtonView.html">SoundButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SoundButton_Previews.html">SoundButton_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StopWatchView_Previews.html">StopWatchView_Previews</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Game</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Game</span> <span class="p">:</span> <span class="kt">ObservableObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Model that holds all information of the game.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify4GameC6playerAA6PlayerCvp"></a>
+                    <a name="//apple_ref/swift/Property/player" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify4GameC6playerAA6PlayerCvp">player</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The current player</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">player</span><span class="p">:</span> <span class="kt"><a href="../Classes/Player.html">Player</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify4GameC8gameModeAA0bD0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/gameMode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify4GameC8gameModeAA0bD0Ovp">gameMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The game mode selected by the player.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">gameMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/GameMode.html">GameMode</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify4GameC11gameDetailsAA0bD0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/gameDetails" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify4GameC11gameDetailsAA0bD0Cvp">gameDetails</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The game details selected by the player.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">gameDetails</span><span class="p">:</span> <span class="kt"><a href="../Classes/GameDetails.html">GameDetails</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify4GameC8isPausedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isPaused" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify4GameC8isPausedSbvp">isPaused</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The property to check the paused state of the game</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">isPaused</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify4GameC02isB4OverSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isGameOver" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify4GameC02isB4OverSbvp">isGameOver</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">isGameOver</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify4GameC12soundManagerAA05SoundD0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/soundManager" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify4GameC12soundManagerAA05SoundD0Cvp">soundManager</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@EnvironmentObject</span>
+<span class="k">var</span> <span class="nv">soundManager</span><span class="p">:</span> <span class="kt"><a href="../Classes/SoundManager.html">SoundManager</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify4GameC19currentFlippedCardsSayAA4CardCGvp"></a>
+                    <a name="//apple_ref/swift/Property/currentFlippedCards" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify4GameC19currentFlippedCardsSayAA4CardCGvp">currentFlippedCards</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Holds the cards flipped by the player of the current move.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">currentFlippedCards</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/Card.html">Card</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify4GameC9newPlayer03andB4Mode0eB7Details0e2IsB4OverAcA0D0C_AA0bF0OAA0bG0CSbtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(newPlayer:andGameMode:andGameDetails:andIsGameOver:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify4GameC9newPlayer03andB4Mode0eB7Details0e2IsB4OverAcA0D0C_AA0bF0OAA0bG0CSbtcfc">init(newPlayer:andGameMode:andGameDetails:andIsGameOver:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes game information provided the player, game mode and game details.</p>
+
+<ul>
+<li>player: The current player</li>
+<li>gameMode: The game mode selected by the player.</li>
+<li><p>gameDetails: The game details selected by the player.</p></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="n">newPlayer</span> <span class="nv">player</span><span class="p">:</span> <span class="kt"><a href="../Classes/Player.html">Player</a></span><span class="p">,</span> <span class="n">andGameMode</span> <span class="nv">gameMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/GameMode.html">GameMode</a></span><span class="p">,</span> <span class="n">andGameDetails</span> <span class="nv">gameDetails</span><span class="p">:</span> <span class="kt"><a href="../Classes/GameDetails.html">GameDetails</a></span><span class="p">,</span> <span class="n">andIsGameOver</span> <span class="nv">isGameOver</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Game model that holds all information of the game.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify4GameC18handleSelectedCard04withE0SbAA0E0Cz_tF"></a>
+                    <a name="//apple_ref/swift/Method/handleSelectedCard(withCard:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify4GameC18handleSelectedCard04withE0SbAA0E0Cz_tF">handleSelectedCard(withCard:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calling this will handle the card selected and update all state of the game accordingly. Examples being the  score, validity of the move, and win state.</p>
+
+<ul>
+<li>card: The card seleceted by the player. Passed by reference.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleSelectedCard</span><span class="p">(</span><span class="n">withCard</span> <span class="nv">card</span><span class="p">:</span> <span class="k">inout</span> <span class="kt"><a href="../Classes/Card.html">Card</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private%20functions"></a>
+                <a name="//apple_ref/swift/Section/Private functions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Private%20functions"></a>
+                  <h3 class="section-name"><p>Private functions</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify4GameC05resetB5StatsyyF"></a>
+                    <a name="//apple_ref/swift/Method/resetGameStats()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify4GameC05resetB5StatsyyF">resetGameStats()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calling this will reset all player stats to zero and empty the &lsquo;currentFlippedCards&rsquo; to an empty array.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resetGameStats</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-01-14)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

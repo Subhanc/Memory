@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EmitterCell Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/EmitterCell" class="dashAnchor"></a>
+    <a title="EmitterCell Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (55% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        EmitterCell Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Card.html">Card</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Card/CardData.html">– CardData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardsViewModel.html">CardsViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EmitterCell.html">EmitterCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EmitterCell/Content.html">– Content</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Game.html">Game</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GameDetails.html">GameDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InternalParticlesView.html">InternalParticlesView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Player.html">Player</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SceneDelegate.html">SceneDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Service.html">Service</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SoundManager.html">SoundManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StopWatch.html">StopWatch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StopWatch/LapItem.html">– LapItem</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Difficulty.html">Difficulty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GameMode.html">GameMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Images.html">Images</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ActivityIndicator.html">ActivityIndicator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Animation_Previews.html">Animation_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardForLogo.html">CardForLogo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardView.html">CardView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardView_Previews.html">CardView_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardsFallingAnimationView.html">CardsFallingAnimationView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardsView.html">CardsView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContentView.html">ContentView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContentView_Previews.html">ContentView_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EmitterCellBuilder.html">EmitterCellBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GameOverView.html">GameOverView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LargeButtonView.html">LargeButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LargeButton_Previews.html">LargeButton_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LogoView.html">LogoView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LogoView_Previews.html">LogoView_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LottieView.html">LottieView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MainMenu.html">MainMenu</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MenuBar.html">MenuBar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MusicButtonView.html">MusicButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ParticlesEmitter.html">ParticlesEmitter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PauseButtonView.html">PauseButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PauseMenuView.html">PauseMenuView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PauseMenu_Previews.html">PauseMenu_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RestartButtonView.html">RestartButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ScoreLabelView.html">ScoreLabelView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SelectDifficultyView.html">SelectDifficultyView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SelectGameModeView.html">SelectGameModeView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SoundButtonView.html">SoundButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SoundButton_Previews.html">SoundButton_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StopWatchView_Previews.html">StopWatchView_Previews</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>EmitterCell</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">EmitterCell</span> <span class="p">:</span> <span class="kt">CAEmitterCell</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Shopify@objc(cs)EmitterCell(im)init"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Shopify@objc(cs)EmitterCell(im)init">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Shopify@objc(cs)EmitterCell(im)initWithCoder:"></a>
+                    <a name="//apple_ref/swift/Method/init(coder:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Shopify@objc(cs)EmitterCell(im)initWithCoder:">init(coder:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">required</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">coder</span><span class="p">:</span> <span class="kt">NSCoder</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC04copyB0ACyF"></a>
+                    <a name="//apple_ref/swift/Method/copyEmitter()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC04copyB0ACyF">copyEmitter()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">copyEmitter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">EmitterCell</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC7ContentO"></a>
+                    <a name="//apple_ref/swift/Enum/Content" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC7ContentO">Content</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Content for the emitter cell, it is either an image, or a circle.
+NB: It could easily be extended for other shapes.</p>
+
+                        <a href="../Classes/EmitterCell/Content.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Content</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC7contentyACXDAC7ContentOF"></a>
+                    <a name="//apple_ref/swift/Method/content(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC7contentyACXDAC7ContentOF">content(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">content</span><span class="p">(</span><span class="n">_</span> <span class="nv">content</span><span class="p">:</span> <span class="kt"><a href="../Classes/EmitterCell/Content.html">Content</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC9birthRateyACXDSfF"></a>
+                    <a name="//apple_ref/swift/Method/birthRate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC9birthRateyACXDSfF">birthRate(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">birthRate</span><span class="p">(</span><span class="n">_</span> <span class="nv">birthRate</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC8lifetimeyACXDSfF"></a>
+                    <a name="//apple_ref/swift/Method/lifetime(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC8lifetimeyACXDSfF">lifetime(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">lifetime</span><span class="p">(</span><span class="n">_</span> <span class="nv">lifetime</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC5scaleyACXD12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/scale(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC5scaleyACXD12CoreGraphics7CGFloatVF">scale(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">scale</span><span class="p">(</span><span class="n">_</span> <span class="nv">scale</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC10scaleRangeyACXD12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/scaleRange(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC10scaleRangeyACXD12CoreGraphics7CGFloatVF">scaleRange(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">scaleRange</span><span class="p">(</span><span class="n">_</span> <span class="nv">scaleRange</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC10scaleSpeedyACXD12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/scaleSpeed(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC10scaleSpeedyACXD12CoreGraphics7CGFloatVF">scaleSpeed(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">scaleSpeed</span><span class="p">(</span><span class="n">_</span> <span class="nv">scaleSpeed</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC8velocityyACXD12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/velocity(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC8velocityyACXD12CoreGraphics7CGFloatVF">velocity(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">velocity</span><span class="p">(</span><span class="n">_</span> <span class="nv">velocity</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC13velocityRangeyACXD12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/velocityRange(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC13velocityRangeyACXD12CoreGraphics7CGFloatVF">velocityRange(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">velocityRange</span><span class="p">(</span><span class="n">_</span> <span class="nv">velocityRange</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC17emissionLongitudeyACXD12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/emissionLongitude(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC17emissionLongitudeyACXD12CoreGraphics7CGFloatVF">emissionLongitude(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">emissionLongitude</span><span class="p">(</span><span class="n">_</span> <span class="nv">emissionLongitude</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC16emissionLatitudeyACXD12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/emissionLatitude(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC16emissionLatitudeyACXD12CoreGraphics7CGFloatVF">emissionLatitude(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">emissionLatitude</span><span class="p">(</span><span class="n">_</span> <span class="nv">emissionLatitude</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC13emissionRangeyACXD12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/emissionRange(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC13emissionRangeyACXD12CoreGraphics7CGFloatVF">emissionRange(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">emissionRange</span><span class="p">(</span><span class="n">_</span> <span class="nv">emissionRange</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC4spinyACXD12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/spin(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC4spinyACXD12CoreGraphics7CGFloatVF">spin(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">spin</span><span class="p">(</span><span class="n">_</span> <span class="nv">spin</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC9spinRangeyACXD12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/spinRange(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC9spinRangeyACXD12CoreGraphics7CGFloatVF">spinRange(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">spinRange</span><span class="p">(</span><span class="n">_</span> <span class="nv">spinRange</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC5coloryACXDSo7UIColorCF"></a>
+                    <a name="//apple_ref/swift/Method/color(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC5coloryACXDSo7UIColorCF">color(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">color</span><span class="p">(</span><span class="n">_</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC13xAccelerationyACXD12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/xAcceleration(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC13xAccelerationyACXD12CoreGraphics7CGFloatVF">xAcceleration(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">xAcceleration</span><span class="p">(</span><span class="n">_</span> <span class="nv">xAcceleration</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC13yAccelerationyACXD12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/yAcceleration(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC13yAccelerationyACXD12CoreGraphics7CGFloatVF">yAcceleration(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">yAcceleration</span><span class="p">(</span><span class="n">_</span> <span class="nv">yAcceleration</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC13zAccelerationyACXD12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/zAcceleration(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC13zAccelerationyACXD12CoreGraphics7CGFloatVF">zAcceleration(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">zAcceleration</span><span class="p">(</span><span class="n">_</span> <span class="nv">zAcceleration</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC10alphaSpeedyACXDSfF"></a>
+                    <a name="//apple_ref/swift/Method/alphaSpeed(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC10alphaSpeedyACXDSfF">alphaSpeed(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">alphaSpeed</span><span class="p">(</span><span class="n">_</span> <span class="nv">alphaSpeed</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify11EmitterCellC10alphaRangeyACXDSfF"></a>
+                    <a name="//apple_ref/swift/Method/alphaRange(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify11EmitterCellC10alphaRangeyACXDSfF">alphaRange(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">alphaRange</span><span class="p">(</span><span class="n">_</span> <span class="nv">alphaRange</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-01-14)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

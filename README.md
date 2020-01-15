@@ -1,5 +1,7 @@
-#  Shopify - iOS Internship Summer 2020 Challenge Submission.
+#  Shopify iOS Internship Summer 2020 Challenge Submission.
 ## By: Subhan Chaudhry 
+
+
 
 <p float="left" align="center">
     <img src="./Documentation-Folder/FirstVideo.gif" width="200"/>
@@ -9,7 +11,7 @@
 
 This is my project submission for the Mobile Developer Intern (iOS) - Summer 2020 Position at Shopify in Toronto, Montreal, and Ottawa. The project challenge can be read at: https://docs.google.com/document/d/1M2VsBSZr8696HU6mO3MWveSB7p3Do9lOkMrjT5nKiEg/edit
 
-This iOS game is a version of the concentration card game known as Memory. 
+This iOS game is a version of the concentration card game known as Memory written in **Swift** using the new **SwiftUI** and **Combine** frameworks by Apple. 
 
 # Third Party Dependecies
 ## Packages 
@@ -19,10 +21,17 @@ The project has the following third-party dependecies and uses Swift Packagesfor
 * Alamofire - for HTTP Requests @ https://github.com/Alamofire/Alamofire
 * SwiftyJSON - for parsing data @ https://github.com/SwiftyJSON/SwiftyJSON
 * Lottie - To render animations natively. @ https://github.com/airbnb/lottie-ios
+* Jazzy - to  generates documentation for the project. @ https://github.com/realm/jazzy
 
 ## Third Party Files 
   * ParticleEmitter - Converts a swift CAAnimationLayer to be usable in SwifTUI.@ https://github.com/ArthurGuibert/SwiftUI-Particless
   * StopWatch - SwiftUI View that is used to handle time. Includes functions with .stop() .start() ..etc
+  
+  ## Third Party Assets
+  
+  * All audio from http://www.orangefreesounds.com/
+  * Trophy Lottie animation from https://lottiefiles.com/677-trophy
+  
   
 # File Architecture - MVVM 
 
@@ -68,6 +77,7 @@ The game consists of three game modes in which the player is able to choose from
 
 ## Game Difficulties
 
+For each game mode listed above, the player can select a difficulty level.
 
 | Difficulty | Grid Size  | # Products Per Match |
 |------------|------------|----------------------|

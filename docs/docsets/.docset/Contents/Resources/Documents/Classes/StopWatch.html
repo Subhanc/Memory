@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>StopWatch Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/StopWatch" class="dashAnchor"></a>
+    <a title="StopWatch Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (55% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        StopWatch Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Card.html">Card</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Card/CardData.html">– CardData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardsViewModel.html">CardsViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EmitterCell.html">EmitterCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EmitterCell/Content.html">– Content</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Game.html">Game</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GameDetails.html">GameDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InternalParticlesView.html">InternalParticlesView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Player.html">Player</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SceneDelegate.html">SceneDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Service.html">Service</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SoundManager.html">SoundManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StopWatch.html">StopWatch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StopWatch/LapItem.html">– LapItem</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Difficulty.html">Difficulty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GameMode.html">GameMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Images.html">Images</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ActivityIndicator.html">ActivityIndicator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Animation_Previews.html">Animation_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardForLogo.html">CardForLogo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardView.html">CardView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardView_Previews.html">CardView_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardsFallingAnimationView.html">CardsFallingAnimationView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardsView.html">CardsView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContentView.html">ContentView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContentView_Previews.html">ContentView_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EmitterCellBuilder.html">EmitterCellBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GameOverView.html">GameOverView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LargeButtonView.html">LargeButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LargeButton_Previews.html">LargeButton_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LogoView.html">LogoView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LogoView_Previews.html">LogoView_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LottieView.html">LottieView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MainMenu.html">MainMenu</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MenuBar.html">MenuBar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MusicButtonView.html">MusicButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ParticlesEmitter.html">ParticlesEmitter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PauseButtonView.html">PauseButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PauseMenuView.html">PauseMenuView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PauseMenu_Previews.html">PauseMenu_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RestartButtonView.html">RestartButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ScoreLabelView.html">ScoreLabelView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SelectDifficultyView.html">SelectDifficultyView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SelectGameModeView.html">SelectGameModeView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SoundButtonView.html">SoundButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SoundButton_Previews.html">SoundButton_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StopWatchView_Previews.html">StopWatchView_Previews</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>StopWatch</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">StopWatch</span> <span class="p">:</span> <span class="kt">ObservableObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify9StopWatchC04stopC4TimeSSvp"></a>
+                    <a name="//apple_ref/swift/Property/stopWatchTime" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify9StopWatchC04stopC4TimeSSvp">stopWatchTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">stopWatchTime</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify9StopWatchC6pausedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/paused" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify9StopWatchC6pausedSbvp">paused</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">paused</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify9StopWatchC4lapsSayAC7LapItemVGvp"></a>
+                    <a name="//apple_ref/swift/Property/laps" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify9StopWatchC4lapsSayAC7LapItemVGvp">laps</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">laps</span><span class="p">:</span> <span class="p">[</span><span class="kt">StopWatch</span><span class="o">.</span><span class="kt"><a href="../Classes/StopWatch/LapItem.html">LapItem</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify9StopWatchC5startyyF"></a>
+                    <a name="//apple_ref/swift/Method/start()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify9StopWatchC5startyyF">start()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">start</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify9StopWatchC5pauseyyF"></a>
+                    <a name="//apple_ref/swift/Method/pause()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify9StopWatchC5pauseyyF">pause()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">pause</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify9StopWatchC3lapyyF"></a>
+                    <a name="//apple_ref/swift/Method/lap()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify9StopWatchC3lapyyF">lap()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">lap</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify9StopWatchC5resetyyF"></a>
+                    <a name="//apple_ref/swift/Method/reset()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify9StopWatchC5resetyyF">reset()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">reset</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify9StopWatchC8isPausedSbyF"></a>
+                    <a name="//apple_ref/swift/Method/isPaused()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify9StopWatchC8isPausedSbyF">isPaused()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isPaused</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify9StopWatchC7LapItemV"></a>
+                    <a name="//apple_ref/swift/Struct/LapItem" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify9StopWatchC7LapItemV">LapItem</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Classes/StopWatch/LapItem.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">LapItem</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify9StopWatchC24convertCountToTimeString7counterSSSi_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/convertCountToTimeString(counter:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify9StopWatchC24convertCountToTimeString7counterSSSi_tFZ">convertCountToTimeString(counter:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">convertCountToTimeString</span><span class="p">(</span><span class="nv">counter</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-01-14)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

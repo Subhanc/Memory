@@ -1,0 +1,768 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/AppDelegate.swift",
+      "line": 12,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/AppDelegate.swift",
+      "line": 14,
+      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/AppDelegate.swift",
+      "line": 21,
+      "symbol": "AppDelegate.application(_:configurationForConnecting:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/AppDelegate.swift",
+      "line": 27,
+      "symbol": "AppDelegate.application(_:didDiscardSceneSessions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/ContentView.swift",
+      "line": 11,
+      "symbol": "ContentView",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/ContentView.swift",
+      "line": 13,
+      "symbol": "ContentView.game",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/ContentView.swift",
+      "line": 15,
+      "symbol": "ContentView.cardsViewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/ContentView.swift",
+      "line": 17,
+      "symbol": "ContentView.isGameLoading",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/ContentView.swift",
+      "line": 75,
+      "symbol": "ContentView_Previews",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/ContentView.swift",
+      "line": 82,
+      "symbol": "ActivityIndicator",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/ContentView.swift",
+      "line": 84,
+      "symbol": "ActivityIndicator.isAnimating",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/ContentView.swift",
+      "line": 85,
+      "symbol": "ActivityIndicator.style",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Models/Enums.swift",
+      "line": 11,
+      "symbol": "Difficulty.easy",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Models/Enums.swift",
+      "line": 12,
+      "symbol": "Difficulty.medium",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Models/Enums.swift",
+      "line": 13,
+      "symbol": "Difficulty.hard",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Models/Enums.swift",
+      "line": 14,
+      "symbol": "Difficulty.custom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Models/Enums.swift",
+      "line": 33,
+      "symbol": "GameMode.regular",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Models/Enums.swift",
+      "line": 34,
+      "symbol": "GameMode.lowestTime",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Models/Enums.swift",
+      "line": 35,
+      "symbol": "GameMode.oneShot",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Models/Game.swift",
+      "line": 24,
+      "symbol": "Game.isGameOver",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Models/Game.swift",
+      "line": 26,
+      "symbol": "Game.soundManager",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Models/Player.swift",
+      "line": 15,
+      "symbol": "Player.currentScore",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Models/Player.swift",
+      "line": 18,
+      "symbol": "Player.currentMatches",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Models/SoundManager.swift",
+      "line": 28,
+      "symbol": "SoundManager.cardFlipSoundURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Models/SoundManager.swift",
+      "line": 30,
+      "symbol": "SoundManager.succesfulMatchSoundURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/SceneDelegate.swift",
+      "line": 12,
+      "symbol": "SceneDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/SceneDelegate.swift",
+      "line": 14,
+      "symbol": "SceneDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/SceneDelegate.swift",
+      "line": 17,
+      "symbol": "SceneDelegate.scene(_:willConnectTo:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/SceneDelegate.swift",
+      "line": 36,
+      "symbol": "SceneDelegate.sceneDidDisconnect(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/SceneDelegate.swift",
+      "line": 43,
+      "symbol": "SceneDelegate.sceneDidBecomeActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/SceneDelegate.swift",
+      "line": 48,
+      "symbol": "SceneDelegate.sceneWillResignActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/SceneDelegate.swift",
+      "line": 53,
+      "symbol": "SceneDelegate.sceneWillEnterForeground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/SceneDelegate.swift",
+      "line": 58,
+      "symbol": "SceneDelegate.sceneDidEnterBackground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Service/Service.swift",
+      "line": 26,
+      "symbol": "Service.API_URL",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 14,
+      "symbol": "ParticlesEmitter.center",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 15,
+      "symbol": "ParticlesEmitter.emitterSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 16,
+      "symbol": "ParticlesEmitter.shape",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 17,
+      "symbol": "ParticlesEmitter.cells",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 37,
+      "symbol": "ParticlesEmitter.emitterSize(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 41,
+      "symbol": "ParticlesEmitter.emitterPosition(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 45,
+      "symbol": "ParticlesEmitter.emitterShape(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 73,
+      "symbol": "EmitterCellBuilder",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 74,
+      "symbol": "EmitterCellBuilder.buildBlock(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 80,
+      "symbol": "ParticlesEmitter.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 84,
+      "symbol": "ParticlesEmitter.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 89,
+      "symbol": "EmitterCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 90,
+      "symbol": "EmitterCell.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 94,
+      "symbol": "EmitterCell.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 98,
+      "symbol": "EmitterCell.copyEmitter()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 104,
+      "symbol": "EmitterCell",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 108,
+      "symbol": "EmitterCell.Content.image(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 109,
+      "symbol": "EmitterCell.Content.circle(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 112,
+      "symbol": "EmitterCell.content(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 117,
+      "symbol": "EmitterCell.birthRate(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 122,
+      "symbol": "EmitterCell.lifetime(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 127,
+      "symbol": "EmitterCell.scale(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 132,
+      "symbol": "EmitterCell.scaleRange(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 137,
+      "symbol": "EmitterCell.scaleSpeed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 142,
+      "symbol": "EmitterCell.velocity(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 147,
+      "symbol": "EmitterCell.velocityRange(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 152,
+      "symbol": "EmitterCell.emissionLongitude(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 157,
+      "symbol": "EmitterCell.emissionLatitude(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 162,
+      "symbol": "EmitterCell.emissionRange(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 167,
+      "symbol": "EmitterCell.spin(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 172,
+      "symbol": "EmitterCell.spinRange(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 177,
+      "symbol": "EmitterCell.color(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 182,
+      "symbol": "EmitterCell.xAcceleration(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 187,
+      "symbol": "EmitterCell.yAcceleration(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 192,
+      "symbol": "EmitterCell.zAcceleration(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 197,
+      "symbol": "EmitterCell.alphaSpeed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/ParticlesEmitter.swift",
+      "line": 202,
+      "symbol": "EmitterCell.alphaRange(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/StopWatch.swift",
+      "line": 10,
+      "symbol": "StopWatch",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/StopWatch.swift",
+      "line": 16,
+      "symbol": "StopWatch.stopWatchTime",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/StopWatch.swift",
+      "line": 18,
+      "symbol": "StopWatch.paused",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/StopWatch.swift",
+      "line": 20,
+      "symbol": "StopWatch.laps",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/StopWatch.swift",
+      "line": 28,
+      "symbol": "StopWatch.start()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/StopWatch.swift",
+      "line": 39,
+      "symbol": "StopWatch.pause()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/StopWatch.swift",
+      "line": 44,
+      "symbol": "StopWatch.lap()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/StopWatch.swift",
+      "line": 53,
+      "symbol": "StopWatch.reset()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/StopWatch.swift",
+      "line": 59,
+      "symbol": "StopWatch.isPaused()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/StopWatch.swift",
+      "line": 89,
+      "symbol": "StopWatch",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/StopWatch.swift",
+      "line": 90,
+      "symbol": "StopWatch.LapItem",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/StopWatch.swift",
+      "line": 91,
+      "symbol": "StopWatch.LapItem.uuid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/StopWatch.swift",
+      "line": 92,
+      "symbol": "StopWatch.LapItem.count",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/StopWatch.swift",
+      "line": 93,
+      "symbol": "StopWatch.LapItem.stringTime",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/StopWatch.swift",
+      "line": 95,
+      "symbol": "StopWatch.LapItem.init(count:diff:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/StopWatch.swift",
+      "line": 107,
+      "symbol": "StopWatch",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Third-Party/StopWatch.swift",
+      "line": 108,
+      "symbol": "StopWatch.convertCountToTimeString(counter:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/Game Over/GameOverView.swift",
+      "line": 15,
+      "symbol": "GameOverView.presentationMode",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/Game Over/GameOverView.swift",
+      "line": 20,
+      "symbol": "GameOverView.onPlayAgainCompletion",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/InGame/MenuBar.swift",
+      "line": 21,
+      "symbol": "MenuBar.onRefreshCompletion",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/InGame/PauseMenuView.swift",
+      "line": 14,
+      "symbol": "PauseMenuView.presentationMode",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/InGame/PauseMenuView.swift",
+      "line": 59,
+      "symbol": "PauseMenu_Previews",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/Onboarding/MainMenu.swift",
+      "line": 17,
+      "symbol": "MainMenu.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/Reusable Views/Art and Animations/CardsFallingAnimationView.swift",
+      "line": 68,
+      "symbol": "Images.orangeAlien",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/Reusable Views/Art and Animations/CardsFallingAnimationView.swift",
+      "line": 69,
+      "symbol": "Images.greenAlien",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/Reusable Views/Art and Animations/CardsFallingAnimationView.swift",
+      "line": 70,
+      "symbol": "Images.yellowAlien",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/Reusable Views/Art and Animations/CardsFallingAnimationView.swift",
+      "line": 71,
+      "symbol": "Images.redAlien",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/Reusable Views/Art and Animations/CardsFallingAnimationView.swift",
+      "line": 75,
+      "symbol": "Animation_Previews",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/Reusable Views/Art and Animations/LogoView.swift",
+      "line": 59,
+      "symbol": "CardForLogo.imageName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/Reusable Views/Art and Animations/LogoView.swift",
+      "line": 79,
+      "symbol": "LogoView_Previews",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/Reusable Views/Art and Animations/LottieView.swift",
+      "line": 14,
+      "symbol": "LottieView",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/Reusable Views/Buttons/LargeButtonView.swift",
+      "line": 29,
+      "symbol": "LargeButton_Previews",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/Reusable Views/Buttons/RestartButtonView.swift",
+      "line": 17,
+      "symbol": "RestartButtonView.onRefreshCompletion",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/Reusable Views/Buttons/ScoreLabelView.swift",
+      "line": 17,
+      "symbol": "ScoreLabelView.stopWatch",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/Reusable Views/Buttons/ScoreLabelView.swift",
+      "line": 37,
+      "symbol": "StopWatchView_Previews",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/Reusable Views/Buttons/SoundButtonView.swift",
+      "line": 40,
+      "symbol": "SoundButtonView.crossedOutLine()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/Reusable Views/Buttons/SoundButtonView.swift",
+      "line": 48,
+      "symbol": "SoundButton_Previews",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/subhan/Desktop/Shopify/Shopify/Views/Reusable Views/CardView.swift",
+      "line": 66,
+      "symbol": "CardView_Previews",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/subhan/Desktop/Shopify"
+}

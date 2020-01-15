@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SoundManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/SoundManager" class="dashAnchor"></a>
+    <a title="SoundManager Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (55% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SoundManager Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Card.html">Card</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Card/CardData.html">– CardData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardsViewModel.html">CardsViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EmitterCell.html">EmitterCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EmitterCell/Content.html">– Content</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Game.html">Game</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GameDetails.html">GameDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InternalParticlesView.html">InternalParticlesView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Player.html">Player</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SceneDelegate.html">SceneDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Service.html">Service</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SoundManager.html">SoundManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StopWatch.html">StopWatch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StopWatch/LapItem.html">– LapItem</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Difficulty.html">Difficulty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GameMode.html">GameMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Images.html">Images</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ActivityIndicator.html">ActivityIndicator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Animation_Previews.html">Animation_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardForLogo.html">CardForLogo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardView.html">CardView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardView_Previews.html">CardView_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardsFallingAnimationView.html">CardsFallingAnimationView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardsView.html">CardsView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContentView.html">ContentView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContentView_Previews.html">ContentView_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EmitterCellBuilder.html">EmitterCellBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GameOverView.html">GameOverView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LargeButtonView.html">LargeButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LargeButton_Previews.html">LargeButton_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LogoView.html">LogoView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LogoView_Previews.html">LogoView_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LottieView.html">LottieView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MainMenu.html">MainMenu</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MenuBar.html">MenuBar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MusicButtonView.html">MusicButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ParticlesEmitter.html">ParticlesEmitter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PauseButtonView.html">PauseButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PauseMenuView.html">PauseMenuView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PauseMenu_Previews.html">PauseMenu_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RestartButtonView.html">RestartButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ScoreLabelView.html">ScoreLabelView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SelectDifficultyView.html">SelectDifficultyView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SelectGameModeView.html">SelectGameModeView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SoundButtonView.html">SoundButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SoundButton_Previews.html">SoundButton_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StopWatchView_Previews.html">StopWatchView_Previews</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SoundManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SoundManager</span> <span class="p">:</span> <span class="kt">ObservableObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Handles all audio functionality of the game.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify12SoundManagerC08cardFlipB6EffectSo13AVAudioPlayerCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cardFlipSoundEffect" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify12SoundManagerC08cardFlipB6EffectSo13AVAudioPlayerCSgvp">cardFlipSoundEffect</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The audio player for the card flip sound effect.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cardFlipSoundEffect</span><span class="p">:</span> <span class="kt">AVAudioPlayer</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify12SoundManagerC015successfulMatchB6EffectSo13AVAudioPlayerCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/successfulMatchSoundEffect" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify12SoundManagerC015successfulMatchB6EffectSo13AVAudioPlayerCSgvp">successfulMatchSoundEffect</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The audio player foer ther card flip sound effect.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">successfulMatchSoundEffect</span><span class="p">:</span> <span class="kt">AVAudioPlayer</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify12SoundManagerC9isMusicOnSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isMusicOn" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify12SoundManagerC9isMusicOnSbvp">isMusicOn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Controls the state if music audio is enabled by the user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">isMusicOn</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify12SoundManagerC02isB9EffectsOnSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isSoundEffectsOn" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify12SoundManagerC02isB9EffectsOnSbvp">isSoundEffectsOn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Controls the state if sound effects audio is enabled by the user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="k">var</span> <span class="nv">isSoundEffectsOn</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify12SoundManagerC08cardFlipB3URL10Foundation0F0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/cardFlipSoundURL" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify12SoundManagerC08cardFlipB3URL10Foundation0F0Vvp">cardFlipSoundURL</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">cardFlipSoundURL</span><span class="p">:</span> <span class="kt">URL</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify12SoundManagerC014succesfulMatchB3URL10Foundation0F0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/succesfulMatchSoundURL" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify12SoundManagerC014succesfulMatchB3URL10Foundation0F0Vvp">succesfulMatchSoundURL</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">succesfulMatchSoundURL</span><span class="p">:</span> <span class="kt">URL</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify12SoundManagerC012playCardFlipB6EffectyyF"></a>
+                    <a name="//apple_ref/swift/Method/playCardFlipSoundEffect()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify12SoundManagerC012playCardFlipB6EffectyyF">playCardFlipSoundEffect()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This plays the card-flip-sound-effect.mp3 once.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">playCardFlipSoundEffect</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Shopify12SoundManagerC016playSuccessSparkB6EffectyyF"></a>
+                    <a name="//apple_ref/swift/Method/playSuccessSparkSoundEffect()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Shopify12SoundManagerC016playSuccessSparkB6EffectyyF">playSuccessSparkSoundEffect()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This plays the success-sparkle-sound-effect.mp3 once.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">playSuccessSparkSoundEffect</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-01-14)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
